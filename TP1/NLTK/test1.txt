@@ -1,0 +1,22 @@
+{
+    "a beau mentir qui *** de loin": ["vient", "part", "mange", "programme"],
+    "a beau *** qui vient de loin": ["mentir", "précher", "temps", "visage"],
+    "l'occasion fait le ***": ["malin", "bonheur", "larron", "pouvoir"],
+    "aide-toi, le ciel t'***": ["aidera", "a", "en", "armera"],
+    "année de gelée, *** de blé": ["année", "faute", "années", "et"],
+    "aprés la pluie, le *** temps": ["beau", "passe", "beau", "mauvais"],
+    "aux échecs, les *** sont les plus prés des rois": ["biens", "fous", "affaires", "chats"],
+    "ce que *** veut, dieu le veut": ["dieu", "femme", "maétre", "ne"],
+    "bien mal acquis ne *** jamais": ["prospére", "profite", "saurait", "voit"],
+    "bon ouvrier ne querelle pas ses ***": ["voisins", "petits", "outils", "outil"],
+    "ce n'est pas tous les jours ***": ["féte", "péques", "dangereux", "noces"],
+    "pour le fou, c'est tous les jours ***": ["féte", "péques", "dangereux", "noces"],
+    "dire et faire, *** deux": ["donne", "sont", "font", "tous"],
+    "mieux vaut *** que jamais": ["tard", "donner", "bon", "étre"],
+    "d'un sac *** ne peut tirer deux moutures": ["on", "qui", "nul", "rien"],
+    "é qui dieu aide, *** ne peut nuire": ["on", "qui", "nul", "rien"],
+    "il n'y a *** de rose de cent jours": ["point", "pas", "rien", "toujours"],
+    "il faut le *** pour le croire": ["boire", "voir", "retrouver", "temps"],
+    "on ne *** pas le poisson qui est encore dans la mer": ["prend", "vend", "connaét", "perd"],
+    "la langue d'un *** vaut mieux que celle d'un menteur": ["tiens", "muet", "silence", "homme"]
+ }

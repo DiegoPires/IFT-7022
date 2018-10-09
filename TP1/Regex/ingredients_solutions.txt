@@ -1,0 +1,298 @@
+0,25 tasse beurre   QUANTITE:0,25 tasse   INGREDIENT:beurre
+0,5 tasse sucre   QUANTITE:0,5 tasse   INGREDIENT:sucre
+2 bananes en purÃ©e   QUANTITE:2   INGREDIENT:bananes
+2 oeufs   QUANTITE:2   INGREDIENT:oeufs
+2 tasses farine   QUANTITE:2 tasses   INGREDIENT:farine
+2 cuillÃ¨res Ã  cafÃ© poudre Ã  pÃ¢te   QUANTITE:2 cuillÃ¨res Ã  cafÃ©   INGREDIENT:poudre Ã  pÃ¢te
+0,5 cuillÃ¨re Ã  cafÃ© bicarbonate de sodium   QUANTITE:0,5 cuillÃ¨re Ã  cafÃ©   INGREDIENT:bicarbonate de sodium
+0,5 cuillÃ¨re Ã  cafÃ© sel   QUANTITE:0,5 cuillÃ¨re Ã  cafÃ©   INGREDIENT:sel
+0,5 tasse lait   QUANTITE:0,5 tasse   INGREDIENT:lait
+1,5 tasse farine   QUANTITE:1,5 tasse   INGREDIENT:farine
+1 cuillÃ¨re Ã  cafÃ© poudre Ã  pÃ¢te   QUANTITE:1 cuillÃ¨re Ã  cafÃ©   INGREDIENT:poudre Ã  pÃ¢te
+0,25 tasse beurre   QUANTITE:0,25 tasse   INGREDIENT:beurre
+1 tasse sucre   QUANTITE:1 tasse   INGREDIENT:sucre
+1 tasse lait   QUANTITE:1 tasse   INGREDIENT:lait
+1 tasse sirop d'Ã©rable   QUANTITE:1 tasse   INGREDIENT:sirop d'Ã©rable
+1 tasse cassonade   QUANTITE:1 tasse   INGREDIENT:cassonade
+1 tasse eau bouillante   QUANTITE:1 tasse   INGREDIENT:eau bouillante
+0,25 tasse beurre   QUANTITE:0,25 tasse   INGREDIENT:beurre
+6 pommes vertes pelÃ©es, en tranches   QUANTITE:6   INGREDIENT:pommes vertes
+0,67 tasse sirop d'Ã©rable   QUANTITE:0,67 tasse   INGREDIENT:sirop d'Ã©rable
+0,75 tasse farine   QUANTITE:0,75 tasse   INGREDIENT:farine
+0,75 tasse gruau   QUANTITE:0,75 tasse   INGREDIENT:gruau
+0,5 tasse cassonade   QUANTITE:0,5 tasse   INGREDIENT:cassonade
+sel   QUANTITE:   INGREDIENT:sel
+0,5 tasse beurre   QUANTITE:0,5 tasse   INGREDIENT:beurre
+4 cuillÃ¨res Ã  soupe huile d'olive   QUANTITE:4 cuillÃ¨res Ã  soupe   INGREDIENT:huile d'olive
+2 cuillÃ¨res Ã  soupe jus de citron   QUANTITE:2 cuillÃ¨res Ã  soupe   INGREDIENT:jus de citron
+2 gousses d'ail   QUANTITE:2 gousses   INGREDIENT:ail
+1 cuillÃ¨re Ã  soupe moutarde de Dijon   QUANTITE:1 cuillÃ¨re Ã  soupe   INGREDIENT:moutarde de Dijon
+3 Ã©chalotes coupÃ©es finement   QUANTITE:3   INGREDIENT:Ã©chalotes
+8 champignons Ã©mincÃ©s   QUANTITE:8   INGREDIENT:champignons
+0,75 tasse vin blanc sec   QUANTITE:0,75 tasse   INGREDIENT:vin blanc sec
+2 tasses crÃ¨me 35%   QUANTITE:2 tasses   INGREDIENT:crÃ¨me 35%
+3 cuillÃ¨res Ã  soupe moutarde de Dijon   QUANTITE:3 cuillÃ¨res Ã  soupe   INGREDIENT:moutarde de Dijon
+1 pincÃ©e de muscade   QUANTITE:1 pincÃ©e   INGREDIENT:muscade
+poivre noir   QUANTITE:   INGREDIENT:poivre noir
+1 lb poitrine de poulet dÃ©sossÃ©es et coupÃ©es en petits morceaux   QUANTITE:1 lb   INGREDIENT:poitrine de poulet
+2 cuillÃ¨res Ã  soupe (30 ml) fÃ©cule de maÃ¯s   QUANTITE:2 cuillÃ¨res Ã  soupe (30 ml)   INGREDIENT:fÃ©cule de maÃ¯s
+1 oeuf battu   QUANTITE:1   INGREDIENT:oeuf
+3 cuillÃ¨res Ã  soupe (45 ml) farine tout usage   QUANTITE:3 cuillÃ¨res Ã  soupe (45 ml)   INGREDIENT:farine tout usage
+0,5 cuillÃ¨re Ã  cafÃ© (2 ml) poudre Ã  pÃ¢te   QUANTITE:0,5 cuillÃ¨re Ã  cafÃ© (2 ml)   INGREDIENT:poudre Ã  pÃ¢te
+0,5 cuillÃ¨re Ã  cafÃ© (2 ml) sel   QUANTITE:0,5 cuillÃ¨re Ã  cafÃ© (2 ml)   INGREDIENT:sel
+0,25 tasse (65 ml) huile vÃ©gÃ©tale   QUANTITE:0,25 tasse (65 ml)   INGREDIENT:huile vÃ©gÃ©tale
+2 cuillÃ¨res Ã  cafÃ© (10 ml) huile de sÃ©same   QUANTITE:2 cuillÃ¨res Ã  cafÃ© (10 ml)   INGREDIENT:huile de sÃ©same
+1 cuillÃ¨re Ã  soupe (15 ml) gingembre rÃ¢pÃ©   QUANTITE:1 cuillÃ¨re Ã  soupe (15 ml)   INGREDIENT:gingembre
+0,25 tasse (65 ml) oignon vert coupÃ©s en biseaux   QUANTITE:0,25 tasse (65 ml)   INGREDIENT:oignon vert
+0,25 tasse (65 ml) eau ou au goÃ»t   QUANTITE:0,25 tasse (65 ml) ou au goÃ»t   INGREDIENT:eau
+2 cuillÃ¨res Ã  soupe (30 ml) vinaigre blanc   QUANTITE:2 cuillÃ¨res Ã  soupe (30 ml)   INGREDIENT:vinaigre blanc
+0,25 tasse (65 ml) sucre ou au goÃ»t   QUANTITE:0,25 tasse (65 ml) ou au goÃ»t   INGREDIENT:sucre
+1 cuillÃ¨re Ã  soupe (15 ml) fÃ©cule de maÃ¯s   QUANTITE1 cuillÃ¨re Ã  soupe (15 ml)   INGREDIENT:fÃ©cule de maÃ¯s
+1 cuillÃ¨re Ã  soupe (15 ml) sauce soya   QUANTITE:1 cuillÃ¨re Ã  soupe (15 ml)   INGREDIENT:sauce soya
+2 cuillÃ¨res Ã  soupe (30 ml) sauce aux huÃ®tres   QUANTITE:2 cuillÃ¨res Ã  soupe (30 ml)   INGREDIENT:sauce aux huÃ®tres
+2 cuillÃ¨res Ã  soupe (30 ml) ketchup   QUANTITE:2 cuillÃ¨res Ã  soupe (30 ml)   INGREDIENT:ketchup
+3 tasses pommes de terre en purÃ©e   QUANTITE:3 tasses   INGREDIENT:pommes de terre
+0,5 tasse fromage cheddar rÃ¢pÃ©   QUANTITE:0,5 tasse   INGREDIENT:fromage cheddar
+0,5 tasse mayonnaise   QUANTITE:0,5 tasse   INGREDIENT:mayonnaise
+0,25 tasse Ã©chalote hachÃ©es   QUANTITE:0,25 tasse   INGREDIENT:Ã©chalote
+1 oeuf battu   QUANTITE:1   INGREDIENT:oeuf
+2 boÃ®tes de conserve (213 g) saumons   QUANTITE:2 boÃ®tes de conserve (213 g)   INGREDIENT:saumons
+2 filets de porc   QUANTITE:2   INGREDIENT:filets de porc
+185 mL (3/4 tasse) sauce chili   QUANTITE:185 mL (3/4 tasse)   INGREDIENT:sauce chili
+125 mL (1/2 tasse) sirop d'Ã©rable   QUANTITE:125 mL (1/2 tasse)   INGREDIENT:sirop d'Ã©rable
+1 enveloppe soupe Ã  l'oignon   QUANTITE:1 enveloppe   INGREDIENT:soupe Ã  l'oignon
+1 rÃ´ti de 675 g (1 Â½ lb) de filet mignon de bÅ“uf (prÃ©levÃ© dans le centre du filet)   QUANTITE:1 rÃ´ti de 675 g (1 Â½ lb)   INGREDIENT:filet mignon de bÅ“uf
+30 ml (2 c. Ã  soupe) dâ€™huile dâ€™olive   QUANTITE:30 ml (2 c. Ã  soupe)   INGREDIENT:huile dâ€™olive
+190 g (Â¾ tasse) de beurre non salÃ©   QUANTITE:190 g (Â¾ tasse)   INGREDIENT:beurre non salÃ©
+1 Ã©chalote franÃ§aise, hachÃ©e   QUANTITE:1   INGREDIENT:Ã©chalote franÃ§aise
+2,5 ml (Â½ c. Ã  thÃ©) de grains de poivre noir concassÃ©s   QUANTITE:2,5ml (Â½ c. Ã  thÃ©)   INGREDIENT:grains de poivre noir
+4 jaunes dâ€™Å“ufs   QUANTITE:4   INGREDIENT:jaunes dâ€™Å“ufs
+45 ml (3 c. Ã  soupe) dâ€™eau   QUANTITE:45 ml (3 c. Ã  soupe)   INGREDIENT:eau
+30 ml (2 c. Ã  soupe) de vinaigre de vin blanc   QUANTITE:30 ml (2 c. Ã  soupe)   INGREDIENT:vinaigre de vin blanc
+7,5 ml (1 Â½ c. Ã  thÃ©) dâ€™estragon frais ciselÃ©   QUANTITE:7,5 ml (1 Â½ c. Ã  thÃ©)   INGREDIENT:estragon frais
+500 ml (2 tasses) de bouillon de poulet   QUANTITE:500 ml (2 tasses)   INGREDIENT:bouillon de poulet
+275 g (2 tasses) de pommes de terre rattes coupÃ©es en rondelles de 5 mm (Â¼ po) dâ€™Ã©paisseur   QUANTITE:275 g (2 tasses)   INGREDIENT:pommes de terre
+170 g (6 oz) dâ€™oignons perlÃ©s, pelÃ©s et coupÃ©s en deux   QUANTITE:170 g (6 oz)   INGREDIENT:oignons perlÃ©s
+340 g (Â¾ lb) dâ€™asperges, parÃ©es et coupÃ©es en tronÃ§ons de 4 cm (2 Â½ po)   QUANTITE:340 g (Â¾ lb)   INGREDIENT:asperges
+6 oignons verts, coupÃ©s en tronÃ§ons de 4 cm (2 Â½ po)   QUANTITE:6   INGREDIENT:oignons verts
+3 homards dâ€™environ 340 g (Â¾ lb) chacun, dÃ©cortiquÃ©s (les pinces entiÃ¨res et la chair coupÃ©e en morceaux)   QUANTITE:3 dâ€™environ 340 g (Â¾ lb) chacun   INGREDIENT:homards
+Sel et poivre   QUANTITE:   INGREDIENT:Sel et poivre
+250 g de nouilles de riz   QUANTITE:250 g   INGREDIENT:nouilles de riz
+PrÃ©paration de la pÃ¢te Ã©picÃ©e   QUANTITE:   INGREDIENT:
+1 petit piment rouge ThaÃ¯ (type rawit)   QUANTITE:1   INGREDIENT:petit piment rouge ThaÃ¯ (type rawit)
+2 gousses dâ€™ail   QUANTITE:2 gousses   INGREDIENT:ail
+2 cÃ©bettes thaÃ¯   QUANTITE:2   INGREDIENT:cÃ©bettes thaÃ¯
+1 c. Ã  s. de purÃ©e de tamarin   QUANTITE:1 c. Ã  s.   INGREDIENT:purÃ©e de tamarin
+1 c. Ã  c. de sucre   QUANTITE:1 c. Ã  c.   INGREDIENT:sucre
+3 c. Ã  s. de nam pla (nuoc-mÃ¢m)   QUANTITE:3 c. Ã  s.   INGREDIENT:nam pla (nuoc-mÃ¢m)
+1 citron vert   QUANTITE:1   INGREDIENT:citron vert
+7 Ã  8 grosses crevettes roses   QUANTITE:7 Ã  8   INGREDIENT:grosses crevettes roses
+100 g de tofu ferme   QUANTITE:100 g   INGREDIENT:tofu ferme
+80 g de germes de soja   QUANTITE:80 g   INGREDIENT:germes de soja
+2 Å“ufs   QUANTITE:2   INGREDIENT:Å“ufs
+sel et poivre du moulin au goÃ»t   QUANTITE:au goÃ»t   INGREDIENT:sel et poivre du moulin
+40 g de cacahuÃ¨tes torrÃ©fiÃ©es   QUANTITE:40 g   INGREDIENT:cacahuÃ¨tes 
+Â½ botte de coriandre   QUANTITE:Â½ botte   INGREDIENT:coriandre
+1 citron vert   QUANTITE:1   INGREDIENT:citron vert
+3 c. Ã  s. dâ€™huile de sÃ©same et arachide   QUANTITE:3 c. Ã  s.   INGREDIENT:huile de sÃ©same et arachide
+3 c. Ã  s. de nam pla   QUANTITE:3 c. Ã  s.   INGREDIENT:nam pla
+1 petit oignon rouge, Ã©mincÃ©   QUANTITE:1   INGREDIENT:petit oignon rouge
+2 gousses dâ€™ail, hachÃ©es   QUANTITE:2 gousses   INGREDIENT:ail
+45 ml (3 c. Ã  soupe) dâ€™huile dâ€™olive   QUANTITE:45 ml (3 c. Ã  soupe)   INGREDIENT:huile dâ€™olive
+75 ml (1/3 tasse) de vin blanc   QUANTITE:75 ml (1/3 tasse)   INGREDIENT:vin blanc
+250 ml (1 tasse) de bouillon de poulet   QUANTITE:250 ml (1 tasse)   INGREDIENT:bouillon de poulet
+16 petites palourdes dans leur coquille, rincÃ©es   QUANTITE:16   INGREDIENT:petites palourdes
+2,5 ml (1/2 c. Ã  thÃ©) de safran   QUANTITE:2,5 ml (1/2 c. Ã  thÃ©)   INGREDIENT:safran
+1 kg (2 lb) de moules, lavÃ©es et nettoyÃ©es   QUANTITE:1 kg (2 lb)   INGREDIENT:moules
+340 g (3/4 lb) de langoustines surgelÃ©es et dÃ©congelÃ©es (voir note)   QUANTITE:340 g (3/4 lb)   INGREDIENT:langoustines surgelÃ©es
+454 g (1 lb) dâ€™asperges moyennes coupÃ©es en tronÃ§ons de 2 cm (3/4 po)   QUANTITE:454 g (1 lb)   INGREDIENT:asperges moyennes
+250 ml (1 tasse) de tomates cerises jaunes, coupÃ©es en deux   QUANTITE:250 ml (1 tasse)   INGREDIENT:tomates cerises jaunes
+30 ml (2 c. Ã  soupe) de persil plat ciselÃ©   QUANTITE:30 ml (2 c. Ã  soupe)   INGREDIENT:persil plat
+30 ml (2 c. Ã  soupe) de beurre, ramolli (facultatif)   QUANTITE:30 ml (2 c. Ã  soupe) (facultatif)   INGREDIENT:beurre
+CroÃ»tons Ã  lâ€™huile dâ€™olive   QUANTITE:   INGREDIENT:CroÃ»tons Ã  lâ€™huile dâ€™olive
+12 tranches de pain baguette dâ€™environ 1,5 cm (1/2 po) dâ€™Ã©paisseur   QUANTITE:12 tranches   INGREDIENT:pain baguette
+1 gousse dâ€™ail, pelÃ©e et coupÃ©e en deux   QUANTITE:1 gousse   INGREDIENT:ail
+60 ml (1/4 tasse) dâ€™huile dâ€™olive   QUANTITE:60 ml (1/4 tasse)   INGREDIENT:huile dâ€™olive
+300 g de pÃ¢te brisÃ©e   QUANTITE:300 g   INGREDIENT:pÃ¢te brisÃ©e
+Beurre pour fonÃ§age   QUANTITE:   INGREDIENT:Beurre
+300 g de tomates cerises rouges   QUANTITE:300 g   INGREDIENT:tomates cerises rouges
+300 g de tomates cerises jaunes   QUANTITE:300 g   INGREDIENT:tomates cerises jaunes
+30 g de sucre semoule   QUANTITE:30 g   INGREDIENT:sucre semoule
+3 c. Ã  .s dâ€™eau   QUANTITE:3 c. Ã  .s   INGREDIENT:eau
+5 c. Ã  .s de vinaigre balsamique   QUANTITE:5 c. Ã  .s   INGREDIENT:vinaigre balsamique
+2 gousses dâ€™ail   QUANTITE:2 gousses   INGREDIENT:ail
+200 g de ricotta   QUANTITE:200 g   INGREDIENT:ricotta
+Quelques sommitÃ©s de basilic   QUANTITE:Quelques sommitÃ©s   INGREDIENT:basilic
+Huile d'olive   QUANTITE:   INGREDIENT:Huile d'olive
+Sel   QUANTITE:   INGREDIENT:Sel
+Poivre du moulin   QUANTITE:   INGREDIENT:Poivre du moulin
+En amont : prÃ©paration des poissons   QUANTITE:   INGREDIENT:
+6 poireaux   QUANTITE:6   INGREDIENT:poireaux
+250 g de petits champignons de Paris   QUANTITE:250 g   INGREDIENT:petits champignons de Paris
+75 g de lard fumÃ©   QUANTITE:75 g   INGREDIENT:lard fumÃ©
+PrÃ©paration des poissons   QUANTITE:   INGREDIENT:
+4 tranches de congre 150 g   QUANTITE:4 tranches (150g)   INGREDIENT:congre
+4 tranches de lotte de 150 g   QUANTITE:4 tranches (150g)   INGREDIENT:lotte
+4 tronÃ§ons de roussette de 150 g   QUANTITE:4 tronÃ§ons (150g)   INGREDIENT:roussette
+PrÃ©paration de la matelote   QUANTITE:   INGREDIENT:
+4 verres de Gewurztraminer   QUANTITE:4 verres   INGREDIENT:Gewurztraminer
+Finition et prÃ©sentation   QUANTITE:   INGREDIENT:
+25 cl de crÃ¨me liquide   QUANTITE:25 cl   INGREDIENT:crÃ¨me liquide
+2 avocats   QUANTITE:2   INGREDIENT:avocats
+50 ml de citron yuzu   QUANTITE:50 ml   INGREDIENT:citron yuzu
+PrÃ©paration du ceviche   QUANTITE:   INGREDIENT:
+1 piÃ¨ce de bar d'1 kg   QUANTITE:1 piÃ¨ce (1 kg)   INGREDIENT:bar
+1 mangue   QUANTITE:1   INGREDIENT:mangue
+1 botte de cÃ©bette thaÃ¯landaise   QUANTITE:1 botte   INGREDIENT:cÃ©bette thaÃ¯landaise
+50 ml d'huile d'olive   QUANTITE:50 ml   INGREDIENT:huile d'olive
+sel au goÃ»t   QUANTITE:au goÃ»t   INGREDIENT:sel 
+Feuilles d'huÃ®tres   QUANTITE:Feuilles   INGREDIENT:huÃ®tres
+Quelques amandes torrÃ©fiÃ©es   QUANTITE:Quelques   INGREDIENT:amandes
+Feuille de basilic (au goÃ»t)   QUANTITE:Feuille (au goÃ»t)   INGREDIENT:basilic
+Huile vÃ©gÃ©tale   QUANTITE:   INGREDIENT:Huile vÃ©gÃ©tale
+1 oignon hachÃ© finement   QUANTITE:1   INGREDIENT:oignon
+1 boÃ®te (540 ml) de tomates Ã©tuvÃ©es en cubes Ã©gouttÃ©es   QUANTITE:1 boÃ®te (540 ml)   INGREDIENT:tomates Ã©tuvÃ©es en cubes
+1 gousse  dâ€™ail Ã©mincÃ©e   QUANTITE:1 gousse   INGREDIENT:ail Ã©mincÃ©e
+1 c. Ã  thÃ© de thym sÃ©chÃ©   QUANTITE:1 c. Ã  thÃ©   INGREDIENT:thym sÃ©chÃ©
+1/2 c. Ã  thÃ© de sel   QUANTITE:1/2 c. Ã  thÃ©   INGREDIENT:sel
+1/2 c. Ã  thÃ© de poivre   QUANTITE:1/2 c. Ã  thÃ©   INGREDIENT:poivre
+250 ml (1 tasse) de bouillon de poulet   QUANTITE:250 ml (1 tasse)   INGREDIENT:bouillon de poulet
+6 saucisses italiennes grillÃ©es   QUANTITE:6   INGREDIENT:saucisses italiennes
+1 boÃ®te (540 ml) de haricots blancs rincÃ©s et Ã©gouttÃ©s   QUANTITE:1 boÃ®te (540 ml)   INGREDIENT:haricots blancs
+160 ml (2/3 tasse) de coriandre hachÃ©e finement ou de persil   QUANTITE:160 ml (2/3 tasse)   INGREDIENT:coriandre ou persil
+2 kg (4 lb) dâ€™ailes de poulet   QUANTITE:2 kg (4 lb)   INGREDIENT:ailes de poulet
+500 ml (2 tasses) de vinaigrette CÃ©sar   QUANTITE:500 ml (2 tasses)   INGREDIENT:vinaigrette CÃ©sar
+45 ml (3 c. Ã  soupe) de parmesan finement rÃ¢pÃ©   QUANTITE:45 ml (3 c. Ã  soupe)   INGREDIENT:parmesan
+20 ml (4 c. Ã  thÃ©) de poivre noir frais moulu   QUANTITE:20 ml (4 c. Ã  thÃ©)   INGREDIENT:poivre noir
+Une pincÃ©e de sel   QUANTITE:Une pincÃ©e   INGREDIENT:sel
+1 demi-pain hamburger   QUANTITE:1 demi   INGREDIENT:pain hamburger
+30 g (1 oz) de jambon tranchÃ©   QUANTITE:30 g (1 oz)   INGREDIENT:jambon
+1 olive, tranchÃ©e   QUANTITE:1   INGREDIENT:olive
+2 rondelles de poivron   QUANTITE:2 rondelles   INGREDIENT:poivron
+30 g (1 oz) de mozzarella, tranchÃ©e   QUANTITE:30 g (1 oz)   INGREDIENT:mozzarella
+2 gousses dâ€™ail hachÃ©es   QUANTITE:2 gousses   INGREDIENT:ail hachÃ©es
+1 Å“uf   QUANTITE:1   INGREDIENT:Å“uf
+4 gousses d'ail   QUANTITE:4 gousses   INGREDIENT:ail
+2 ciboulettes   QUANTITE:2   INGREDIENT:ciboulettes
+2 c.Ã .c de sel   QUANTITE:2 c.Ã .c de   INGREDIENT:sel
+3 c.Ã .s de sauce de soja claire   QUANTITE:3 c.Ã .s   INGREDIENT:sauce de soja claire
+3 c.Ã .s de vinaigre   QUANTITE:3 c.Ã .s   INGREDIENT:vinaigre
+1 c.Ã .s de sucre   QUANTITE:1 c.Ã .s   INGREDIENT:sucre
+4 c.Ã .s de pÃ¢te de soja   QUANTITE:4 c.Ã .s   INGREDIENT:pÃ¢te de soja
+3 piments   QUANTITE:3   INGREDIENT:piments
+1 Å“uf   QUANTITE:1   INGREDIENT:Å“uf
+3 c.Ã .s de sauce salade   QUANTITE:3 c.Ã .s   INGREDIENT:sauce salade
+du sel du poivre   QUANTITE:   INGREDIENT:sel poivre
+des chapelures   QUANTITE:   INGREDIENT:chapelures
+Huile de tournesol   QUANTITE:   INGREDIENT:Huile de tournesol
+4 c.Ã .s de sauce de tomate   QUANTITE:4 c.Ã .s   INGREDIENT:sauce de tomate
+500 g de farine   QUANTITE:500 g   INGREDIENT:farine
+500 g de poitrine de porc   QUANTITE:500 g   INGREDIENT:poitrine de porc
+1/2 poivron vert   QUANTITE:1/2   INGREDIENT:poivron vert
+Â½ c.Ã .c de levain   QUANTITE:Â½ c.Ã .c   INGREDIENT:levain
+1 c.Ã .s dâ€™huile de tournesol   QUANTITE:1 c.Ã .s   INGREDIENT:huile de tournesol
+3 coriandres   QUANTITE:3   INGREDIENT:coriandres
+3 tranches de ciboulette   QUANTITE:3 tranches   INGREDIENT:ciboulette
+2 lamelles de gingembre   QUANTITE:2 lamelles   INGREDIENT:gingembre
+1 c.Ã .c de sucre   QUANTITE:1 c.Ã .c   INGREDIENT:sucre
+2 c.Ã .c de sel   QUANTITE:2 c.Ã .c   INGREDIENT:sel
+la sauce mixte (Ã  volontÃ©)   QUANTITE:Ã  volontÃ©   INGREDIENT:la sauce mixte
+1 c.Ã .s de sauce de soja foncÃ©e   QUANTITE:1 c.Ã .s   INGREDIENT:sauce de soja foncÃ©e
+2 c.Ã .s de sauce de soja claire de lâ€™eau   QUANTITE:2 c.Ã .s   INGREDIENT:sauce de soja claire de lâ€™eau
+quelques feuilles coriandre   QUANTITE:quelques feuilles   INGREDIENT:coriandre
+1 citron jaune   QUANTITE:1   INGREDIENT:citron jaune
+3 tomates moyennes   QUANTITE:3   INGREDIENT:tomates moyennes
+1 petit oignon   QUANTITE:1   INGREDIENT:petit oignon
+clou et cannelle au goÃ»t   QUANTITE:au goÃ»t   INGREDIENT:clou et cannelle
+1 botte de persil plat ou frisÃ©   QUANTITE:1 botte   INGREDIENT:persil plat ou frisÃ©
+1/3 botte de menthe fraÃ®che   QUANTITE:1/3 botte   INGREDIENT:menthe fraÃ®che
+eau   QUANTITE:   INGREDIENT:eau
+1 tasse de mÃ©lasse ou de sirop d'Ã©rable   QUANTITE:1 tasse   INGREDIENT:mÃ©lasse ou sirop d'Ã©rable
+1 verre Ã  moutarde de boulghour (blÃ© concassÃ©)   QUANTITE:1 verre Ã  moutarde   INGREDIENT:boulghour (blÃ© concassÃ©)
+huile d'olive   QUANTITE:   INGREDIENT:huile d'olive
+sel et poivre   QUANTITE:   INGREDIENT:sel et poivre
+170 g de pois chiches secs (surtout pas en boÃ®te)   QUANTITE:170 g   INGREDIENT:pois chiches secs
+2 gousses d'ail   QUANTITE:2 gousses   INGREDIENT:ail
+15 g de persil plat   QUANTITE:15 g   INGREDIENT:persil plat
+15 g de coriandre   QUANTITE:15 g   INGREDIENT:coriandre
+1/4 d'oignon   QUANTITE:1/4   INGREDIENT:oignon
+1/2 cuillÃ¨re Ã  cafÃ© de bicarbonate   QUANTITE:1/2 cuillÃ¨re Ã  cafÃ©   INGREDIENT:bicarbonate
+1/2 cuillÃ¨re Ã  cafÃ© de graines de sÃ©same dorÃ©es   QUANTITE:1/2 cuillÃ¨re Ã  cafÃ©   INGREDIENT:graines de sÃ©same dorÃ©es
+1 cuillÃ¨re Ã  cafÃ© de coriandre moulue   QUANTITE:1 cuillÃ¨re Ã  cafÃ©   INGREDIENT:coriandre moulue
+1 cuillÃ¨re Ã  cafÃ© de cumin en poudre   QUANTITE:1 cuillÃ¨re Ã  cafÃ©   INGREDIENT:cumin en poudre
+1/2 cuillÃ¨re Ã  cafÃ© de piment en poudre   QUANTITE:1/2 cuillÃ¨re Ã  cafÃ©   INGREDIENT:piment en poudre
+1 poulet de 1,2 Kg   QUANTITE:1 (1,2 Kg)   INGREDIENT:poulet
+5 gousses d'ail   QUANTITE:5 gousses   INGREDIENT:ail
+ail au goÃ»t   QUANTITE:au goÃ»t   INGREDIENT:ail
+1 bouquet de menthe   QUANTITE:1 bouquet   INGREDIENT:menthe
+2 grands oignons   QUANTITE:2   INGREDIENT:grands oignons
+une petite tasse de riz rond   QUANTITE:une petite tasse   INGREDIENT:riz rond
+1 noix de muscade rÃ¢pÃ©e   QUANTITE:1 noix   INGREDIENT:muscade
+le jus d'un citron   QUANTITE:un   INGREDIENT:citron
+1 noix de muscade rÃ¢pÃ©e   QUANTITE:1 noix   INGREDIENT:muscade
+Carottes   QUANTITE:   INGREDIENT:Carottes
+1 c. Ã  soupe de beurre   QUANTITE:1 c. Ã  soupe   INGREDIENT:beurre
+2 c. Ã  thÃ© de sucre   QUANTITE:2 c. Ã  thÃ©   INGREDIENT:sucre
+1/2 c. Ã  thÃ© de gingembre moulu   QUANTITE:1/2 c. Ã  thÃ©   INGREDIENT:gingembre moulu
+1/2 c. Ã  thÃ© de sucre   QUANTITE:1/2 c. Ã  thÃ©   INGREDIENT:sucre
+2 c. Ã  thÃ© de persil   QUANTITE:2 c. Ã  thÃ©   INGREDIENT:persil
+1 pincÃ©e de thym   QUANTITE:1 pincÃ©e   INGREDIENT:thym
+3 c. Ã  soupe de crÃ¨me   QUANTITE:3 c. Ã  soupe   INGREDIENT:crÃ¨me
+1 chou   QUANTITE:1   INGREDIENT:chou
+3 c. Ã  soupe de beurre   QUANTITE:3 c. Ã  soupe   INGREDIENT:beurre
+3. Ã  soupe de farine   QUANTITE:3. Ã  soupe   INGREDIENT:farine
+3 tasses de lait   QUANTITE:3 tasses   INGREDIENT:lait
+1 oignon Ã©mincÃ©   QUANTITE:1   INGREDIENT:oignon
+1 pincÃ©e d'anis   QUANTITE:1 pincÃ©e   INGREDIENT:anis
+3 c. Ã  soupe de fromage rÃ¢pÃ©   QUANTITE:3 c. Ã  soupe   INGREDIENT:fromage rÃ¢pÃ©
+4 pintes de bleuets   QUANTITE:4 pintes   INGREDIENT:bleuets
+4 pintes d'eau   QUANTITE:4 pintes   INGREDIENT:eau
+4 lb de sucre   QUANTITE:4 lb   INGREDIENT:sucre
+1 tasse de mÃ»res   QUANTITE:1 tasse   INGREDIENT:mÃ»res
+1 enveloppe de levure sÃ¨che   QUANTITE:1 enveloppe   INGREDIENT:levure sÃ¨che
+4 tasses de cassis   QUANTITE:4 tasses   INGREDIENT:cassis
+1 gallon d'eau   QUANTITE:1 gallon   INGREDIENT:eau
+2 lb de sucre   QUANTITE:2 lb   INGREDIENT:sucre
+1/2 tasse de raisins secs   QUANTITE:1/2 tasse   INGREDIENT:raisins secs
+1 enveloppe de levure sÃ¨che   QUANTITE:1 enveloppe   INGREDIENT:levure sÃ¨che
+5 pintes d'eau chaude   QUANTITE:5 pintes   INGREDIENT:eau chaude
+5 lb de sucre   QUANTITE:5 lb   INGREDIENT:sucre
+3 oranges   QUANTITE:3   INGREDIENT:oranges
+3 citrons   QUANTITE:3   INGREDIENT:citrons
+3 pamplemousses   QUANTITE:3   INGREDIENT:pamplemousses
+3 bananes   QUANTITE:3   INGREDIENT:bananes
+2 lb de raisins secs   QUANTITE:2 lb   INGREDIENT:raisins secs
+1 enveloppe de levure sÃ¨che   QUANTITE:1 enveloppe   INGREDIENT:levure sÃ¨che
+1/2 gallon d'eau   QUANTITE:1/2 gallon   INGREDIENT:eau
+2 pintes de mÃ©lasse   QUANTITE:2 pintes   INGREDIENT:mÃ©lasse
+2 c. Ã  soupe de crÃ¨me de tartre   QUANTITE:2 c. Ã  soupe   INGREDIENT:crÃ¨me de tartre
+3 c. Ã  soupe de levure   QUANTITE:3 c. Ã  soupe   INGREDIENT:levure
+Zeste d'un citron   QUANTITE:un   INGREDIENT:citron
+2 tasse de sucre   QUANTITE:2 tasse   INGREDIENT:sucre
+1 citron tranchÃ©   QUANTITE:1   INGREDIENT:citron
+1 c. Ã  soupe de levure   QUANTITE:1 c. Ã  soupe   INGREDIENT:levure
+1 morceau de pastÃ¨ques   QUANTITE:1 morceau   INGREDIENT:pastÃ¨ques
+5 cl de rhum cubain   QUANTITE:5 cl   INGREDIENT:rhum cubain
+2 cl de jus de citrons verts   QUANTITE:2 cl   INGREDIENT:jus de citrons verts
+2 cl de liqueur de menthe blanche   QUANTITE:2 cl   INGREDIENT:liqueur de menthe blanche
+2 oz rhum   QUANTITE:2 oz   INGREDIENT:rhum
+1 cuillÃ¨re Ã  cafÃ© sucre   QUANTITE:1 cuillÃ¨re Ã  cafÃ©   INGREDIENT:sucre
+4 oz eau gazÃ©ifiÃ©e   QUANTITE:4 oz   INGREDIENT:eau gazÃ©ifiÃ©e
+4 glaÃ§ons Ã©crasÃ©s   QUANTITE:4   INGREDIENT:glaÃ§ons
+0,5 jus de lime   QUANTITE:0,5   INGREDIENT:jus de lime
+4 Ã  5 feuilles de menthe fraÃ®che   QUANTITE:4 Ã  5 feuilles   INGREDIENT:menthe fraÃ®che
+100 g fraises congelÃ©es   QUANTITE:100 g   INGREDIENT:fraises congelÃ©es
+5 glaÃ§ons   QUANTITE:5   INGREDIENT:glaÃ§ons
+7,5 mL sucre blanc granulÃ©   QUANTITE:7,5 mL   INGREDIENT:sucre blanc granulÃ©
+30 mL jus de lime   QUANTITE:30 mL   INGREDIENT:jus de lime
+60 mL jus de citron   QUANTITE:60 mL   INGREDIENT:jus de citron
+60 mL 7Up   QUANTITE:60 mL   INGREDIENT:7Up
+30 mL rhum   QUANTITE:30 mL   INGREDIENT:rhum
+2 oz crÃ¨me 10%   QUANTITE:2 oz   INGREDIENT:crÃ¨me 10%
+1 oz Ã  2 oz rhum blanc   QUANTITE:1 oz Ã  2 oz   INGREDIENT:rhum blanc
+trait jus de citron ou de lime   QUANTITE:trait   INGREDIENT:jus de citron ou de lime
+Une quinzaine dâ€™abricots frais   QUANTITE:Une quinzaine   INGREDIENT:abricots frais
+12 feuilles de menthe fraÃ®che   QUANTITE:12 feuilles   INGREDIENT:menthe fraÃ®che
+1 Bouquet de menthe, pour dÃ©corer   QUANTITE:1 Bouquet   INGREDIENT:menthe
+1 Rondelle de lime, pour dÃ©corer   QUANTITE:1 Rondelle   INGREDIENT:lime
+Le jus dâ€™une demi-lime   QUANTITE:une demi   INGREDIENT:lime
