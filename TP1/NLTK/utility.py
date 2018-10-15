@@ -12,6 +12,13 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+def get_file_content_with_br(path):
+    text = ""
+    with open(path) as fp:
+        for line in fp:
+            text +=  line.strip() # "<s>" + + "</s>"
+    return text
+
 def get_file_content(path):
     text = ""
     with open(path) as fp:

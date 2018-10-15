@@ -5,7 +5,14 @@ from utility import get_file_content, get_complet_path
 Ingredient = collections.namedtuple('Ingredient', ['item', 'quantity'])
 
 REGEX = r"""
-(([0-99])+(\,\d{0,})?(\/[0-9])?(\snoix?)?(\senveloppe?)?(\tasse?)?(\smorceau?)?(\strait?)?)(\ ?(gousses|(B|b)ouquet|(R|r)ondelle|feuilles|tasse(s|)|cuillÃ¨re(s|)((\sÃ(\s*)cafÃ©)|(\sÃ(\s*)soupe))?|m(L|l)|(g\s)|l(b|B)|tranches|pintes|gallon|pincÃ©e|cl|oz|(c\.\s{0,}Ã\s{0,}((s\.)|(c\.)|(\.c)|(\.s)|thÃ©|soupe))))?|((.*)\)|(U|u)ne pincÃ©e|(A|a)u goÃ»t|(Q|q)uelques|(F|f)euilles)
+    (([0-99])+(\,\d{0,})?(\/[0-9])?
+    (\snoix?)?(\senveloppe?)?(\tasse?)?(\smorceau?)?(\strait?)?)
+    (\ ?(gousses|(B|b)ouquet|(R|r)ondelle|feuilles|tasse(s|)|
+        cuillÃ¨re(s|)((\sÃ(\s*)cafÃ©)|
+        (\sÃ(\s*)soupe))?|m(L|l)|(g\s)|l(b|B)|tranches|pintes|gallon|pincÃ©e|
+        cl|oz|(c\.\s{0,}Ã\s{0,}((s\.)|(c\.)|(\.c)|(\.s)|thÃ©|soupe))))?|
+    ((.*)\)|
+    (U|u)ne pincÃ©e|(A|a)u goÃ»t|(Q|q)uelques|(F|f)euilles)
 """
 
 REGEX_TEXT = r"^(de |d'|dâ€™|du|des)"
