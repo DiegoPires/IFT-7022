@@ -144,7 +144,7 @@ def complet_with_ngram(tokens, proverbs_to_test, ngram_number, laplace=0):
             filtered = [x for x in table_prob if x[0][0] in guess_words]
             filtered.sort(key=lambda elem: elem[1], reverse=True)
 
-            print((proverb.replace("***",  "{}{}{}") + " | Prov {}{}{}").format(
+            print((proverb.replace("***",  "{}{}{}") + " | Prob {}{}{}").format(
                     bcolors.OKBLUE, 
                     filtered[0][0][0], 
                     bcolors.ENDC,
@@ -182,7 +182,7 @@ def complet_with_ngram(tokens, proverbs_to_test, ngram_number, laplace=0):
             
             ordered_probs = sorted(guess_word_prob, key=guess_word_prob.get, reverse=True)
 
-            print((proverb.replace("***",  "{}{}{}") + " | Prov {}{}{}").format(
+            print((proverb.replace("***",  "{}{}{}") + " | Prob {}{}{}").format(
                     bcolors.OKBLUE, 
                     ordered_probs[0], 
                     bcolors.ENDC,
@@ -229,18 +229,21 @@ def main():
     tokens = tokenize_text(corpus)
     tokens.append("UNK")
 
-    #complet_proverbe_with_unigram(tokens, tests)
-    #complet_proverbe_with_bigram(tokens, tests)
-    #complet_proverbe_with_trigram(tokens, tests)
+    # First solution
+    complet_proverbe_with_unigram(tokens, tests)
+    complet_proverbe_with_bigram(tokens, tests)
+    complet_proverbe_with_trigram(tokens, tests)
     
-    #complet_with_ngram(tokens, tests, ngram_number=1, laplace=1)
-    #complet_with_ngram(tokens, tests, ngram_number=2, laplace=1)
+    # Second solution with laplace
+    complet_with_ngram(tokens, tests, ngram_number=1, laplace=1)
+    complet_with_ngram(tokens, tests, ngram_number=2, laplace=0)
     
-    #complet_with_ngram(tokens, tests, ngram_number=3, laplace=1)
-    #complet_with_ngram(tokens, tests, ngram_number=3, laplace=10)
+    complet_with_ngram(tokens, tests, ngram_number=3, laplace=0)
+    complet_with_ngram(tokens, tests, ngram_number=3, laplace=10)
 
-    #perplexity_of_sentence("a beau mentir qui vient de loin", tokens, 0)
-    #perplexity_of_sentence("something not trained in our model", tokens, 0)
+    # Perplexity
+    perplexity_of_sentence("a beau mentir qui vient de loin", tokens, 0)
+    perplexity_of_sentence("something not trained in our model", tokens, 0)
 
 if __name__ == '__main__':  
    main()
