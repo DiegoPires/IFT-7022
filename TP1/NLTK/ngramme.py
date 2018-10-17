@@ -6,10 +6,17 @@ import math
 from collections import defaultdict
 from itertools import permutations
 from nltk.tokenize import word_tokenize, RegexpTokenizer
-from nltk.util import ngrams, bigrams, trigrams
 from collections import Counter
 from utility import get_complet_path, get_file_content, bcolors, get_file_content_with_br
 from math import log
+
+# Create the ngram tuples
+def get_ngram(tokens, ngram_count):
+    for i in range(len(tokens) - ngram_count+1):
+        tuple = ()
+        for ngram in range(ngram_count):
+            tuple = tuple + (tokens[i+ngram],)
+        yield tuple
 
 def tokenize_text(text):
     ## Custom Regex used instead of the word_tokenizer because it doens't like french that much...
@@ -24,7 +31,7 @@ def tokenize_text(text):
 def complet_proverbe_with_unigram(tokens, proverbs_to_test):
     print("\n{}## UNIGRAM GUESS{}".format(bcolors.HEADER, bcolors.ENDC))
     
-    unigram = list(ngrams(tokens, 1))
+    unigram = list(get_ngram(tokens, 1))
 
     for proverb in proverbs_to_test:
         guess_words = proverbs_to_test[proverb]
@@ -40,7 +47,7 @@ def complet_proverbe_with_unigram(tokens, proverbs_to_test):
 def complet_proverbe_with_bigram(tokens, proverbs_to_test):
     print("\n{}## BIGRAM GUESS{}".format(bcolors.HEADER, bcolors.ENDC))
     
-    bigram = list(bigrams(tokens))
+    bigram = list(get_ngram(tokens, 2))
     
     for proverb in proverbs_to_test:
         guess_words = proverbs_to_test[proverb]
@@ -62,8 +69,8 @@ def complet_proverbe_with_bigram(tokens, proverbs_to_test):
 def complet_proverbe_with_trigram(tokens, proverbs_to_test):
     print("\n{}## TRIGRAM GUESS{}".format(bcolors.HEADER, bcolors.ENDC))
     
-    trigram = list(trigrams(tokens))
-    
+    trigram = list(get_ngram(tokens, 3))
+
     for proverb in proverbs_to_test:
         guess_words = proverbs_to_test[proverb]
 
@@ -94,8 +101,7 @@ def create_table_prob(tokens, ngram_number, laplace):
     #    if (laplace > 0):
     #        quantity += laplace
     #    table_prob.append((group, quantity))
-
-    ngram = list(ngrams(tokens, ngram_number))
+    ngram = list(get_ngram(tokens, ngram_number))
     
     ngram_counter = collections.Counter(ngram)
     total = len(tokens)
@@ -228,6 +234,8 @@ def main():
 
     tokens = tokenize_text(corpus)
     tokens.append("UNK")
+
+    complet_proverbe_with_trigram(tokens, tests)
 
     # First solution
     complet_proverbe_with_unigram(tokens, tests)
