@@ -1,0 +1,14 @@
+Cette mystérieuse tablette Google n’est pas la nouvelle Nexus 7.
+
+Des informations au sujet d’une tablette de 7 pouces conçue par Google ont été repérées sur le site de la FCC. Les ingrédients essentiels pour que la machine à rumeurs s’emballe.
+
+Un lecteur de Droid Life a communiqué avec le blogue ce weekend afin de lui faire part d’une découverte sur le site de la FCC. En effet, les informations listées concernent un mystérieux appareil identifié comme étant le A4R-NX74751, doté d’un système sur puce Tegra de Nvidia, d’une connexion LTE et d’une pile de 2 480 mAh fabriquée par LG.
+
+Pour l’instant, cette tablette est réservée aux développeurs qui souhaitent contribuer à Project Tango.
+Mais contrairement à ce que l’on pourrait croire, il ne s’agit pas ici de la Nexus 7 édition 2014.
+
+Tel que le rapporte TuttoAndroid, il s’agit plutôt de la tablette conçue dans le cadre de Project Tango. L’équipe d’iFixit a d’ailleurs déjà effectué le désassemblage de la tablette en question, dont les composantes correspondent à ce qui est décrit sur le site de la FCC.
+
+Le coup de grâce : le numéro du modèle désassemblé par iFixit est NX-74751.
+
+Nul ne sait si Google a l’intention de commercialiser la A4R-NX74751. Pour l’instant, cette tablette est réservée aux développeurs qui souhaitent contribuer à Project Tango. À l’instar de Project Ara, l’initiative est encore au stade embryonnaire.

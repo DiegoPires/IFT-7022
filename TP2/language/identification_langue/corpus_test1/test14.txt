@@ -1,0 +1,31 @@
+The Oculus Rift has been teased to the public for a few years now. It's been on the verge of wide release for what seems like an eternity, so it came as a surprise when a commercially available version arrived at this year's IFA Berlin trade show — not from Oculus itself, but from Samsung.
+
+I had never tried any virtual reality headset before I put on the Gear VR. Frankly, I'd always thought they must be overhyped. How could the experience possibly live up to the gushing praise the early Oculus VR prototypes received?
+
+But when I first strapped on the Gear VR—along with a pair of headphones to completely seal out reality—I have to admit that it really felt like I'd been transported into another world.
+
+It's impressive that the Gear VR uses a smartphone screen, but after the initial awe wears off, it's clear that the approach has its shortcomings. Viewing the Note 4's screen from just a couple inches away is surprisingly immersive, but pixels remain visible in spite of the WQHD resolution. And after using just one of the demos for only a few minutes, my eyes did feel the strain.
+
+Another problem? The screen looks pretty great when looking straight ahead, but the wonderful sense of immersion is lost if you try to peek into your peripheral vision. The lenses inside the Gear VR just can't compensate.
+
+Another glaring omission is an audio solution. Samsung could have easily built headphones into the Gear VR—as Avegant has with its Glyph VR headset—but instead you need to bring your own cans to complete the experience.
+
+It's unclear what features the Gear VR will offer when it goes on sale in October, but the demos at Samsung's booth offered some hints.
+
+The headset seems to run off of a special Gear VR app on the Note 4. In the booth demo, I was presented with a 3D menu interface where I could choose my VR experience. In the center of my vision was a small cursor-like target that moved around the menu as I tilted and turned my head. I could tap on the touchpad on the side of the Gear VR to select the desired option.
+
+Each booth at the IFA Gear VR display ran different demos. The experiences on offer included a walkthrough of Tony Stark's lab from the upcoming The Avengers: Age of Ultron, a Pacific Rim jaeger pilot demo, an upgraded version of the wildly popular Temple Run, a Coldplay concert, and more.
+
+Of what I tried, I was most impressed by the Coldplay concert and Temple Run. In the concert, you were up on stage with Coldplay in 3D. It looked like Chris Martin was singing and dancing only a few feet away.
+
+For Temple Run, I needed to (blindly) use a wireless gamepad, which took some getting used to. The Gear VR itself added an interesting perspective to the gaming experience. Instead of the usual third-person view, this version put you in the position of the runner. As you run through the game, you can look around and even behind you to see how far away the monster is.
+
+Simply put, the Samsung Gear VR is a lot of fun to play with. While the demos were a bit gimmicky, there are definitely some real-world applications for virtual reality headsets, and there's little doubt that high-quality content will follow.
+
+It is a bit disappointing that the device only works with the new Galaxy Note 4, as it significantly raises the barrier to entry. In theory, this tech could work with any phone wide enough to cover the gap between your pupils, and simple plastic adapters could (again, in theory) easily be snapped in to adapt something like the 5.1-inch Galaxy S5.
+
+But whether Samsung will bother likely depends on sales results, and you shouldn't expect to see compatibility with non-Galaxy phones—ever.
+
+I do look forward to the day I can play Call of Duty or Destiny on the Gear VR, or at least something like it. Maybe something with an 8K display? With the right display hardware and the right content, this tech has the potential to create an immersive experience unlike anything ever seen.
+
+The Gear VR will be coming to the United States this October. For more on Samsung's IFA 2014 announcements and hands-on's with its other products, keep checking Reviewed.com.

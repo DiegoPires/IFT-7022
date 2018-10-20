@@ -1,0 +1,107 @@
+La computadora es una máquina electrónica que recibe y procesa datos para convertirlos en información conveniente y útil. Una computadora está formada, físicamente, por numerosos circuitos integrados y otros muchos componentes de apoyo, extensión y accesorios, que en conjunto pueden ejecutar tareas diversas con suma rapidez y bajo el control de un programa.
+
+Dos partes esenciales la constituyen, el hardware, que es su composición física (circuitos electrónicos, cables, gabinete, teclado, etcétera) y su software, siendo ésta la parte intangible (programas, datos, información, etcétera). Una no funciona sin la otra.
+
+Desde el punto de vista funcional es una máquina que posee, al menos, una unidad central de procesamiento, una memoria principal y algún periférico o dispositivo de entrada y otro de salida. Los dispositivos de entrada permiten el ingreso de datos, la CPU se encarga de su procesamiento (operaciones arimético-lógicas) y los dispositivos de salida los comunican a otros medios. Es así, que la computadora recibe datos, los procesa y emite la información resultante, la que luego puede ser interpretada, almacenada, transmitida a otra máquina o dispositivo o sencillamente impresa; todo ello a criterio de un operador o usuario y bajo el control de un programa.
+
+El hecho de que sea programable, le posibilita realizar una gran diversidad de tareas, ésto la convierte en una máquina de propósitos generales (a diferencia, por ejemplo, de una calculadora cuyo único propósito es calcular limitadamente). Es así que, en base a datos de entrada, puede realizar operaciones y resolución de problemas en las más diversas áreas del quehacer humano (administrativas, científicas, de diseño, ingeniería, medicina, comunicaciones, música, etc), incluso muchas cuestiones que directamente no serían resolubles o posibles sin su intervención.
+
+Básicamente, la capacidad de una computadora depende de sus componentes hardware, en tanto que la diversidad de tareas radica mayormente en el software que admita ejecutar y contenga instalado.
+
+Si bien esta máquina puede ser de dos tipos diferentes, analógica o digital, el primer tipo es usado para pocos y muy específicos propósitos; la más difundida, utilizada y conocida es la computadora digital (de propósitos generales); de tal modo que en términos generales (incluso populares), cuando se habla de "la computadora" se está refiriendo a computadora digital. Las hay de arquitectura mixta, llamadas computadoras híbridas, siendo también éstas de propósitos especiales.
+
+En la Segunda Guerra mundial se utilizaron computadoras analógicas mecánicas, orientadas a aplicaciones militares, y durante la misma se desarrolló la primera computadora digital, que se llamó ENIAC; ella ocupaba un enorme espacio y consumía grandes cantidades de energía, que equivalen al consumo de cientos de computadores actuales (PC’s).6 Los computadores modernos están basados en circuitos integrados, miles de millones de veces más veloces que las primeras máquinas, y ocupan una pequeña fracción de su espacio. 7
+
+Computadoras simples son lo suficientemente pequeñas para residir en los dispositivos móviles. Las computadoras portátiles, tales como tabletas, netbooks, notebooks, ultrabooks, pueden ser alimentadas por pequeñas baterías. Computadoras personales en sus diversas formas son iconos de la Era de la información y son lo que la mayoría de la gente considera como "computadoras". Sin embargo, los computadores integrados se encuentran en muchos dispositivos actuales, tales como reproductores MP4; teléfonos celulares; aviones de combate, y, desde juguetes hasta robot industriales.
+
+Historia
+
+Lejos de ser un invento de alguien en particular, el ordenador es el resultado evolutivo de ideas y realizaciones de muchas personas relacionadas con áreas tales como la electrónica, la mecánica, los materiales semiconductores, la lógica, el álgebra y la programación.
+
+Cronología
+
+A continuación se presentan resumidamente los principales hitos en la historia de los ordenadores, desde las primeras herramientas manuales para hacer cálculos hasta las modernas computadoras de bolsillo.
+
+2700 a.C.: se utiliza en antiguas civilizaciones como la china o la sumeria la primera herramienta para realizar sumas y restas, el ábaco.
+c. 830: el matemático e ingeniero persa Musa al-Juarismi inventó el algoritmo, es decir, la resolución metódica de problemas de álgebra y cálculo numérico mediante una lista bien definida, ordenada y finita de operaciones.
+1614: el escocés John Napier inventa el logaritmo neperiano, que consiguió simplificar el cálculo de multiplicaciones y divisiones reduciéndolo a un cálculo con sumas y restas.
+1620: el inglés Edmund Gunter inventa la regla de cálculo, instrumento manual utilizado desde entonces hasta la aparición de la calculadora electrónica para hacer operaciones aritméticas.
+1623: el alemán Wilhelm Schickard inventa la primera máquina de calcular, cuyo prototipo desapareció poco después.
+1642: el científico y filósofo francés Blaise Pascal inventa una máquina de sumar (la pascalina), que utilizaba ruedas dentadas, y de la que todavía se conservan algunos ejemplares originales.
+1671: el filósofo y matemático alemán Gottfried Wilhelm Leibniz inventa una máquina capaz de multiplicar y dividir.
+1801: el francés Joseph Jacquard inventa para su máquina de tejer brocados una tarjeta perforada que controla el patrón de funcionamiento de la máquina, una idea que sería empleada más adelante por los primeros ordenadores.
+1833: el matemático e inventor británico Charles Babbage diseña e intenta construir la primera computadora, de funcionamiento mecánico, a la que llamó la "máquina analítica". Sin embargo, la tecnología de su época no estaba lo suficientemente avanzada para hacer realidad su idea.
+1890: el norteamericano Hermann Hollerith inventa una máquina tabuladora aprovechando algunas de las ideas de Babbage, que se utilizó para elaborar el censo de EEUU. Hollerith fundó posteriormente la compañía que después se convertiría en IBM.
+1893: el científico suizo Otto Steiger desarrolla la primera calculadora automática que se fabricó y empleó a escala industrial, conocida como la Millonaria.
+1936: el matemático y computólogo inglés Alan Turing formaliza los conceptos de algoritmo y de máquina de Turing, que serían claves en el desarrollo de la computación moderna.
+1938: el ingeniero alemán Konrad Zuze completa la Z1, la primera computadora que se puede considerar como tal. De funcionamiento electromecánico y utilizando relés, era programable (mediante cinta perforada) y usaba sistema binario y lógica boleana. A ella le seguirían los modelos mejorados Z2, Z3 y Z4.
+1944: en Estados Unidos la empresa IBM construye la computadora electromecánica Harvard Mark I, diseñada por un equipo encabezado por Howard H. Aiken. Fue la primera computadora creada en EEUU.
+1944: en Inglaterra se construyen los ordenadores Colossus (Colossus Mark I y Colossus Mark 2), con el objetivo de descifrar las comunicaciones de los alemanes durante la Segunda Guerra Mundial.
+1946: en la Universidad de Pensilvania se construye la ENIAC (Electronic Numerical Integrator And Calculator), que funcionaba a válvulas y fue la primera computadora electrónica de propósito general.
+1947: en los Laboratorios Bell, John Bardeen, Walter H. Brattain y William Shockley inventan el transistor.
+1951: comienza a operar la EDVAC, diseñada por John von Neumann, que a diferencia de la ENIAC no era decimal, sino binaria, y tuvo el primer programa diseñado para ser almacenado.
+1953: IBM fabrica su primera computadora a escala industrial, la IBM 650. Se amplía el uso del lenguaje ensamblador para la programación de las computadoras. Los ordenadores con transistores reemplazan a los de válvulas, marcando el comienzo de la segunda generación de computadoras.
+1957: Jack S. Kilby construye el primer circuito integrado.
+1964: la aparición del IBM 360 marca el comienzo de la tercera generación de computadoras, en la que las placas de circuito impreso con múltiples componentes elementales pasan a ser reemplazadas con placas de circuitos integrados.
+1971: Intel presenta el primer procesador comercial y a la vez el primer chip Microprocesador, el Intel_4004.
+1975: Paul Alen y Bill Gates fundan Microsoft.
+1977: Apple presenta el primer computador personal que se vende a gran escala, el Apple II, desarrollado por Steve Jobs y Steve Wozniak en un garaje.
+1981: se lanza al mercado el IBM PC, que se convertiría en un éxito comercial, marcaría una revolución en el campo de la computación personal y definiría nuevos estándares.
+1982: Microsoft presenta su sistema operativo MS-DOS, por encargo de IBM.
+1983: ARPANET se separa de la red militar que la originó, pasando a un uso civil y convirtiéndose así en el origen de Internet.
+1983: Richard Stallman anuncia públicamente el proyecto GNU.
+1985: Microsoft presenta el sistema operativo Windows 1.0.
+1990: Tim Berners-Lee idea el hipertexto para crear el World Wide Web (www), una nueva manera de interactuar con Internet.
+1991: Linus Torvalds comenzó a desarrollar Linux, un sistema operativo compatible con Unix.
+2000: aparecen a comienzos del siglo XXI los ordenadores de bolsillo, primero en forma de PDAs, y luego en forma de teléfonos inteligentes o smartphones.
+
+Componentes
+
+Las tecnologías utilizadas en computadoras digitales han evolucionado mucho desde la aparición de los primeros modelos en los años 1940, aunque la mayoría todavía utiliza la Arquitectura de von Neumann, publicada por John von Neumann a principios de esa década, que otros autores atribuyen a John Presper Eckert y John William Mauchly.
+
+La arquitectura de Von Neumann describe una computadora con cuatro (4) secciones principales: la unidad aritmético lógica, la unidad de control, la memoria primaria, principal o central, y los dispositivos de entrada y salida (E/S). Estas partes están interconectadas por canales de conductores denominados buses.
+
+Unidad central de procesamiento
+
+La unidad central de procesamiento (CPU, por sus siglas del inglés: Central Processing Unit) consta de manera básica de los siguientes tres elementos:
+
+
+Un típico símbolo esquemático para una ALU: A y B son operandos; R es la salida; F es la entrada de la unidad de control; D es un estado de la salida.
+La unidad aritmético lógica (ALU, por sus siglas del inglés: Arithmetic-Logic Unit) es el dispositivo diseñado y construido para llevar a cabo las operaciones elementales como las operaciones aritméticas (suma, resta, ...), operaciones lógicas (Y, O, NO), y operaciones de comparación o relacionales. En esta unidad es en donde se hace todo el trabajo computacional.
+La unidad de control (UC) sigue la dirección de las posiciones en memoria que contienen la instrucción que el computador va a realizar en ese momento; recupera la información poniéndola en la ALU para la operación que debe desarrollar. Transfiere luego el resultado a ubicaciones apropiadas en la memoria. Una vez que ocurre lo anterior, la unidad de control va a la siguiente instrucción (normalmente situada en la siguiente posición, a menos que la instrucción sea una instrucción de salto, informando al ordenador de que la próxima instrucción estará ubicada en otra posición de la memoria).
+Los registros: de datos, de memoria, registros constantes, de coma flotante, de propósito general, de propósito específico.
+Los procesadores pueden constar de además de las anteriormente citadas, de otras unidades adicionales como la unidad de coma flotante.
+
+Memoria primaria
+
+La memoria principal (MP), conocida como memoria de acceso aleatorio (RAM, por sus siglas del inglés: Random-Access Memory), es una secuencia de celdas de almacenamiento numeradas, donde cada una es un bit o unidad de información. La instrucción es la información necesaria para realizar lo que se desea con el computador. Las «celdas» contienen datos que se necesitan para llevar a cabo las instrucciones, con el computador. El número de celdas varían mucho de computador a computador, y las tecnologías empleadas para la memoria han cambiado bastante; van desde los relés electromecánicos, tubos llenos de mercurio en los que se formaban los pulsos acústicos, matrices de imanes permanentes, transistores individuales a circuitos integrados con millones de celdas en un solo chip se subdividen en memoria estática (SRAM) con seis transistores por bit y la mucho más utilizada memoria dinámica (DRAM) un transistor y un condensador por bit. En general, la memoria puede ser reescrita varios millones de veces (memoria RAM); se parece más a una pizarra que a una lápida (memoria ROM) que sólo puede ser escrita una vez.
+
+Periféricos de Entrada, de Salida o de Entrada/Salida
+
+Los dispositivos de Entrada/Salida (E/S) sirven a la computadora para obtener información del mundo exterior y/o comunicar los resultados generados por el computador al exterior. Hay una gama muy extensa de dispositivos E/S como teclados, monitores, unidades de disco flexible o cámaras web.
+
+Otros conceptos
+
+En la actualidad se puede tener la impresión de que los computadores están ejecutando varios programas al mismo tiempo. Esto se conoce como multitarea, y es más común que se utilice el segundo término. En realidad, la CPU ejecuta instrucciones de un programa y después tras un breve periodo de tiempo, cambian a un segundo programa y ejecuta algunas de sus instrucciones. Esto crea la ilusión de que se están ejecutando varios programas simultáneamente, repartiendo el tiempo de la CPU entre los programas. Esto es similar a la película que está formada por una sucesión rápida de fotogramas. El sistema operativo es el programa que generalmente controla el reparto del tiempo. El procesamiento simultáneo viene con computadoras de más de un CPU, lo que da origen al multiprocesamiento.
+
+El sistema operativo es una especie de caja de herramientas llena de utilerías que sirven para decidir, por ejemplo, qué programas se ejecutan, y cuándo, y qué fuentes se utilizan (memoria o dispositivos E/S). El sistema operativo tiene otras funciones que ofrecer a otros programas, como los códigos que sirven a los programadores, escribir programas para una máquina sin necesidad de conocer los detalles internos de todos los dispositivos electrónicos conectados.
+
+A 2015 se están empezando a incluir en las distribuciones donde se incluye el sistema operativo, algunos programas muy usados, debido a que es ésta una manera económica de distribuirlos. No es extraño que un sistema operativo incluya navegadores de Internet, procesadores de texto, programas de correo electrónico, interfaces de red, reproductores de películas y otros programas que antes se tenían que conseguir e instalar separadamente.
+
+Los primeros computadores digitales, de gran tamaño y coste, se utilizaban principalmente para hacer cálculos científicos. ENIAC, uno de los primeros computadores, calculaba densidades de neutrón transversales para ver si explotaría la bomba de hidrógeno. El CSIR Mk I, el primer ordenador australiano, evaluó patrones de precipitaciones para un gran proyecto de generación hidroeléctrica. Los primeros visionarios vaticinaron que la programación permitiría jugar al ajedrez, ver películas y otros usos.
+
+La gente que trabajaba para los gobiernos y las grandes empresas también usó los computadores para automatizar muchas de las tareas de recolección y procesamiento de datos, que antes eran hechas por humanos; por ejemplo, mantener y actualizar la contabilidad y los inventarios. En el mundo académico, los científicos de todos los campos empezaron a utilizar los computadores para hacer sus propios análisis. El descenso continuo de los precios de los computadores permitió su uso por empresas cada vez más pequeñas. Las empresas, las organizaciones y los gobiernos empezaron a emplear un gran número de pequeños computadores para realizar tareas que antes eran hechas por computadores centrales grandes y costosos. La reunión de varios pequeños computadores en un solo lugar se llamaba torre de servidores[cita requerida].
+
+Con la invención del microprocesador en 1970, fue posible fabricar computadores muy baratos. Nacen los computadores personales (PC), los que se hicieron famosos para llevar a cabo diferentes tareas como guardar libros, escribir e imprimir documentos, calcular probabilidades y otras tareas matemáticas repetitivas con hojas de cálculo, comunicarse mediante correo electrónico e Internet. Sin embargo, la gran disponibilidad de computadores y su fácil adaptación a las necesidades de cada persona, han hecho que se utilicen para varios propósitos.
+
+Al mismo tiempo, los pequeños computadores fueron casi siempre con una programación fija, empezaron a hacerse camino entre las aplicaciones del hogar, los coches, los aviones y la maquinaria industrial. Estos procesadores integrados controlaban el comportamiento de los aparatos más fácilmente, permitiendo el desarrollo de funciones de control más complejas como los sistemas de freno antibloqueo en los coches. A principios del siglo XXI, la mayoría de los aparatos eléctricos, casi todos los tipos de transporte eléctrico y la mayoría de las líneas de producción de las fábricas funcionan con un computador. La mayoría de los ingenieros piensa que esta tendencia va a continuar.
+
+Hacia finales de siglo XX y comienzos del XXI, los computadores personales son usados tanto para la investigación como para el entretenimiento (videojuegos), pero los grandes computadores aún sirven para cálculos matemáticos complejos y para otros usos de la ciencia, tecnología, astronomía, medicina, etc.
+
+Tal vez el más interesante "descendiente" del cruce entre el concepto de la PC o computadora personal y los llamados supercomputadores sea la Workstation o estación de trabajo. Este término, originalmente utilizado para equipos y máquinas de registro, grabación y tratamiento digital de sonido, y ahora utilizado precisamente en referencia a estaciones de trabajo (traducido literalmente del inglés), se usa para dar nombre a equipos que, debido sobre todo a su utilidad dedicada especialmente a labores de cálculo científico, eficiencia contra reloj y accesibilidad del usuario bajo programas y software profesional y especial, permiten desempeñar trabajos de gran cantidad de cálculos y "fuerza" operativa. Una Workstation es, en esencia, un equipo orientado a trabajos personales, con capacidad elevada de cálculo y rendimiento superior a los equipos PC convencionales, que aún tienen componentes de elevado coste, debido a su diseño orientado en cuanto a la elección y conjunción sinérgica de sus componentes. En estos casos, el software es el fundamento del diseño del equipo, el que reclama, junto con las exigencias del usuario, el diseño final de la Workstation.
+
+Etimología de la palabra ordenador
+
+La palabra española ordenador proviene del término francés ordinateur, en referencia a Dios que pone orden en el mundo ("Dieu qui met de l'ordre dans le monde").8 En parte por cuestiones de marketing, puesto que la descripción realizada por IBM para su introducción en Francia en 1954 situaba las capacidades de actuación de la máquina cerca de la omnipotencia, idea equivocada que perdura hoy en día al considerar que la máquina universal de Turing es capaz de computar absolutamente todo.9 En 1984, académicos franceses reconocieron, en el debate Les jeunes, la technique et nous, que el uso de este sustantivo es incorrecto, porque la función de un computador es procesar datos, no dar órdenes.10 Mientras que otros, como el catedrático de filología latina Jacques Perret, conocedores del origen religioso del término, lo consideran más correcto que las alternativas.8
+
+El uso de la palabra ordinateur se ha exportado a los idiomas de España: el aragonés, el asturiano, el gallego, el castellano, el catalán y el euskera. El español que se habla en Iberoamérica, así como los demás idiomas europeos, como el portugués, el alemán y el neerlandés, utilizan términos derivados de computare.

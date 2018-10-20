@@ -1,0 +1,202 @@
+Computador é uma máquina capaz de variados tipos de tratamento automático de informações ou processamento de dados. Um computador pode possuir inúmeros atributos, dentre eles armazenamento de dados, processamento de dados, cálculo em grande escala, desenho industrial, tratamento de imagens gráficas, realidade virtual, entretenimento e cultura.
+
+No passado, o termo já foi aplicado a pessoas responsáveis por algum cálculo. Em geral, entende-se por computador um sistema físico que realiza algum tipo de computação. Existe ainda o conceito matemático rigoroso, utilizado na teoria da computação.
+
+Assumiu-se que os computadores pessoais e laptops são ícones da Era da Informação1 ; e isto é o que muitas pessoas consideram como "computador". Entretanto, atualmente as formas mais comuns de computador em uso são os sistemas embarcados, pequenos dispositivos usados para controlar outros dispositivos, como robôs, câmeras digitais ou brinquedos.
+
+As primeiras máquinas de computar
+
+Pascaline, máquina calculadora feita por Blaise Pascal.
+John Napier (1550-1617), escocês inventor dos logaritmos, também inventou os ossos de Napier, que eram tabelas de multiplicação gravadas em bastão, o que evitava a memorização da tabuada.
+
+A primeira máquina de verdade foi construída por Wilhelm Schickard sendo capaz de somar, subtrair, multiplicar e dividir. Essa máquina foi perdida durante a guerra dos trinta anos, sendo que recentemente foi encontrada alguma documentação sobre ela. Durante muitos anos nada se soube sobre essa máquina, por isso, atribuía-se a Blaise Pascal (1623-1662) a construção da primeira máquina calculadora, que fazia apenas somas e subtrações.
+
+A máquina Pascal foi criada com objetivo de ajudar seu pai a computar os impostos em Rouen, França. O projeto de Pascal foi bastante aprimorado pelo matemático alemão Gottfried Wilhelm Leibniz (1646-1726), que também inventou o cálculo, o qual sonhou que, um dia no futuro, todo o raciocínio pudesse ser substituído pelo girar de uma simples alavanca.
+
+Todas essas máquinas, porém, estavam longe de ser um computador de uso geral, pois não eram programáveis. Isto quer dizer que a entrada era feita apenas de números, mas não de instruções a respeito do que fazer com os números.
+
+Babbage
+
+Réplica (parte) do Calculador Diferencial criado por Charles Babbage.
+A origem da idéia de programar uma máquina vem da necessidade de que as máquinas de tecer produzissem padrões de cores diferentes. Assim, no século XVIII foi criada uma forma de representar os padrões em cartões de papel perfurado, que eram tratados manualmente. Em 1801, Joseph Marie Jacquard (1752-1834) inventa um tear mecânico, com uma leitora automática de cartões.
+
+A ideia de Jacquard atravessou o Canal da Mancha, onde inspirou Charles Babbage (1792-1871), um professor de matemática de Cambridge, a desenvolver uma máquina de “tecer números”, uma máquina de calcular onde a forma de calcular pudesse ser controlada por cartões.
+
+Tudo começou com a tentativa de desenvolver uma máquina capaz de calcular polinômios por meio de diferenças, o calculador diferencial. Enquanto projetava seu calculador diferencial, a idéia de Jacquard fez com que Babbage imaginasse uma nova e mais complexa máquina, o calculador analítico, máquina com alguns elementos que remetem aos computadores atuais.
+
+Sua parte principal seria um conjunto de rodas dentadas, o moinho, formando uma máquina de somar com precisão de cinquenta dígitos. As instruções seriam lidas de cartões perfurados. Os cartões seriam lidos em um dispositivo de entrada e armazenados, para futuras referências, em um banco de mil registradores. Cada um dos registradores seria capaz de armazenar um número de cinquenta dígitos, que poderiam ser colocados lá por meio de cartões a partir do resultado de um dos cálculos do moinho.
+
+Além disso tudo, Babbage imaginou a primeira máquina de impressão, que imprimiria os resultados dos cálculos, contidos nos registradores. Babbage conseguiu, durante algum tempo, fundos para sua pesquisa, porém não conseguiu completar sua máquina no tempo prometido e não recebeu mais dinheiro. Hoje, partes de sua máquina podem ser vistas no Museu Britânico, que também construiu uma versão completa, utilizando as técnicas disponíveis na época.
+
+Junto com Babbage, trabalhou a jovem Ada Augusta, filha do poeta Lord Byron, conhecida como Lady Lovelace e Ada Lovelace. Ada foi a primeira programadora da história, projetando e explicando, a pedido de Babbage, programas para a máquina inexistente. Ada inventou os conceitos de subrotina, uma seqüência de instruções que pode ser usada várias vezes; de loop, uma instrução que permite a repetição de uma seqüência de instruções, e do salto condicional, instrução que permite saltar para algum trecho do programa caso uma condição seja satisfeita.
+
+Ada Lovelace e Charles Babbage estavam avançados demais para o seu tempo, tanto que até a década de 1940, nada se inventou parecido com seu computador analítico. Até essa época foram construídas muitas máquinas mecânicas de somar destinadas a controlar negócios (principalmente caixas registradoras) e algumas máquinas inspiradas na calculadora diferencial de Babbage, para realizar cálculos de engenharia (que não alcançaram grande sucesso).
+
+A máquina de tabular
+O próximo avanço dos computadores foi feito pelo americano Herman Hollerith (1860-1929), que inventou uma máquina capaz de processar dados baseada na separação de cartões perfurados (pelos seus furos). A máquina de Hollerith foi utilizada para auxiliar no censo de 1890, reduzindo o tempo de processamento de dados de sete anos, do censo anterior, para apenas dois anos e meio. Ela foi também pioneira ao utilizar a eletricidade na separação, contagem e tabulação dos cartões.
+
+A empresa fundada por Hollerith é hoje conhecida como International Business Machines, ou IBM.
+
+Os primeiros computadores de uso geral
+
+Z1, computador eletro-mecânico construído por Konrad Zuse.
+O primeiro computador eletro-mecânico foi construído por Konrad Zuse (1910–1995). Em 1936, esse engenheiro alemão construiu, a partir de relês que executavam os cálculos e dados lidos em fitas perfuradas, o Z1. Zuse tentou vender o computador ao governo alemão, que desprezou a oferta, já que não poderia auxiliar no esforço de guerra. Os projetos de Zuse ficariam parados durante a guerra, dando a chance aos americanos de desenvolver seus computadores.
+
+Foi na Segunda Guerra Mundial que realmente nasceram os computadores atuais. A Marinha dos Estados Unidos, em conjunto com a Universidade de Harvard, desenvolveu o computador Harvard Mark I, projetado pelo professor Howard Aiken, com base no calculador analítico de Babbage. O Mark I ocupava 120m³ aproximadamente, conseguindo multiplicar dois números de dez dígitos em três segundos.
+
+Simultaneamente, e em segredo, o Exército dos Estados Unidos desenvolvia um projeto semelhante, chefiado pelos engenheiros J. Presper Eckert e John Mauchly, cujo resultado foi o primeiro computador a válvulas, o Eletronic Numeric Integrator And Calculator (ENIAC)2 , capaz de fazer quinhentas multiplicações por segundo. Tendo sido projetado para calcular trajetórias balísticas, o ENIAC foi mantido em segredo pelo governo americano até o final da guerra, quando foi anunciado ao mundo.
+
+
+ENIAC, computador desenvolvido pelo Exército dos Estados Unidos.
+No ENIAC, o programa era feito rearranjando a fiação em um painel. Nesse ponto John von Neumann propôs a idéia que transformou os calculadores eletrônicos em “cérebros eletrônicos”: modelar a arquitetura do computador segundo o sistema nervoso central. Para isso, eles teriam que ter três características:
+
+Codificar as instruções de uma forma possível de ser armazenada na memória do computador. Von Neumann sugeriu que fossem usados uns e zeros.
+Armazenar as instruções na memória, bem como toda e qualquer informação necessária a execução da tarefa, e
+Quando processar o programa, buscar as instruções diretamente na memória, ao invés de lerem um novo cartão perfurado a cada passo.
+
+Visão simplificada da arquitetura de Von Neumann.
+Este é o conceito de programa armazenado, cujas principais vantagens são: rapidez, versatilidade e automodificação. Assim, o computador programável que conhecemos hoje, onde o programa e os dados estão armazenados na memória ficou conhecido como Arquitetura de von Neumann.
+
+Para divulgar essa idéia, von Neumann publicou sozinho um artigo. Eckert e Mauchy não ficaram muito contentes com isso, pois teriam discutido muitas vezes com ele. O projeto ENIAC acabou se dissolvendo em uma chuva de processos, mas já estava criado o computador moderno.
+
+Arquitetura de hardware
+
+LEGENDA: 01- Monitor; 02- Placa-Mãe; 03- Processador; 04- Memória RAM; 05- Placas de Rede, Placas de Som, Vídeo, Fax...; 06- Fonte de Energia; 07- Leitor de CDs e/ou DVDs; 08- Disco Rígido (HD); 09- Mouse (Rato); 10- Teclado.
+Mesmo que a tecnologia utilizada nos computadores digitais tenha mudado dramaticamente desde os primeiros computadores da década de 1940 (veja história do hardware), quase todos os computadores atuais ainda utilizam a arquitetura de von Neumann proposta por John von Neumann.
+
+Seguindo a arquitetura, os computadores possuem quatro sessões principais, a unidade lógica e aritmética, a unidade de controle, a memória e os dispositivos de entrada e saída. Essas partes são interconectadas por barramentos. A unidade lógica e aritmética, a unidade de controle, os registradores e a parte básica de entrada e saída são conhecidos como a CPU.
+
+Alguns computadores maiores diferem do modelo acima em um aspecto principal - eles têm múltiplas CPUs trabalhando simultaneamente. Adicionalmente, poucos computadores, utilizados principalmente para pesquisa e computação científica, têm diferenças significativas do modelo acima, mas eles não tem grande aplicação comercial.
+
+Processamento
+Ver artigo principal: Processamento
+O processador (ou CPU) é uma das partes principais do hardware do computador e é responsável pelos cálculos, execução de tarefas e processamento de dados. A velocidade com que o computador executa as tarefas ou processa dados está diretamente ligada à velocidade do processador. As primeiras CPUs eram constituídas de vários componentes separados, mas desde meados da década de 1970 as CPUs vêm sendo manufaturadas em um único circuito integrado, sendo então chamadas microprocessadores.
+
+A unidade lógica e aritmética (ULA) é a unidade central do processador, que realmente executa as operações aritméticas e lógicas entre dois números. Seus parâmetros incluem, além dos números operandos, um resultado, um comando da unidade de controle, e o estado do comando após a operação. O conjunto de operações aritméticas de uma ULA pode ser limitado a adição e subtração, mas também pode incluir multiplicação, divisão, funções trigonométricas e raízes quadradas. Algumas podem operar somente com números inteiros, enquanto outras suportam o uso de ponto flutuante para representar números reais (apesar de possuírem precisão limitada).
+
+A unidade de controle é a unidade do processador que armazena a posição de memória que contém a instrução corrente que o computador está executando, informando à ULA qual operação a executar, buscando a informação (da memória) que a ULA precisa para executá-la e transferindo o resultado de volta para o local apropriado da memória. Feito isto, a unidade de controle vai para a próxima instrução (tipicamente localizada na próxima posição da memória, a menos que a instrução seja uma instrução de desvio informando que a próxima instrução está em outra posição.
+
+A CPU também contém um conjunto restrito de células de memória chamadas registradores, que podem ser lidas e escritas muito mais rapidamente que em outros dispositivos de memória. São usadas frequentemente para evitar o acesso contínuo à memória principal cada vez que um dado é requisitado.
+
+Memória
+Ver artigo principal: Memória (computador)
+A memória é um dispositivo que permite ao computador armazenar dados por certo tempo. Atualmente o termo é geralmente usado para definir as memórias voláteis, como a RAM, mas seu conceito primordial também aborda memórias não voláteis, como o disco rígido. Parte da memória do computador é feita no próprio processador; o resto é diluído em componentes como a memória RAM, memória cache, disco rígido e leitores de mídias removíveis, como disquete, CD e DVD.
+
+Nos computadores modernos, cada posição da memória é configurado para armazenar grupos de oito bits (chamado de um byte). Cada byte consegue representar 256 números diferentes; de 0 a 255 ou de -128 a +127. Para armazenar números maiores pode-se usar diversos bytes consecutivos (geralmente dois, quatro ou oito). Quando números negativos são armazenados, é utilizada a notação de complemento para dois.
+
+A memória do computador é normalmente dividida entre primária e secundária, havendo também pesquisadores que afirmam haver a memória "terciária".
+
+Memória primária
+Ver artigos principais: Memória RAM e Memória ROM
+A memória primária é aquela acessada diretamente pela Unidade Lógica e Aritmética. Tradicionalmente essa memória pode ser de leitura e escrita (RAM) ou só de leitura (ROM). Atualmente existem memórias que podem ser classificadas como preferencialmente de leitura, isso é, variações da memória ROM que podem ser regravadas, porém com um número limitado de ciclos e um tempo muito mais alto.
+
+Normalmente a memória primária se comunica com a ULA por meio de um barramento ou canal de dados. A velocidade de acesso a memória é um fator importante de custo de um computador, por isso a memória primária é normalmente construída de forma hierárquica em um projeto de computador. Parte da memória, conhecida como cache fica muito próxima à ULA, com acesso muito rápido. A maior parte da memória é acessada por meio de vias auxiliares.
+
+Normalmente a memória é nitidamente separada da ULA em uma arquitetura de computador. Porém, os microprocessadores atuais possuem memória cache incorporada, o que aumenta em muito sua velocidade.
+
+Memória RAM
+
+Memória RAM de um PC.
+A memória RAM (Random Access Memory) é uma sequência de células numeradas, cada uma contendo uma pequena quantidade de informação. A informação pode ser uma instrução para dizer ao computador o que fazer. As células podem conter também dados que o computador precisa para realizar uma instrução. Qualquer célula pode conter instrução ou dado, assim o que em algum momento armazenava dados pode armazenar instruções em outro momento. Em geral, o conteúdo de uma célula de memória pode ser alterado a qualquer momento, a memória RAM é um rascunho e não um bloco de pedra.
+
+As memórias RAM são denominadas genericamente de DRAM (RAM dinâmica) pelo fato de possuírem uma característica chamada refrescamento de memória, que tem a finalidade de regravar os dados armazenados em intervalos regulares de tempo,o que é necessário para a manutenção de seu conteúdo. O tamanho de cada célula, e o número de células, varia de computador para computador, e as tecnologias utilizadas para implementar a memória RAM variam bastante. Atualmente o mais comum é a implementação em circuitos integrados.
+
+Memória ROM
+
+Memória ROM de um PC.
+A memória ROM (Read-Only Memory) é aquela que só pode ser lida e os dados não são perdidos com o desligamento do computador. A diferença entre a memória RAM e a ROM é que a RAM aceita gravação, regravação e perda de dados. Mesmo se for enviada uma informação para ser gravada na memória ROM, o procedimento não é executado (esta característica praticamente elimina a criação de vírus que afetam a ROM).
+
+Um software gravado na ROM recebe o nome de firmware. Em computadores da linha IBM-PC eles são basicamente três, que são acessados toda vez que ligamos o computador, a saber: BIOS, POST e SETUP.
+
+Existe uma variação da ROM chamada memória preferencialmente de leitura que permite a re-gravação de dados. São as chamadas EPROM (Erasable Programmable Read Only Memory) ou EEPROM (Electrically Erasable Programmable Read-Only Memory).
+
+Memória secundária
+A memória secundária ou memória de massa é usada para gravar grande quantidade de dados, que não são perdidos com o desligamento do computador, por um período longo de tempo. Exemplos de memória de massa incluem o disco rígido e mídias removíveis como o CD-ROM, o DVD, o disquete e o pen drive.
+
+Normalmente a memória secundária não é acessada diretamente pela ULA, mas sim por meio dos dispositivos de entrada e saída. Isso faz com que o acesso a essa memória seja muito mais lento do que o acesso a memória primária. Para isso cada dispositivo encontra-se com um buffer de escrita e leitura para melhoramento de desempenho.
+
+Supostamente, consideramos que a memória terciária está permanentemente ligada ao computador.
+
+Memória terciária
+
+Fita magnética para gravação de dados.
+Sistemas mais complexos de computação podem incluir um terceiro nível de memória, com acesso ainda mais lento que o da memória secundária. Um exemplo seria um sistema automatizado de fitas contendo a informação necessária. A memória terciária pode ser considerada um dispositivo de memória secundária ou memória de massa colocado para servir um dispositivo de memória secundária.
+
+As tecnologias de memória usam materiais e processos bastante variados. Na informática, elas têm evoluído sempre em direção de uma maior capacidade de armazenamento, maior miniaturização, maior rapidez de acesso e confiabilidade, enquanto seu custo cai constantemente.
+
+Entretanto, a memória de um computador não se limita a sua memoria individual e física, ela se apresenta de maneira mais ampla, e sem lugar definido (desterritorializada). Temos possibilidades de armazenar em diversos lugares na rede, podemos estar em Cairo e acessar arquivos que foram armazenados em sítios no Brasil.
+
+É crescente a tendência para o armazenamento das informações na memória do espaço virtual, ou o chamado ciberespaço, através de discos virtuais e anexos de e-mails. Isto torna possível o acesso a informação a partir de qualquer dispositivo conectado à Internet.
+
+Entrada e saída
+Ver artigo principal: E/S
+
+Mouse
+Os dispositivos de entrada e saída (E/S) são periféricos usados para a interação homem-computador. Nos computadores pessoais modernos, dispositivos comuns de entrada incluem o mouse (ou rato), o teclado, o digitalizador e a webcam. Dispositivos comuns de saída incluem a caixa de som, o monitor3 e a impressora.
+
+O que todos os dispositivos de entrada têm em comum é que eles precisam codificar (converter) a informação de algum tipo em dados que podem ser processados pelo sistema digital do computador. Dispositivos de saída por outro lado, descodificam os dados em informação que é entendida pelo usuário do computador. Neste sentido, um sistema de computadores digital é um exemplo de um sistema de processamento de dados.
+
+Processo este, que consiste basicamente em três fases: Entrada, Processameto e Saída. Entendemos por entrada todo o procedimento de alimentação de informações, que por sua vez serão processadas (fase de processamento) e após isso, são repassadas as respostas ao usuário (saída).
+
+Podemos ter dispositivos que funcionam tanto para entrada como para saída de dados, como o modem e o drive de disquete. Atualmente, outro dispositivo híbrido de dados é a rede de computadores.
+
+
+Blocos funcionais de um computador.
+Barramentos
+Para interligar todos esses dispositivos existe uma placa de suporte especial, a placa-mãe, que através de barramentos, fios e soquetes conecta todos os dispositivos. Sua função inclui também a conexão de placas auxiliares que sub-controlam os periféricos de entrada e saída, como a placa de som (conecta-se com a caixa de som), a placa de vídeo (conecta-se com o monitor), placa de rede (conecta-se com a LAN) e o fax-modem (conecta-se com a linha telefônica).
+
+Nota-se que o barramento entre os componentes não constitui uma conexão ponto-a-ponto; ele pode conectar logicamente diversos componentes utilizando o mesmo conjunto de fios. O barramento pode utilizar uma interface serial ou uma interface paralela.
+
+Outros equipamentos adicionais usados em conjunto com a placa-mãe são o dissipador, um pequeno ventilador para resfriar o processador, e a fonte de energia, responsável pela alimentação de energia de todos os componentes do computador.
+
+Arquitetura de software
+Instruções
+A principal característica dos computadores modernos, o que o distingue de outras máquinas, é que pode ser programado. Isto significa que uma lista de instruções pode ser armazenada na memória e executa posteriormente.
+
+
+Diagrama de linguagem de programação compilada em linguagem de máquina.
+As instruções executadas na ULA discutidas acima não são um rico conjunto de instruções como a linguagem humana. O computador tem apenas um limitado número de instruções bem definidas. Um exemplo típico de uma instrução existente na maioria dos computadores é "copie o conteúdo da posição de memória 123 para a posição de memória 456", "adicione o conteúdo da posição de memória 510 ao conteúdo da posição 511 e coloque o resultado na posição 507" e "se o conteúdo da posição 012 é igual a 0, a próxima instrução está na posição 678".
+
+Instruções são representadas no computador como números - o código para "copiar" poderia ser 007, por exemplo. O conjunto particular de instruções que um computador possui é conhecido como a linguagem de máquina do computador. Na prática, as pessoas não escrevem instruções diretamente na linguagem de máquina mas em uma linguagem de programação, que é posteriormente traduzida na linguagem de máquina através de programas especiais, como interpretadores e compiladores. Algumas linguagens de programação se aproximam bastante da linguagem de máquina, como o assembly (linguagem de baixo nível); por outro lado linguagens como o Prolog são baseadas em princípios abstratos e se distanciam bastante dos detalhes da operação da máquina (linguagens de alto nível).
+
+A execução das instruções é tal como ler um livro. Apesar da pessoa normalmente ler cada palavra e linha em sequência, é possível que algumas vezes ela volte para pontos anteriores do texto de interesse ou passe sessões não interessantes. Da mesma forma, um computador que segue a arquitetura de von Neumann executa cada instrução de forma sequencial, da maneira como foram armazenadas na memória. Mas, através de instruções especiais, o computador pode repetir instruções ou avançá-las até que alguma condição seja satisfeita. Isso é chamado controle do fluxo e é o que permite que o computador realize tarefas repetitivamente sem intervenção humana.
+
+Uma pessoa usando uma calculadora pode realizar operações aritméticas como somar número apertando poucos botões. Mas somar sequencialmente os números de um a mil iria requerer apertar milhares de vezes os botões, com uma alta probabilidade de erro em alguma iteração. Por outro lado, computadores podem ser programados para realizar tal tarefa com poucas instruções, e a execução e extremamente rápida.
+
+Mas os computadores não conseguem pensar, eles somente executam as instruções que fornecemos. Um humano instruído, ao enfrentar o problema da adição explicado anteriormente, perceberia em algum momento que pode reduzir o problema usando a seguinte equação:
+
+1+2+3+...+n = {{n(n+1)} \over 2},
+e chegar na mesma resposta correta com pouco trabalho. Alguns computadores modernos conseguem tomar algumas decisões para acelerar a execução dos programas ao prever instruções futuras e reorganizar a ordem de instruções sem modificar seu significado. Entretanto, os computadores ainda não conseguem determinar instintivamente uma maneira mais eficiente de realizar sua tarefa, pois não possuem conhecimento para tal 4 .
+
+Programas
+Ver artigo principal: Programa de computador
+Programas são simplesmente grandes listas de instruções para o computador executar, tais com tabelas de dados. Muitos programas de computador contêm milhões de instruções, e muitas destas instruções são executadas repetidamente. Um computador pessoal típico (no ano de 2003) podia executar cerca de dois a três bilhões de instruções por segundo. Os computadores não têm a sua extraordinária capacidade devido a um conjunto de instruções complexo. Apesar de existirem diferenças de projeto com CPU com um maior número de instruções e mais complexas, os computadores executam milhões de instruções simples combinadas, escritas por bons "programadores". Estas instruções combinadas são escritas para realizar tarefas comuns como, por exemplo, desenhar um ponto na tela. Tais instruções podem então ser utilizadas por outros programadores.
+
+Hoje em dia, muitos computadores aparentam executar vários programas ao mesmo tempo, o que é normalmente conhecido como multitarefa. Na realidade, a CPU executa as instruções de um programa por um curto período de tempo e, em seguida, troca para um outro programa e executa algumas de suas instruções. Isto cria a ilusão de vários programas sendo executados simultaneamente através do compartilhamento do tempo da CPU entre os programas. Este compartilhamento de tempo é normalmente controlado pelo sistema operacional. Nos casos em que o computador possui dois núcleos de processamento, cada núcleo processa informações de um programa, diminuindo assim o tempo de processamento.
+
+Sistema operacional
+Ver artigo principal: Sistema operacional
+Um computador sempre precisa de no mínimo um programa em execução por todo o tempo para operar. Tipicamente este programa é o sistema operacional (ou sistema operativo), que determina quais programas vão executar, quando, e que recursos (como memória e E / S) ele poderá utilizar. O sistema operacional também fornece uma camada de abstração sobre o hardware, e dá acesso aos outros programas fornecendo serviços, como programas gerenciadores de dispositivos ("drivers") que permitem aos programadores escreverem programas para diferentes máquinas sem a necessidade de conhecer especificidades de todos os dispositivos eletrônicos de cada uma delas.
+
+Impactos do computador na sociedade
+
+Visualização gráfica de várias rotas em uma porção da Internet mostrando a escalabilidade da rede
+Segundo Pierre Lévy, no livro "Cibercultura", o computador não é mais um centro, e sim um nó, um terminal, um componente da rede universal calculante. Em certo sentido, há apenas um único computador, mas é impossível traçar seus limites, definir seu contorno. É um computador cujo centro está em toda parte e a circunferência em lugar algum, um computador hipertextual, disperso, vivo, fervilhante, inacabado: o ciberespaço em si.
+
+O computador evoluiu em sua capacidade de armazenamento de informações, que é cada vez maior, o que possibilita a todos um acesso cada vez maior a informação. Isto significa que o computador agora representa apenas um ponto de um novo espaço, o ciberespaço. Essas informações contidas em computadores de todo mundo e presentes no ciberespaço, possibilitam aos usuários um acesso a novos mundos, novas culturas, sem a locomoção física. Com todo este armazenamento de textos, imagens, dados, etc.
+
+Houve também uma grande mudança no comportamento empresarial, com uma forte redução de custo e uma descompartimentalização das mesmas. Antes o que era obstante agora é próximo, as máquinas, componentes do ciberespaço, com seus compartimentos de saída, otimizaram o tempo e os custos.
+
+Classificação dos computadores
+Computadores podem ser classificados de acordo com a função que exercem ou pelas suas dimensões (capacidade de processamento). A capacidade de processamento é medida em flops.
+
+Quanto à Capacidade de Processamento
+Microcomputador - Também chamado Computador pessoal ou ainda Computador doméstico. Segundo a Lista Top 10 Flops, chegam atualmente aos 107,58 GFlops5 (Core i7 980x da Intel).
+Console ou videogame - Ao mesmo tempo função e capacidade. Não chega a ser um computador propriamente dito, mas os atuais PlayStation 3 e Xbox 360 alcançam 218 e 115 GFlops respectivamente.
+Mainframe - Um computador maior em tamanho e mais poderoso. Segundo a Lista Top500 de jun/2010, ficam na casa dos TFlops (de 20 a 80 TFlops), recebendo o nome comercial de servidores (naquela lista), que na verdade é a função para a qual foram fabricados e não sua capacidade, que é de mainframe.
+Supercomputador - Muito maior em dimensões, pesando algumas toneladas e capaz de, em alguns casos, efetuar cálculos que levariam 100 anos para serem calculados em um microcomputador. Seu desempenho ultrapassa 80 TFlops, chegando a 1.750 TFlops (1,75 PFlops)6 .
+Quanto às suas Funções
+Console ou videogame - Como dito não são computadores propriamente ditos, mas atualmente conseguem realizar muitas, senão quase todas, as funções dos computadores pessoais.
+Servidor (server) - Um computador que serve uma rede de computadores. São de diversos tipos. Tanto microcomputadores quanto mainframes são usados como servidores.
+Estação de trabalho (workstation) - Serve um único usuário e tende a possuir hardware e software não encontráveis em computadores pessoais, embora externamente se pareçam muito com os computadores pessoais. Tanto microcomputadores quanto mainframes são usados como estações de trabalho.
+Sistema embarcado, computador dedicado ou computador integrado (embedded computer) - De menores proporções, é parte integrante de uma máquina ou dispositivo. Por exemplo uma unidade de comando da injeção eletrônica de um automóvel, que é específica para atuar no gerenciamento eletrônico do sistema de injeção de combustível e ignição. Eles são chamados de dedicados pois executam apenas a tarefa para a qual foram programados. Tendem a ter baixa capacidade de processamento, às vezes inferior aos microcomputadores.

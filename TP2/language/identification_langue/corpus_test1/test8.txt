@@ -1,0 +1,13 @@
+Google comparte algunos diseños de interfaz de las primeras fases de desarrollo de Android Wear.
+
+Pese a la juventud del sistema operativo Android Wear, este también ha tenido su fase de maduración y refinamiento, y si no que se lo pregunten al equipo de Google encargado de sacar adelante el sistema operativo para dispositivos wearables. Aprovechando la celebración de la IFA y el anuncio de los nuevos smartwatch compatibles con Android Wear que están por venir, la compañía ha querido compartir algunos diseños previos que se tuvieron en cuenta durante su fase de desarrollo.
+
+Aunque el minimalismo fue en todo momento el punto de partida de Android Wear, el sistema operativo ha pasado por varias fases de desarrollo, con una interfaz poco reconocible si la comparamos con la que tenemos hoy en día. Los chicos de The Verge han tenido la oportunidad de tener acceso a todos estos conceptos y anteproyectos de lo que ha acabado convirtiéndose en Android Wear.
+
+Por ejemplo, podemos ver que el equipo encargado de su desarrollo tuvo bien claro en todo momento que el sistema de tarjetas sería el escogido para conformar la interfaz del sistema y que los usuarios pudieran moverse a través de ella. Sin embargo, la elección de los colores, así como la delimitación de los elementos, no estuvo tan claro.
+
+Una imagen muy ilustrativa de este proceso es la que os dejamos justo debajo. En ella podemos apreciar tres capturas de pantalla diferentes que se corresponden con la búsqueda a través de comandos de voz. De izquierda a derecha podemos ver como se va priorizando cada vez más la delimitación y ordenación de los elementos dentro de la ficha. ¿Cuál de ellos os gusta más?
+
+En la galería podéis encontrar muchos más ejemplos de esto. Entre ellos, destacan el gran número de watchfaces que el equipo de Android Wear experimentó. Al parecer, les preocupaba mucho las combinaciones de colores y el efecto que estas podían tener en la experiencia de usuario tratándose de una pantalla tan pequeña.
+
+Además, también hemos podido saber que Google se fijó en el diseño de varios relojes minimalistas como referencia para el desarrollo de su sistema operativo. Sin duda, una recopilación muy curiosa de cómo grandes compañías de la talla de Google conciben y desarrollan sus productos.
