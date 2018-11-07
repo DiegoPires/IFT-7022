@@ -422,6 +422,8 @@ def classify_sklearn(negative_reviews, positive_reviews, verbose=False):
             train_size=0.80)
 
     classifiers = [
+            ClassifierTestSet('Naive Bayes', MultinomialNB(), 'english', min_df=0.3, max_df=0.5, apply_stem=False, use_open_words=True, use_Tfid=True), 
+            ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.3, max_df=0.5, apply_stem=False, use_open_words=True, use_Tfid=True), 
             # This one was not required, just using for some quick test since its called one of the most efficients in the docs
             ClassifierTestSet('SGD ', SGDClassifier(loss='hinge', penalty='l2',
                                             alpha=1e-3, random_state=42,
@@ -464,7 +466,7 @@ def classify_sklearn(negative_reviews, positive_reviews, verbose=False):
     headerClassifier = ClassifierTestSet('Header', None)
     print(headerClassifier.str_keys())
 
-    for classifier in classifiers: #[:4]: # Use two firsts for simple tests
+    for classifier in classifiers[:2]: # Use two firsts for simple tests
         skLearnClassifier = SkLearnClassifier(data_train, data_test, target_train, target_test)
         mean = skLearnClassifier.mean_from_classifier(classifier)
 
@@ -486,7 +488,7 @@ def main():
     # Results using all the criterias possibles
     # 83/200 from positive reviews  -- 41.5% succes for positive reviews
     # 185/200 from negative reviews -- 92.5% succes for negative reviews
-    classify_nltk_naive_bayes(negative_reviews, positive_reviews)
+    #classify_nltk_naive_bayes(negative_reviews, positive_reviews)
     
     # Make all tests using Sklearn
     classify_sklearn(negative_reviews, positive_reviews, verbose=False)

@@ -6,7 +6,10 @@ import nltk.data
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.pipeline import Pipeline
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import MultinomialNB, GaussianNB
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.svm import SVC
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn import metrics
 from sklearn.svm import LinearSVC
 from sklearn.model_selection import train_test_split
@@ -86,6 +89,14 @@ def main():
         ClassifierTest('Linear Regression', LogisticRegression(), 1),
         ClassifierTest('Linear Regression', LogisticRegression(), 2),
         ClassifierTest('Linear Regression', LogisticRegression(), 3),
+        #ClassifierTest('KNeighborsClassifier', KNeighborsClassifier(3), 1), # Strange results
+        #ClassifierTest('SVC', SVC(kernel="linear", C=0.025), 2), # Always predict right, not matter n-gram, maybe it ignores it?
+        #ClassifierTest('SVC', SVC(gamma=2, C=1), 3), # Never works
+        #ClassifierTest('DecisionTreeClassifier', DecisionTreeClassifier(max_depth=5), 1), # Strange results
+        #ClassifierTest('GaussianNB', GaussianNB(), 1), # Doenst work...,
+        #ClassifierTest('SGD ', SGDClassifier(loss='hinge', penalty='l2',
+        #                                    alpha=1e-3, random_state=42,
+        #                                    max_iter=5, tol=None), 1) # Strange results
     ]
 
     for test_case in test_cases: #[:1]:
