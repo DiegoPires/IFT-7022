@@ -114,9 +114,9 @@ def main(verbose):
         ClassifierTest('SVC gamma auto', SVC(gamma='auto'), 2), # strange
         ClassifierTest('SVC gamma auto', SVC(gamma='auto'), 3), # strange
         
-        ClassifierTest('SVC linear', SVC(kernel="linear", C=0.025), 1), # This linear with 1 gram its better than the other class
-        ClassifierTest('SVC linear', SVC(kernel="linear", C=0.025), 2), # GOOD
-        ClassifierTest('SVC linear', SVC(kernel="linear", C=0.025), 3), # GOOD
+        ClassifierTest('SVC avec linear', SVC(kernel="linear", C=0.025), 1), # This linear with 1 gram its better than the other class
+        ClassifierTest('SVC avec linear', SVC(kernel="linear", C=0.025), 2), # GOOD
+        ClassifierTest('SVC avec linear', SVC(kernel="linear", C=0.025), 3), # GOOD
 
         ClassifierTest('SVC gamma 2', SVC(gamma=2, C=1), 1), # always english...
         ClassifierTest('SVC gamma 2', SVC(gamma=2, C=1), 2), # always english...
