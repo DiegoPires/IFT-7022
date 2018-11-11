@@ -1,0 +1,1 @@
+To switch to the Dev Channel, open the settings menu and choose the ‘About Chrome OS’ option. Inside of that menu, choose ‘Detailed Build Information,’ then ‘Change Channel.’ The final step is to choose ‘Developer channel.’

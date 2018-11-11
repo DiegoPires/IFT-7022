@@ -1,0 +1,2 @@
+A native web-based version of the Google Assistant is coming to all Chromebooks, and users can test it now by switching their OS to the latest developer channel version. 
+On Chrome OS, Google Assistant was a Pixelbook and the Pixel Slate exclusive until now. Read more at MobileSyrup.com: You can now enable Google Assistant on your Chromebook.

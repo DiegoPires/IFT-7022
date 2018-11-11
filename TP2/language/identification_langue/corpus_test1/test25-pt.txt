@@ -1,0 +1,7 @@
+O GPU Radeon Instinct MI60, em especial, está marcado como o acelerador de dupla precisão mais rápido do seu tipo. É capaz de entregar 7.4 teraflops quando trata dados de v´rgula flutuante de 64-bits.
+
+Esta nova placa vem equipada com memória HBM2 de banda larga (até 1TB/s) e pode trabalhar em grupos associados de até 4GPUs, graças aos seus links peer-to-peer de até 200GB/s.
+
+O MI60 e a sua construção de 7nm vai chegar aos centros de dados e à computação avançada antes do final de 2018 e o mais acessível MI50 deverá chegar mais tarde, no primeiro trimestre de 2019.
+
+Infelizmente este não é ainda o GPU de 7nm acessível a todos. É um marco por ser o primeiro GPU de 7nm a chegar. A concorrência ainda constrói os seus GPUs com tecnologia de 12nm e assim a AMD marca uma posição importante, estando preparada para a chegada massiva destes novos GPUs.

@@ -1,0 +1,3 @@
+Com os processadores de 7nm já bem implementados no mercado, em especial nos novos smartphones e nos seus SoCs, era hora desta tecnologia de construção ser alargada a outras áreas, em especial aos GPUs, onde o poder de processamento adicional era bem vindo.
+
+Muitas marcas pareciam bem colocadas para apresentar os seus primeiros produtos com esta nova forma de construção, mas foi a AMD a primeira a consegui-lo. As Radeon Instinct MI60 e MI50 foram agora apresentadas, mas infelizmente ainda não são para todos.
