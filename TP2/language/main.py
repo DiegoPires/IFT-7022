@@ -23,12 +23,20 @@ class ClassifierTest:
         self.name = name
         self.classifier = classifier
         self.ngram = ngram
+    def str_keys(self):
+        sb = []
+        for key in self.__dict__:
+            # TODO: this is not pythonic i guess...
+            if (key != 'classifier'):
+                sb.append("{key}".format(key=key, value=self.__dict__[key]))
+ 
+        return ' | '.join(sb)
     def __str__(self):
         sb = []
         for key in self.__dict__:
             # TODO: this is not pythonic i guess...
             if (key != 'classifier'):
-                sb.append("{key}={value}".format(key=key, value=self.__dict__[key]))
+                sb.append("{value}".format(key=key, value=self.__dict__[key]))
  
         return ' | '.join(sb)
 
@@ -75,38 +83,75 @@ def prepare_data():
 
     return texts, language
     
-def main():
+def main(verbose):
     
     # Data to train/test
     sentences, language = prepare_data()
-    tests = get_directory_content("identification_langue/corpus_test1/*.txt")
+    tests_language, tests_text = get_directory_content("identification_langue/corpus_test1/*.txt")
     
     # Use cases for test
     test_cases = [
-        ClassifierTest('Naive Bayes', MultinomialNB(), 1),
-        ClassifierTest('Naive Bayes', MultinomialNB(), 2),
-        ClassifierTest('Naive Bayes', MultinomialNB(), 3),
-        ClassifierTest('Linear Regression', LogisticRegression(), 1),
-        ClassifierTest('Linear Regression', LogisticRegression(), 2),
-        ClassifierTest('Linear Regression', LogisticRegression(), 3),
-        #ClassifierTest('KNeighborsClassifier', KNeighborsClassifier(3), 1), # Strange results
-        #ClassifierTest('SVC', SVC(kernel="linear", C=0.025), 2), # Always predict right, not matter n-gram, maybe it ignores it?
-        #ClassifierTest('SVC', SVC(gamma=2, C=1), 3), # Never works
-        #ClassifierTest('DecisionTreeClassifier', DecisionTreeClassifier(max_depth=5), 1), # Strange results
-        #ClassifierTest('GaussianNB', GaussianNB(), 1), # Doenst work...,
-        #ClassifierTest('SGD ', SGDClassifier(loss='hinge', penalty='l2',
-        #                                    alpha=1e-3, random_state=42,
-        #                                    max_iter=5, tol=None), 1) # Strange results
+        
+        ClassifierTest('MultinomialNB', MultinomialNB(), 1),
+        ClassifierTest('MultinomialNB', MultinomialNB(), 2),
+        ClassifierTest('MultinomialNB', MultinomialNB(), 3),
+        ClassifierTest('LogisticRegression', LogisticRegression(), 1),
+        ClassifierTest('LogisticRegression', LogisticRegression(), 2),
+        ClassifierTest('LogisticRegression', LogisticRegression(), 3),
+        
+        ClassifierTest('KNeighborsClassifier 3 neighbors', KNeighborsClassifier(3), 1), # Strange predictions
+        ClassifierTest('KNeighborsClassifier 3 neighbors', KNeighborsClassifier(3), 2), # Strange predictions
+        ClassifierTest('KNeighborsClassifier 3 neighbors', KNeighborsClassifier(3), 3), # Strange predictions
+        ClassifierTest('KNeighborsClassifier 5 neighbors', KNeighborsClassifier(5), 1), # Strange predictions
+        ClassifierTest('KNeighborsClassifier 5 neighbors', KNeighborsClassifier(5), 2), # Strange predictions
+        ClassifierTest('KNeighborsClassifier 5 neighbors', KNeighborsClassifier(5), 3), # Strange predictions
+        
+        ClassifierTest('Linear SVC', LinearSVC(random_state=0, tol=1e-5), 1), # -
+        ClassifierTest('Linear SVC', LinearSVC(random_state=0, tol=1e-5), 2), # GOOD
+        ClassifierTest('Linear SVC', LinearSVC(random_state=0, tol=1e-5), 3), # GOOD
+        
+        ClassifierTest('SVC gamma auto', SVC(gamma='auto'), 1), # strange
+        ClassifierTest('SVC gamma auto', SVC(gamma='auto'), 2), # strange
+        ClassifierTest('SVC gamma auto', SVC(gamma='auto'), 3), # strange
+        
+        ClassifierTest('SVC linear', SVC(kernel="linear", C=0.025), 1), # This linear with 1 gram its better than the other class
+        ClassifierTest('SVC linear', SVC(kernel="linear", C=0.025), 2), # GOOD
+        ClassifierTest('SVC linear', SVC(kernel="linear", C=0.025), 3), # GOOD
+
+        ClassifierTest('SVC gamma 2', SVC(gamma=2, C=1), 1), # always english...
+        ClassifierTest('SVC gamma 2', SVC(gamma=2, C=1), 2), # always english...
+        ClassifierTest('SVC gamma 2', SVC(gamma=2, C=1), 3), # always english...
+
+        ClassifierTest('DecisionTreeClassifier', DecisionTreeClassifier(max_depth=5), 1), # very bad
+        ClassifierTest('DecisionTreeClassifier', DecisionTreeClassifier(max_depth=5), 2), # Strange results
+        ClassifierTest('DecisionTreeClassifier', DecisionTreeClassifier(max_depth=5), 3), # Strange results
+        
+        ClassifierTest('SGDClassifier ', SGDClassifier(max_iter=1000), 1), # 
+        ClassifierTest('SGDClassifier ', SGDClassifier(max_iter=1000), 2), # GOOD
+        ClassifierTest('SGDClassifier ', SGDClassifier(max_iter=1000), 3), # GOOD      
+
+        ### ClassifierTest('GaussianNB', GaussianNB(), 1), # Doenst work... too dense error,
+                                                                    
     ]
 
-    for test_case in test_cases: #[:1]:
+    # Just to show header
+    headerClassifier = ClassifierTest('Header', None, 0)
+    print(headerClassifier.str_keys())
+
+    # tests our cases
+    for test_case in test_cases: #[:1]
         classifier = Classifier(test_case, language, sentences, verbose=False)
 
-        print("{}{}{}".format(bcolors.HEADER, test_case, bcolors.ENDC))
-
-        for test in tests:
+        predictions = []
+        for test in tests_text: 
             prediction = classifier.predict(test)
-            print ('# Prediction: {} | Text: {}'.format(prediction, test[:70].replace("\n", "")))
+            predictions.append(prediction[0])
+            if (verbose):
+                print ('# Prediction: {} | Text: {}'.format(prediction, test[:70].replace("\n", "")))
+            
+        mean = np.mean(np.array(predictions) == tests_language)
+        
+        print("{}{}{} | {}".format(bcolors.HEADER, test_case, bcolors.ENDC, mean))
     
 if __name__ == '__main__':  
-   main()
+   main(verbose=False)

@@ -1,6 +1,8 @@
 import glob
 import os
 import sys
+import re
+import numpy as np
 
 # https://stackoverflow.com/questions/287871/print-in-terminal-with-colors
 class bcolors:
@@ -21,10 +23,23 @@ def read_file(file):
 def read_directory(path):
     files = glob.glob(path)
     texts = []
+    language = []
     for name in files:
         with open(name, encoding = "ISO-8859-1") as f:
             texts.append(f.read())
-    return texts
+            language.append(get_language(name))
+    return np.array(language), texts
+
+def get_language(name):
+    lg = re.split('-|\.',name)[2]
+    if (lg == 'pt'):
+        return 'portuguese'
+    elif (lg == 'es'):
+        return 'spanish'
+    elif (lg == 'fr'):
+        return 'french'
+    elif (lg == 'en'):
+        return 'english'
 
 def get_complet_path(path):
     program_dir = os.path.dirname(__file__)
