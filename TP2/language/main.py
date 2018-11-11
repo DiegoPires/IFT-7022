@@ -106,9 +106,9 @@ def main(verbose):
         ClassifierTest('KNeighborsClassifier 5 neighbors', KNeighborsClassifier(5), 2), # Strange predictions
         ClassifierTest('KNeighborsClassifier 5 neighbors', KNeighborsClassifier(5), 3), # Strange predictions
         
-        ClassifierTest('Linear SVC', LinearSVC(random_state=0, tol=1e-5), 1), # -
-        ClassifierTest('Linear SVC', LinearSVC(random_state=0, tol=1e-5), 2), # GOOD
-        ClassifierTest('Linear SVC', LinearSVC(random_state=0, tol=1e-5), 3), # GOOD
+        ClassifierTest('LinearSVC', LinearSVC(random_state=0, tol=1e-5), 1), # -
+        ClassifierTest('LinearSVC', LinearSVC(random_state=0, tol=1e-5), 2), # GOOD
+        ClassifierTest('LinearSVC', LinearSVC(random_state=0, tol=1e-5), 3), # GOOD
         
         ClassifierTest('SVC gamma auto', SVC(gamma='auto'), 1), # strange
         ClassifierTest('SVC gamma auto', SVC(gamma='auto'), 2), # strange
