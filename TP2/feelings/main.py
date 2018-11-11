@@ -1,38 +1,41 @@
-import nltk
 import time
 import string
 import pprint
 from collections import Counter
 from utility import get_directory_content, bcolors #stuff not important are here
 
+import nltk
 from nltk import word_tokenize, pos_tag
 from nltk.corpus import stopwords, wordnet
 from nltk.stem.porter import PorterStemmer
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.classify import NaiveBayesClassifier
 
+from sklearn import metrics
+from sklearn.pipeline import Pipeline
+from sklearn.svm import LinearSVC
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
-from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn import metrics
 
 from operator import itemgetter
 
 import numpy as np
 
-# Silent pandas warnings for better reporting 
+# Silent numpy warnings for better reporting 
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
+# Stuff downloaded to make this work
 # nltk.download('punkt')
 # nltk.download('stopwords')
 # nltk.download('averaged_perceptron_tagger')
 # nltk.download('wordnet')
 
+# Helper to return the good tag of word/text
 class TreebankHelper:
     def __init__(self):
         pass
@@ -50,44 +53,6 @@ class TreebankHelper:
         pos_tag = nltk.tag.pos_tag([word])
         return self.get_wordnet_pos(pos_tag[0][1])
 
-# DataSet to be used for SkLearn classifiers
-class SentimentDataSet:
-    def __init__(self):
-        self.data = []
-        self.target = []
-
-# Class used to test all the scenarios of test for SkLearn
-# Some reminder about max_df and min_df = https://stackoverflow.com/questions/27697766/understanding-min-df-and-max-df-in-scikit-countvectorizer
-class ClassifierTestSet:
-    def __init__(self, name, classifier, stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, apply_stem=False, use_open_words=False):
-        self.name = name
-        self.classifier = classifier
-        self.stop_words = stop_words
-        self.min_df = min_df
-        self.max_df = max_df
-        self.use_Tfid = use_Tfid
-        self.apply_stem=apply_stem
-        self.use_open_words=use_open_words
-        self.allowed_tags = [wordnet.ADJ, wordnet.VERB, wordnet.NOUN, wordnet.ADV] if self.use_open_words else []
-
-    def str_keys(self):
-        sb = []
-        for key in self.__dict__:
-            # TODO: this is not pythonic i guess...
-            if (key != 'classifier'):
-                sb.append("{key}".format(key=key, value=self.__dict__[key]))
- 
-        return ' | '.join(sb)
-
-    def __str__(self):
-        sb = []
-        for key in self.__dict__:
-            # TODO: this is not pythonic i guess...
-            if (key != 'classifier'):
-                sb.append("{value}".format(key=key, value=self.__dict__[key]))
- 
-        return ' | '.join(sb)
-
 # Lot's of influence from these for the Naive Bayes
 # https://www.twilio.com/blog/2017/09/sentiment-analysis-python-messy-data-nltk.html
 # https://www.laurentluce.com/posts/twitter-sentiment-analysis-using-python-and-nltk/
@@ -95,7 +60,7 @@ class ClassifierTestSet:
 
 # This class is used to train NaiveBayesClassifier from NLTK package,
 # everything is done manually: steamming, lemming, stop_words, minimal, frequency of words, etc
-# BIGGEST DOWNPOINT: The training of process is VERY VERY slow (Up to 30 seconds)
+# BIGGEST DOWNPOINT: The training of process is VERY VERY slow (Up to 30 seconds) event if not everything is implemented
 class SentimentClassifier:
 
     def __init__(self, stemming, lemming, remove_stopwords, with_tagging):
@@ -207,6 +172,7 @@ class SentimentClassifier:
 
         return classification
 
+    # Validates if the prediction is what we really expect
     def validate_classification(self, classification, classification_should_be, verbose=False):
         if (classification == classification_should_be):
             msg = "{}## GOT IT RIGHT - {} {}".format(bcolors.OKBLUE, classification, bcolors.ENDC)
@@ -219,6 +185,7 @@ class SentimentClassifier:
             print(msg)
         return validation
 
+# Method used to test the SentimentClassifier class
 def classify_nltk_naive_bayes(negative_reviews, positive_reviews):
 
     # 80% of first entries as the training set
@@ -229,7 +196,7 @@ def classify_nltk_naive_bayes(negative_reviews, positive_reviews):
     test_set_positive = positive_reviews[int((.8)*len(positive_reviews)):]
     test_set_negative = negative_reviews[int((.8)*len(negative_reviews)):]
 
-    # Initialize everything
+    # Setup
     sentiClassifier = SentimentClassifier(
         stemming=True, 
         lemming=False, 
@@ -241,6 +208,7 @@ def classify_nltk_naive_bayes(negative_reviews, positive_reviews):
     
     sentiClassifier.create_bayes_classifier(verbose=False)
     
+    # Tests
     good_bayes_guess_positive = 0
     for review in test_set_positive:
         classification = sentiClassifier.classify_with_bayes(review)
@@ -257,7 +225,47 @@ def classify_nltk_naive_bayes(negative_reviews, positive_reviews):
         good_bayes_guess_positive, len(test_set_positive), 
         good_bayes_guess_negative, len(test_set_negative)))
     
-    # TODO
+# Class to be used for SkLearn classifiers that wants those parameters
+class SentimentDataSet:
+    def __init__(self):
+        self.data = []
+        self.target = []
+
+# Class used to test all the scenarios of test for SkLearn
+# Some reminder about max_df and min_df = https://stackoverflow.com/questions/27697766/understanding-min-df-and-max-df-in-scikit-countvectorizer
+class ClassifierTestSet:
+    def __init__(self, name, classifier, stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, apply_stem=False, apply_lemm=False, use_open_words=False, binary=False):
+        self.name = name
+        self.classifier = classifier
+        self.stop_words = stop_words
+        self.min_df = min_df
+        self.max_df = max_df
+        self.use_Tfid = use_Tfid
+        self.apply_stem = apply_stem
+        self.apply_lemm = apply_lemm
+        self.use_open_words = use_open_words
+        self.binary = binary
+        self.allowed_tags = [wordnet.ADJ, wordnet.VERB, wordnet.NOUN, wordnet.ADV] if self.use_open_words else []
+
+    # To return all properties concatenated to the report header
+    def str_keys(self):
+        sb = []
+        for key in self.__dict__:
+            # TODO: this is not pythonic i guess...
+            if (key != 'classifier'):
+                sb.append("{key}".format(key=key, value=self.__dict__[key]))
+ 
+        return ' | '.join(sb)
+
+    # To return all the properties values concatenated to the report
+    def __str__(self):
+        sb = []
+        for key in self.__dict__:
+            # TODO: this is not pythonic i guess...
+            if (key != 'classifier'):
+                sb.append("{value}".format(key=key, value=self.__dict__[key]))
+ 
+        return ' | '.join(sb)
 
 # Custom Vectorizer to be able to use Stemmer and filter open words   
 # Idea taken from https://stackoverflow.com/questions/36182502/add-stemming-support-to-countvectorizer-sklearn    
@@ -268,14 +276,15 @@ class CustomCountVectorizer(CountVectorizer):
                  stop_words=None, token_pattern=r"(?u)\b\w\w+\b",
                  ngram_range=(1, 1), analyzer='word',
                  max_df=1.0, min_df=1, max_features=None,
-                 vocabulary=None, binary=False, dtype=np.int64, apply_stem=False, allowed_tags=[]):
+                 vocabulary=None, binary=False, dtype=np.int64, apply_stem=False, apply_lemm=False, allowed_tags=[]):
 
         self.apply_stem = apply_stem
+        self.apply_lemm = apply_lemm
         self.allowed_tags = allowed_tags
 
-        #self.lemmatizer = WordNetLemmatizer()
         self.stemmer = PorterStemmer()
         self.treebank_helper = TreebankHelper()
+        self.lemmatizer = WordNetLemmatizer()
 
         super().__init__(input=input, encoding=encoding, decode_error=decode_error, strip_accents=strip_accents,
             lowercase=lowercase, preprocessor=preprocessor, tokenizer=tokenizer, stop_words=stop_words,
@@ -290,20 +299,33 @@ class CustomCountVectorizer(CountVectorizer):
         if (self.apply_stem and len(self.allowed_tags) > 0):
             analyser_result = lambda doc: (self.stemmer.stem(w) for w in analyzer(doc) if self.treebank_helper.get_wordnet_pos_word(w) in self.allowed_tags)
         elif (self.apply_stem and len(self.allowed_tags) == 0):
-            analyser_result = lambda doc: (self.stemmer.stem(w) for w in analyzer(doc))
-        elif (not self.apply_stem and len(self.allowed_tags) > 0):
+            analyser_result = lambda doc: (self.stemmer.stem(w) for w in analyzer(doc))        
+        if (not self.apply_stem and self.apply_lemm and len(self.allowed_tags) > 0):
+            analyser_result = lambda doc: (self.__apply_lemmtizer(w) for w in analyzer(doc) if self.treebank_helper.get_wordnet_pos_word(w) in self.allowed_tags)
+        elif (not self.apply_stem and self.apply_lemm and len(self.allowed_tags) == 0):
+            analyser_result = lambda doc: (self.__apply_lemmtizer(w) for w in analyzer(doc))
+        elif (not self.apply_stem and not self.apply_lemm and len(self.allowed_tags) > 0):
             analyser_result = lambda doc: (w for w in analyzer(doc) if self.treebank_helper.get_wordnet_pos_word(w) in self.allowed_tags )
         else:
             analyser_result = lambda doc: (w for w in analyzer(doc))
 
         return analyser_result
 
+    # TOO SLOW - Not very good as a implementation, because goes word by word...
+    def __apply_lemmtizer(self, word):
+        token_tag = nltk.pos_tag([word])
+        trebank_tag = self.treebank_helper.get_wordnet_pos(token_tag[0][1])
+        if (trebank_tag != None):
+            token = self.lemmatizer.lemmatize(token_tag[0][0].lower(), trebank_tag)
+        else:
+            token = self.lemmatizer.lemmatize(token_tag[0][0].lower())
+        return token
+
 # Most resources taken from http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
 
 # This class train and tests SkLearn classifiers
 class SkLearnClassifier():
     def __init__(self, data_train, data_test, target_train, target_test):
-        # split the data between the training and testing
         self.data_train = data_train
         self.data_test = data_test
         self.target_train = target_train
@@ -311,24 +333,27 @@ class SkLearnClassifier():
 
     def __create_pipeline(self, classifierTest):
 
-        # Tests of performance between custom and existant
-        if (classifierTest.apply_stem or classifierTest.use_open_words):
+        # Because the custom Vectorizer is more slow (POS_Tagging processing) we dont use it if you dont need
+        if (classifierTest.apply_stem or classifierTest.use_open_words or classifierTest.apply_lemm):
             count_vectorizer = CustomCountVectorizer(
                 strip_accents = 'unicode', 
                 stop_words = classifierTest.stop_words, 
                 lowercase = True, 
                 max_df = classifierTest.max_df, 
                 min_df = classifierTest.min_df,
-                apply_stem=classifierTest.apply_stem,
-                allowed_tags=classifierTest.allowed_tags
+                apply_stem = classifierTest.apply_stem,
+                apply_lemm= classifierTest.apply_lemm,
+                allowed_tags = classifierTest.allowed_tags,
+                binary = classifierTest.binary
             )
         else:
             count_vectorizer = CountVectorizer(
-                strip_accents = 'unicode', 
+                strip_accents = 'unicode',
                 stop_words = classifierTest.stop_words, 
                 lowercase = True, 
                 max_df = classifierTest.max_df, 
                 min_df = classifierTest.min_df,
+                binary=classifierTest.binary
             )
 
         self.pipeline = Pipeline([
@@ -358,8 +383,8 @@ class SkLearnClassifier():
         self.__predict()
         return self.__mean()
 
-    # Extract from https://bbengfort.github.io/tutorials/2016/05/19/text-classification-nltk-sckit-learn.html 
-    # just for evaluation purposes
+    # This method was extract from https://bbengfort.github.io/tutorials/2016/05/19/text-classification-nltk-sckit-learn.html 
+    # I dont clain ownership of it, its just for evaluation purposes, to see how the classifier is trained
     def show_most_informative_features(self, text=None, n=7):
         # Extract the vectorizer and the classifier from the pipeline
         vectorizer = self.pipeline.named_steps['vect']
@@ -408,6 +433,7 @@ class SkLearnClassifier():
 
         print("\n".join(output)) 
 
+# Method used to test all the cases for SkLearn Classifiers
 def classify_sklearn(negative_reviews, positive_reviews, verbose=False):
     # Create our data object with sentiments
     dataset = SentimentDataSet()
@@ -422,35 +448,36 @@ def classify_sklearn(negative_reviews, positive_reviews, verbose=False):
             train_size=0.80)
 
     classifiers = [
-            ClassifierTestSet('Naive Bayes', MultinomialNB(), 'english', min_df=0.3, max_df=0.5, apply_stem=False, use_open_words=True, use_Tfid=True), 
-            ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.3, max_df=0.5, apply_stem=False, use_open_words=True, use_Tfid=True), 
-            # This one was not required, just using for some quick test since its called one of the most efficients in the docs
-            ClassifierTestSet('SGD ', SGDClassifier(loss='hinge', penalty='l2',
-                                            alpha=1e-3, random_state=42,
-                                            max_iter=5, tol=None)),
-            ClassifierTestSet('SGD ', SGDClassifier(loss='hinge', penalty='l2',
-                                            alpha=1e-3, random_state=42,
-                                            max_iter=5, tol=None), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_Tfid=False),
-            ClassifierTestSet('SGD ', SGDClassifier(loss='hinge', penalty='l2',
-                                            alpha=1e-3, random_state=42,
-                                            max_iter=5, tol=None), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=False, use_Tfid=True),
-            ClassifierTestSet('SGD ', SGDClassifier(loss='hinge', penalty='l2',
-                                            alpha=1e-3, random_state=42,
-                                            max_iter=5, tol=None), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True, use_Tfid=True),
-            ClassifierTestSet('Naive Bayes', MultinomialNB()),
-            ClassifierTestSet('Naive Bayes', MultinomialNB(), 'english'), 
-            ClassifierTestSet('Naive Bayes', MultinomialNB(), 'english', min_df=0.01, max_df=0.9), 
-            ClassifierTestSet('Naive Bayes', MultinomialNB(), 'english', min_df=0.03, max_df=0.9),
-            ClassifierTestSet('Naive Bayes', MultinomialNB(), 'english', min_df=0.03, max_df=0.5), 
-            ClassifierTestSet('Naive Bayes', MultinomialNB(), None, min_df=0.03, max_df=0.5), 
-            ClassifierTestSet('Naive Bayes', MultinomialNB(), 'english', min_df=0.10, max_df=1.0, apply_stem=True, use_open_words=False), 
-            ClassifierTestSet('Naive Bayes', MultinomialNB(), 'english', min_df=0.01, max_df=0.9, apply_stem=True, use_open_words=True), 
-            ClassifierTestSet('Naive Bayes', MultinomialNB(), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True), 
-            ClassifierTestSet('Naive Bayes', MultinomialNB(), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True, use_Tfid=True), 
-            ClassifierTestSet('Naive Bayes', MultinomialNB(), 'english', min_df=0.01, max_df=0.9, apply_stem=False, use_open_words=True), 
-            ClassifierTestSet('Naive Bayes', MultinomialNB(), 'english', min_df=0.01, max_df=0.9, apply_stem=False, use_open_words=True, use_Tfid=True), 
-            ClassifierTestSet('Logistic Regression', LogisticRegression()),
-            ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english'), 
+            ClassifierTestSet('MultinomialNB', MultinomialNB()), # stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, apply_stem=False, use_open_words=False, binary=False
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english'),                     # remove open word of english
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), min_df=0.1, max_df=0.6),        # ignore frequency less than 10% and more than 60%
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), apply_stem=True),               # apply stemming
+            # ClassifierTestSet('MultinomialNB', MultinomialNB(), apply_lemm=True),             # TOO SLOW - apply lemmatizer
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), use_open_words=True),           # KIND OF SLOW TOO - just use open words
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), use_Tfid=True),                 # use Tfidf
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), binary=True),                   # use binary, not count
+
+            ClassifierTestSet('LogisticRegression', LogisticRegression()), # stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, apply_stem=False, use_open_words=False, binary=False
+            ClassifierTestSet('LogisticRegression', LogisticRegression(), 'english'),                     # remove open word of english
+            ClassifierTestSet('LogisticRegression', LogisticRegression(), min_df=0.1, max_df=0.6),        # ignore frequency less than 10% and more than 60%
+            ClassifierTestSet('LogisticRegression', LogisticRegression(), apply_stem=True),               # apply stemming
+            # ClassifierTestSet('LogisticRegression', LogisticRegression(), apply_lemm=True),             # TOO SLOW - apply lemmatizer
+            ClassifierTestSet('LogisticRegression', LogisticRegression(), use_open_words=True),           # KIND OF SLOW TOO - just use open words
+            ClassifierTestSet('LogisticRegression', LogisticRegression(), use_Tfid=True),                 # use Tfidf
+            ClassifierTestSet('LogisticRegression', LogisticRegression(), binary=True),                   # use binary, not count
+
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.01, max_df=0.9), 
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.03, max_df=0.9),
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.03, max_df=0.5), 
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), min_df=0.03, max_df=0.5), 
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.10, max_df=1.0, apply_stem=True), 
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.01, max_df=0.9, apply_stem=True, use_open_words=True), 
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True), 
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True, use_Tfid=True), 
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.01, max_df=0.9, use_open_words=True), 
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.3, max_df=0.5, use_open_words=True, use_Tfid=True), 
+            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.01, max_df=0.9, use_open_words=True, use_Tfid=True), 
+
             ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.01, max_df=0.9), 
             ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.03, max_df=0.9),
             ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.03, max_df=0.5), 
@@ -461,12 +488,20 @@ def classify_sklearn(negative_reviews, positive_reviews, verbose=False):
             ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True, use_Tfid=True), 
             ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.01, max_df=0.9, apply_stem=False, use_open_words=True), 
             ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.01, max_df=0.9, apply_stem=False, use_open_words=True, use_Tfid=True), 
+            ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.3, max_df=0.5, apply_stem=False, use_open_words=True, use_Tfid=True), 
+            # These one was not required, just using for some quick tests
+            
+            #ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000)),
+            #ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_Tfid=False),
+            #ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=False, use_Tfid=True),
+            #ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True, use_Tfid=True),
+            #ClassifierTestSet('SGD ', LinearSVC(random_state=0, tol=1e-5))
         ]
     
     headerClassifier = ClassifierTestSet('Header', None)
     print(headerClassifier.str_keys())
 
-    for classifier in classifiers[:2]: # Use two firsts for simple tests
+    for classifier in classifiers[:14]: # Use 14 firsts for simple tests, because they are the simple cases
         skLearnClassifier = SkLearnClassifier(data_train, data_test, target_train, target_test)
         mean = skLearnClassifier.mean_from_classifier(classifier)
 
