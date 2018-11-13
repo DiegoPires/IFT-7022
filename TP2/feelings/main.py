@@ -448,60 +448,93 @@ def classify_sklearn(negative_reviews, positive_reviews, verbose=False):
             train_size=0.80)
 
     classifiers = [
-            ClassifierTestSet('MultinomialNB', MultinomialNB()), # stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, apply_stem=False, use_open_words=False, binary=False
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english'),                     # remove open word of english
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), min_df=0.1, max_df=0.6),        # ignore frequency less than 10% and more than 60%
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), apply_stem=True),               # apply stemming
-            # ClassifierTestSet('MultinomialNB', MultinomialNB(), apply_lemm=True),             # TOO SLOW - apply lemmatizer
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), use_open_words=True),           # KIND OF SLOW TOO - just use open words
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), use_Tfid=True),                 # use Tfidf
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), binary=True),                   # use binary, not count
+        ClassifierTestSet('MultinomialNB', MultinomialNB()), # stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, apply_stem=False, use_open_words=False, binary=False
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english'),                     # remove open word of english
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), min_df=0.1, max_df=0.6),        # ignore frequency less than 10% and more than 60%
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), apply_stem=True),               # apply stemming
+        # ClassifierTestSet('MultinomialNB', MultinomialNB(), apply_lemm=True),             # TOO SLOW - apply lemmatizer
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), use_open_words=True),           # KIND OF SLOW TOO - just use open words
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), use_Tfid=True),                 # use Tfidf
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), binary=True),                   # use binary, not count
 
-            ClassifierTestSet('LogisticRegression', LogisticRegression()), # stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, apply_stem=False, use_open_words=False, binary=False
-            ClassifierTestSet('LogisticRegression', LogisticRegression(), 'english'),                     # remove open word of english
-            ClassifierTestSet('LogisticRegression', LogisticRegression(), min_df=0.1, max_df=0.6),        # ignore frequency less than 10% and more than 60%
-            ClassifierTestSet('LogisticRegression', LogisticRegression(), apply_stem=True),               # apply stemming
-            # ClassifierTestSet('LogisticRegression', LogisticRegression(), apply_lemm=True),             # TOO SLOW - apply lemmatizer
-            ClassifierTestSet('LogisticRegression', LogisticRegression(), use_open_words=True),           # KIND OF SLOW TOO - just use open words
-            ClassifierTestSet('LogisticRegression', LogisticRegression(), use_Tfid=True),                 # use Tfidf
-            ClassifierTestSet('LogisticRegression', LogisticRegression(), binary=True),                   # use binary, not count
+        ClassifierTestSet('LogisticRegression', LogisticRegression()), # stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, apply_stem=False, use_open_words=False, binary=False
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), 'english'),                     # remove open word of english
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), min_df=0.1, max_df=0.6),        # ignore frequency less than 10% and more than 60%
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), apply_stem=True),               # apply stemming
+        # ClassifierTestSet('LogisticRegression', LogisticRegression(), apply_lemm=True),             # TOO SLOW - apply lemmatizer
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), use_open_words=True),           # KIND OF SLOW TOO - just use open words
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), use_Tfid=True),                 # use Tfidf
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), binary=True),                   # use binary, not count
 
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.01, max_df=0.9), 
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.03, max_df=0.9),
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.03, max_df=0.5), 
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), min_df=0.03, max_df=0.5), 
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.10, max_df=1.0, apply_stem=True), 
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.01, max_df=0.9, apply_stem=True, use_open_words=True), 
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True), 
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True, use_Tfid=True), 
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.01, max_df=0.9, use_open_words=True), 
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.3, max_df=0.5, use_open_words=True, use_Tfid=True), 
-            ClassifierTestSet('MultinomialNB', MultinomialNB(), 'english', min_df=0.01, max_df=0.9, use_open_words=True, use_Tfid=True), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=False, apply_stem=False, use_open_words=False, binary=False), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.03, max_df=0.9, use_Tfid=False, apply_stem=False, use_open_words=False, binary=False),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.03, max_df=0.5, use_Tfid=False, apply_stem=False, use_open_words=False, binary=False), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None,      min_df=0.03, max_df=0.5, use_Tfid=False, apply_stem=False, use_open_words=False, binary=False), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.10, max_df=1.0, use_Tfid=False, apply_stem=True,  use_open_words=False, binary=False), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=False, apply_stem=True,  use_open_words=True, binary=False), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.01, max_df=1.0, use_Tfid=False, apply_stem=True,  use_open_words=True, binary=False), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.01, max_df=1.0, use_Tfid=True, apply_stem=True,  use_open_words=True, binary=False), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=False, apply_stem=False, use_open_words=True, binary=False), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.3, max_df=0.5,  use_Tfid=True, apply_stem=False, use_open_words=True, binary=False), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=True, apply_stem=False, use_open_words=True, binary=False), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=False, apply_stem=False, use_open_words=False, binary=True), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.03, max_df=0.9, use_Tfid=False, apply_stem=False, use_open_words=False, binary=True),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.03, max_df=0.5, use_Tfid=False, apply_stem=False, use_open_words=False, binary=True), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None,      min_df=0.03, max_df=0.5, use_Tfid=False, apply_stem=False, use_open_words=False, binary=True), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.10, max_df=1.0, use_Tfid=False, apply_stem=True,  use_open_words=False, binary=True), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=False, apply_stem=True,  use_open_words=True, binary=True), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.01, max_df=1.0, use_Tfid=False, apply_stem=True,  use_open_words=True, binary=True), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.01, max_df=1.0, use_Tfid=True, apply_stem=True,  use_open_words=True, binary=True), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=False, apply_stem=False, use_open_words=True, binary=True), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.3, max_df=0.5,  use_Tfid=True, apply_stem=False, use_open_words=True, binary=True), 
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=True, apply_stem=False, use_open_words=True, binary=True), 
 
-            ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.01, max_df=0.9), 
-            ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.03, max_df=0.9),
-            ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.03, max_df=0.5), 
-            ClassifierTestSet('Logistic Regression', LogisticRegression(), None, min_df=0.03, max_df=0.5), 
-            ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.10, max_df=1.0, apply_stem=True, use_open_words=False), 
-            ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.01, max_df=0.9, apply_stem=True, use_open_words=True), 
-            ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True), 
-            ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True, use_Tfid=True), 
-            ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.01, max_df=0.9, apply_stem=False, use_open_words=True), 
-            ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.01, max_df=0.9, apply_stem=False, use_open_words=True, use_Tfid=True), 
-            ClassifierTestSet('Logistic Regression', LogisticRegression(), 'english', min_df=0.3, max_df=0.5, apply_stem=False, use_open_words=True, use_Tfid=True), 
-            # These one was not required, just using for some quick tests
-            
-            #ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000)),
-            #ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_Tfid=False),
-            #ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=False, use_Tfid=True),
-            #ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True, use_Tfid=True),
-            #ClassifierTestSet('SGD ', LinearSVC(random_state=0, tol=1e-5))
-        ]
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=False, apply_stem=False, use_open_words=False, binary=False), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.03, max_df=0.9, use_Tfid=False, apply_stem=False, use_open_words=False, binary=False),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.03, max_df=0.5, use_Tfid=False, apply_stem=False, use_open_words=False, binary=False), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None,      min_df=0.03, max_df=0.5, use_Tfid=False, apply_stem=False, use_open_words=False, binary=False), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.10, max_df=1.0, use_Tfid=False, apply_stem=True,  use_open_words=False, binary=False), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=False, apply_stem=True,  use_open_words=True, binary=False), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.01, max_df=1.0, use_Tfid=False, apply_stem=True,  use_open_words=True, binary=False), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.01, max_df=1.0, use_Tfid=True, apply_stem=True,  use_open_words=True, binary=False), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=False, apply_stem=False, use_open_words=True, binary=False), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.3, max_df=0.5,  use_Tfid=True, apply_stem=False, use_open_words=True, binary=False), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=True, apply_stem=False, use_open_words=True, binary=False), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=False, apply_stem=False, use_open_words=False, binary=True), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.03, max_df=0.9, use_Tfid=False, apply_stem=False, use_open_words=False, binary=True),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.03, max_df=0.5, use_Tfid=False, apply_stem=False, use_open_words=False, binary=True), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None,      min_df=0.03, max_df=0.5, use_Tfid=False, apply_stem=False, use_open_words=False, binary=True), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.10, max_df=1.0, use_Tfid=False, apply_stem=True,  use_open_words=False, binary=True), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=False, apply_stem=True,  use_open_words=True, binary=True), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.01, max_df=1.0, use_Tfid=False, apply_stem=True,  use_open_words=True, binary=True), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.01, max_df=1.0, use_Tfid=True, apply_stem=True,  use_open_words=True, binary=True), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=False, apply_stem=False, use_open_words=True, binary=True), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.3, max_df=0.5,  use_Tfid=True, apply_stem=False, use_open_words=True, binary=True), 
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', min_df=0.01, max_df=0.9, use_Tfid=True, apply_stem=False, use_open_words=True, binary=True), 
+        
+        # These one was not required, just using for some tests
+        
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000)),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), 'english', min_df=0.3, max_df=0.6),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), 'english', min_df=0.01, max_df=1.0, apply_stem=False, use_open_words=False, use_Tfid=False, binary=False),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=False, use_Tfid=False, binary=False),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=False, use_Tfid=True, binary=False),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True, use_Tfid=True, binary=False),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True, use_Tfid=True, binary=True),
+        
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5)),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), 'english', min_df=0.3, max_df=0.6),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), 'english', min_df=0.01, max_df=1.0, apply_stem=False, use_open_words=False, use_Tfid=False, binary=False),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=False, use_Tfid=False, binary=False),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=False, use_Tfid=True, binary=False),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True, use_Tfid=True, binary=False),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), 'english', min_df=0.01, max_df=1.0, apply_stem=True, use_open_words=True, use_Tfid=True, binary=True),
+    ]
     
     headerClassifier = ClassifierTestSet('Header', None)
     print(headerClassifier.str_keys())
 
-    for classifier in classifiers[:14]: # Use 14 firsts for simple tests, because they are the simple cases
+    for classifier in classifiers: #[:14]: # Use 14 firsts for simple tests, because they are the simple cases
         skLearnClassifier = SkLearnClassifier(data_train, data_test, target_train, target_test)
         mean = skLearnClassifier.mean_from_classifier(classifier)
 
