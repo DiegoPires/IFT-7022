@@ -5,7 +5,7 @@ from operator import itemgetter
 
 from utility import get_complet_path, bcolors
 from sklearn_classifiers import SkLearnClassifier, ClassifierTestSet
-from keras_classifier import *
+from keras_classifier import SimpleKerasClassifier
 
 from sklearn.model_selection import train_test_split
 from sklearn.svm import LinearSVC
@@ -27,7 +27,7 @@ def get_train_data():
     texts = df["text"].values
     labels = df["label"].values
 
-    target_names = df.label.unique
+    target_names = df.label.unique()
     
     # Create our data object with sentiments
     data_train, data_test, target_train, target_test = train_test_split(
@@ -56,12 +56,16 @@ def get_predict_data():
 # Prepare data and call classifiers
 def main(verbose=False):
     data_train, data_test, target_train, target_test, target_names = get_train_data()
+    
     test_with_sklearn_classifiers(data_train, data_test, target_train, target_test, target_names, verbose)
-    test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose)
+    #test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose)
 
+# Train a neural network with Keras and predict the conversations without label
 def test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose=False):
-    pass 
+    
+    trainedClassifier = SimpleKerasClassifier(data_train, data_test, target_train, target_test, target_names, verbose)
 
+# Get best sklearn classifier using the test set and use it to predict the conversations without label
 def test_with_sklearn_classifiers(data_train, data_test, target_train, target_test, target_names, verbose=False):
 
     classifiers = [
@@ -133,4 +137,4 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
             text))
 
 if __name__ == '__main__':  
-   main(verbose=True)
+   main(verbose=False)
