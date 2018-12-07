@@ -3,9 +3,9 @@ import pandas as pd
 import numpy as np
 from operator import itemgetter
 
-from utility import get_complet_path, bcolors
+from utility import get_complet_path, bcolors, remove_keras_models
 from sklearn_classifiers import SkLearnClassifier, ClassifierTestSet
-from keras_classifier import SimpleKerasClassifier
+from keras_classifier import GetSimpleKerasClassifier, KerasClassifier
 
 from sklearn.model_selection import train_test_split
 from sklearn.svm import LinearSVC
@@ -54,16 +54,29 @@ def get_predict_data():
     return np.ndenumerate(values)
 
 # Prepare data and call classifiers
-def main(verbose=False):
+def main(verbose=False, remove_keras_models=False):
     data_train, data_test, target_train, target_test, target_names = get_train_data()
     
     #test_with_sklearn_classifiers(data_train, data_test, target_train, target_test, target_names, verbose)
-    test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose)
+    test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose, remove_keras_models)
 
 # Train a neural network with Keras and predict the conversations without label
-def test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose=False):
+def test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose=False, remove_models=False):
     
-    trainedClassifier = SimpleKerasClassifier(data_train, data_test, target_train, target_test, target_names, verbose)
+    remove_keras_models(remove_models)
+
+    results = []
+    results.append(GetSimpleKerasClassifier(data_train, data_test, target_train, target_test, target_names, verbose))
+    # TODO: Add more classifiers to evaluate
+
+    results.sort(key=lambda x: x.accuracy, reverse=True)
+    best_classifier = results[0]
+
+    print("{} ## The best keras classifier is: {} - {}{}".format(
+        bcolors.HEADER,
+        best_classifier.name,
+        best_classifier.accuracy,
+        bcolors.ENDC))
 
 # Get best sklearn classifier using the test set and use it to predict the conversations without label
 def test_with_sklearn_classifiers(data_train, data_test, target_train, target_test, target_names, verbose=False):

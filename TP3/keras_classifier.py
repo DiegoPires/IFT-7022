@@ -1,7 +1,7 @@
 from keras.models import Sequential
 from keras import layers
 from keras.utils import to_categorical
-from keras.models import model_from_json
+from keras.models import load_model
 
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.feature_extraction.text import CountVectorizer
@@ -9,9 +9,17 @@ from sklearn.feature_extraction.text import CountVectorizer
 from utility import get_complet_path
 from pathlib import Path
 
-def SimpleKerasClassifier(data_train, data_test, target_train, target_test, target_names, verbose=False):
-    classifier_name = 'simple'
-    path = get_complet_path('keras_models') + "/" + classifier_name + ".h5"
+class KerasClassifier:
+    loss = 0
+    accurary = 0
+    model = None
+    name = ''
+    def __init__(self, name):
+        self.name = name
+
+def GetSimpleKerasClassifier(data_train, data_test, target_train, target_test, target_names, verbose=False):
+    classifier = KerasClassifier('simple')
+    path = get_complet_path('keras_models') + "/" + classifier.name + ".h5"
 
     vectorizer = CountVectorizer()
     vectorizer.fit(data_train)
@@ -25,8 +33,8 @@ def SimpleKerasClassifier(data_train, data_test, target_train, target_test, targ
 
     input_dim = X_train.shape[1]  # Number of features
 
-    path_to_model = Path(get_complet_path('keras_models') + "/" + classifier_name +".json")
-    if (not path_to_model.is_file()):
+    # We save/load model to improve performance
+    if (not Path(path).is_file()):
         model = Sequential()
         model.add(layers.Dense(10, input_dim=input_dim, activation='relu'))
         model.add(layers.Dense(len(target_names), activation='softmax', kernel_initializer='uniform')) 
@@ -58,9 +66,9 @@ def SimpleKerasClassifier(data_train, data_test, target_train, target_test, targ
     if (verbose):
         print("Training Accuracy: {:.4f} ; Loss: {:.4f}".format(accuracy, loss))
     
-    loss, accuracy = model.evaluate(X_test, y_test, verbose=False)
-    
+    classifier.loss, classifier.accuracy = model.evaluate(X_test, y_test, verbose=False)
+     
     if (verbose):
-        print("Testing Accuracy:  {:.4f} ; Loss: {:.4f}".format(accuracy, loss))
+        print("Testing Accuracy:  {:.4f} ; Loss: {:.4f}".format(classifier.accuracy, classifier.loss))
 
-    return (model, accuracy)
+    return classifier

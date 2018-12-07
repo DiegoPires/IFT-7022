@@ -17,6 +17,12 @@ def get_complet_path(path):
 def get_directory_content(path):
     return read_directory(get_complet_path(path))
 
+def remove_keras_models(remove_models):
+    if (remove_models):
+        files = glob.glob(get_complet_path("keras_models") + '/*')
+        for f in files:
+            os.remove(f)
+
 # https://stackoverflow.com/questions/287871/print-in-terminal-with-colors
 class bcolors:
     HEADER = '\033[95m'
