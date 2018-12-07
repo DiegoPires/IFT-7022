@@ -8,3 +8,14 @@ L'orientation de ce cours est de familiariser le participant à des techniques d
 ## Informations
 
 Cours passé à l'autonme 2018
+
+### Virtualenv
+Started using virtualenv as a recommendation to make Tensorflow work for TP3
+
+- Create as `virtualenv ./venv`
+- Exported with `pip freeze > requirements.txt`
+- Activate with `source ./venv/bin/activate`
+- Desactivate with `deactivate`
+- Install requirements `$ pip install -r requirements.txt --no-index --find-links file:///tmp/packages`
+
+On VSCode should go `Shift + cmd + p` and search `python: select interpreter`. Chose the venv environment to make it run with VSCode

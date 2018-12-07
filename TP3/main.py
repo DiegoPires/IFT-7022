@@ -57,8 +57,8 @@ def get_predict_data():
 def main(verbose=False):
     data_train, data_test, target_train, target_test, target_names = get_train_data()
     
-    test_with_sklearn_classifiers(data_train, data_test, target_train, target_test, target_names, verbose)
-    #test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose)
+    #test_with_sklearn_classifiers(data_train, data_test, target_train, target_test, target_names, verbose)
+    test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose)
 
 # Train a neural network with Keras and predict the conversations without label
 def test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose=False):
@@ -137,4 +137,4 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
             text))
 
 if __name__ == '__main__':  
-   main(verbose=False)
+   main(verbose=True)
