@@ -11,6 +11,7 @@ from pathlib import Path
 
 def SimpleKerasClassifier(data_train, data_test, target_train, target_test, target_names, verbose=False):
     classifier_name = 'simple'
+    path = get_complet_path('keras_models') + "/" + classifier_name + ".h5"
 
     vectorizer = CountVectorizer()
     vectorizer.fit(data_train)
@@ -35,59 +36,31 @@ def SimpleKerasClassifier(data_train, data_test, target_train, target_test, targ
                     optimizer='adam', 
                     metrics=['accuracy'])
         
-        save_model(classifier_name, model, verbose)
+        if (verbose):
+            model.summary()
+
+        history = model.fit(X_train, y_train,
+                        epochs=100,
+                        verbose=False,
+                        #validation_data=(X_test, y_test),
+                        batch_size=100)
+    
+        model.save(path)
+
+        if (verbose):
+            print (history)
+
     else:
-        model = load_model(classifier_name, verbose)
-
-    if (verbose):
-        model.summary()
-
-    history = model.fit(X_train, y_train,
-                     epochs=100,
-                     verbose=False,
-                     #validation_data=(X_test, y_test),
-                     batch_size=100)
-
-    if (verbose):
-        print ("history" + history)
+        model = load_model(path)
 
     loss, accuracy = model.evaluate(X_train, y_train, verbose=False)
     
     if (verbose):
-        print("Training Accuracy: {:.4f}".format(accuracy))
+        print("Training Accuracy: {:.4f} ; Loss: {:.4f}".format(accuracy, loss))
     
     loss, accuracy = model.evaluate(X_test, y_test, verbose=False)
     
     if (verbose):
-        print("Testing Accuracy:  {:.4f}".format(accuracy))
+        print("Testing Accuracy:  {:.4f} ; Loss: {:.4f}".format(accuracy, loss))
 
     return (model, accuracy)
-
-def save_model(name, model, verbose):
-    path = get_complet_path('keras_models')
-
-    # serialize model to JSON
-    model_json = model.to_json()
-    with open(path +"/" + name + ".json", "w") as json_file:
-        json_file.write(model_json)
-
-    # serialize weights to HDF5
-    model.save_weights(path + "/" + name + ".h5")
-
-    if (verbose):
-        print("Saved model '" + name + "' to disk")
-
-def load_model(name, verbose):
-    path = get_complet_path('keras_models') 
-
-    json_file = open(path + "/" + name + ".json", 'r')
-    loaded_model_json = json_file.read()
-    json_file.close()
-    loaded_model = model_from_json(loaded_model_json)
-    # load weights into new model
-    loaded_model.load_weights(path + "/" + name + ".h5")
-    
-    if (verbose):
-        print("Loaded model '" + name + "' from disk")
-
-    return loaded_model
