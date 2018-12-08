@@ -16,6 +16,7 @@ from classifier import Classifier
 
 import numpy as np
 
+# Class used to encapsulate each Keras test, so it can be testable easily later
 class KerasClassifier(Classifier):
     loss = 0
     accurary = 0
@@ -23,8 +24,9 @@ class KerasClassifier(Classifier):
     name = ''
     vectorizer = None
     labels = []
-    def __init__(self, name, vectorizer, labels):
+    def __init__(self, name, model, vectorizer, labels):
         self.name = name
+        self.model = model
         self.vectorizer = vectorizer
         self.labels = labels
         self.labels.sort()
@@ -39,34 +41,69 @@ class KerasClassifier(Classifier):
     def __str__(self):
         return self.name
 
-def RemoveSavedKerasModels(remove_models):
+# Small DTO to facilitate passing parameters to methods. It vectorize our data to be able to use with Keras
+class Vectorized():
+    def __init__(self, data_train, data_test, target_train, target_test, target_names):
+        self.vectorizer = CountVectorizer()
+        self.vectorizer.fit(data_train)
+
+        self.X_train = self.vectorizer.transform(data_train)
+        self.X_test  = self.vectorizer.transform(data_test)
+        
+        # Need to transforms the texts in number to be able to use with Keras
+        labelencoder_y_1 = LabelEncoder()
+        self.y_train = to_categorical(labelencoder_y_1.fit_transform(target_train))
+        self.y_test =  to_categorical(labelencoder_y_1.fit_transform(target_test))
+
+        self.input_dim = self.X_train.shape[1]  # Number of features
+
+        self.target_names = target_names
+        
+# Remove all saved models from the directory
+def remove_saved_keras_models(remove_models):
     if (remove_models):
         files = glob.glob(get_complet_path("keras_models") + '/*')
         for f in files:
             os.remove(f)
 
-def GetSimpleKerasClassifier(data_train, data_test, target_train, target_test, target_names, verbose=False):
-    vectorizer = CountVectorizer()
-    vectorizer.fit(data_train)
-    
-    classifier = KerasClassifier('simple', vectorizer, target_names)
-    path = get_complet_path('keras_models') + "/" + classifier.name + ".h5"
-    
-    X_train = vectorizer.transform(data_train)
-    X_test  = vectorizer.transform(data_test)
-    
-    # The only way to transform the output from text into number, the only way to train our model
-    labelencoder_y_1 = LabelEncoder()
-    y_train = to_categorical(labelencoder_y_1.fit_transform(target_train))
-    y_test =  to_categorical(labelencoder_y_1.fit_transform(target_test))
-
-    input_dim = X_train.shape[1]  # Number of features
+# Get saved file from model if exists
+def get_saved_model(name):
+    model = None
+    path = get_complet_path('keras_models') + "/" + name + ".h5"
 
     # We save/load model to improve performance
-    if (not Path(path).is_file()):
+    if (Path(path).is_file()):
+        model = load_model(path)
+
+    return model, path
+
+# return a KerasClassifier from a trained model
+def get_keras_classifier(name, model, vectorize_data, verbose):
+
+    classifier = KerasClassifier(name, model, vectorize_data.vectorizer, vectorize_data.target_names)
+    
+    loss, accuracy = model.evaluate(vectorize_data.X_train, vectorize_data.y_train, verbose=verbose)
+    if (verbose):
+        print("Training Accuracy: {:.4f} ; Loss: {:.4f}".format(accuracy, loss))
+    
+    classifier.loss, classifier.accuracy = model.evaluate(vectorize_data.X_test, vectorize_data.y_test, verbose=verbose)
+    if (verbose):
+        print("Testing Accuracy:  {:.4f} ; Loss: {:.4f}".format(classifier.accuracy, classifier.loss))
+
+    return classifier
+
+# Create a simple keras classifier with one layer
+# This example does not have a hidden layer, just input and output
+def get_simple_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose=False):
+    name = 'simple'
+
+    vectorize_data = Vectorized(data_train, data_test, target_train, target_test, target_names)
+
+    model, path = get_saved_model(name)
+    if (model == None):
         model = Sequential()
-        model.add(layers.Dense(10, input_dim=input_dim, activation='relu'))
-        model.add(layers.Dense(len(target_names), activation='softmax', kernel_initializer='uniform')) 
+        model.add(layers.Dense(10, input_dim=vectorize_data.input_dim, activation='relu'))
+        model.add(layers.Dense(len(vectorize_data.target_names), activation='softmax', kernel_initializer='uniform')) 
 
         # categorial is the way to go for multiple possible categorys as results, instead of binary
         model.compile(loss='categorical_crossentropy',  
@@ -76,10 +113,10 @@ def GetSimpleKerasClassifier(data_train, data_test, target_train, target_test, t
         if (verbose):
             model.summary()
 
-        history = model.fit(X_train, y_train,
+        history = model.fit(vectorize_data.X_train, vectorize_data.y_train,
                         epochs=100,
-                        verbose=False,
-                        validation_data=(X_test, y_test),
+                        verbose=verbose,
+                        validation_data=(vectorize_data.X_test, vectorize_data.y_test),
                         batch_size=100)
     
         model.save(path)
@@ -87,19 +124,4 @@ def GetSimpleKerasClassifier(data_train, data_test, target_train, target_test, t
         if (verbose):
             print (history)
 
-    else:
-        model = load_model(path)
-
-    loss, accuracy = model.evaluate(X_train, y_train, verbose=False)
-    
-    if (verbose):
-        print("Training Accuracy: {:.4f} ; Loss: {:.4f}".format(accuracy, loss))
-    
-    classifier.loss, classifier.accuracy = model.evaluate(X_test, y_test, verbose=False)
-     
-    if (verbose):
-        print("Testing Accuracy:  {:.4f} ; Loss: {:.4f}".format(classifier.accuracy, classifier.loss))
-
-    classifier.model = model
-
-    return classifier
+    return get_keras_classifier(name, model, vectorize_data, verbose)

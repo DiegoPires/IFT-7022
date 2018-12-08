@@ -5,7 +5,7 @@ from operator import itemgetter
 
 from utility import get_complet_path, bcolors
 from sklearn_classifiers import SkLearnClassifier, ClassifierTestSet
-from keras_classifier import GetSimpleKerasClassifier, KerasClassifier, RemoveSavedKerasModels
+from keras_classifier import get_simple_keras_classifier, KerasClassifier, remove_saved_keras_models
 
 from sklearn.model_selection import train_test_split
 from sklearn.svm import LinearSVC
@@ -104,10 +104,10 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
 # Train multiple keras classifiers differents, takes the best one and predict the texts without label
 def test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose=False, remove_models=False):
     
-    RemoveSavedKerasModels(remove_models)
+    remove_saved_keras_models(remove_models)
 
     results = []
-    results.append(GetSimpleKerasClassifier(data_train, data_test, target_train, target_test, target_names, verbose))
+    results.append(get_simple_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose))
     # TODO: Add more classifiers to evaluate
 
     return predict_with_best(results)
@@ -117,11 +117,10 @@ def predict_with_best(results):
     results.sort(key=lambda x: x.accuracy, reverse=True)
     best_classifier = results[0]
 
-    print("\n\n{}## The best {} is: {} - {}{}".format(
+    print("\n\n{}## The best {} is: {} {}".format(
         bcolors.HEADER,
         type(best_classifier),
         best_classifier,
-        results[0],
         bcolors.ENDC))
 
     predictions = []
@@ -139,11 +138,11 @@ def predict_with_best(results):
     return np.array(predictions)
 
 # Prepare data and call classifiers
-def main(verbose=False, removeSavedKerasModels=False):
+def main(verbose=False, remove_saved_keras_models=False):
     data_train, data_test, target_train, target_test, target_names = get_train_data()
     
-    sk_predictions = test_with_sklearn_classifiers(data_train, data_test, target_train, target_test, target_names, verbose)
-    ke_predictions = test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose, removeSavedKerasModels)
+    sk_predictions = [] #test_with_sklearn_classifiers(data_train, data_test, target_train, target_test, target_names, verbose)
+    ke_predictions = test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose, remove_saved_keras_models)
 
     mean_between_results = np.mean(sk_predictions == ke_predictions)
 
@@ -154,4 +153,4 @@ def main(verbose=False, removeSavedKerasModels=False):
             ))
 
 if __name__ == '__main__':  
-   main(verbose=False, removeSavedKerasModels=False) # TODO: Change this to receive args from command prompt
+   main(verbose=False, remove_saved_keras_models=False) # TODO: Change this to receive args from command prompt
