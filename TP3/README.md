@@ -19,3 +19,14 @@ Dans votre rapport, vous devriez aborder les points suivants :
 
 ## À remettre : 
 Votre code et votre rapport. 
+
+### Virtualenv
+Started using virtualenv as a recommendation to make Tensorflow work for TP3
+
+- Create as `virtualenv ./env`
+- Exported with `pip freeze > requirements.txt`
+- Activate with `source ./venv/bin/activate`
+- Desactivate with `deactivate`
+- Install requirements `$ pip install -r requirements.txt`
+
+On VSCode should go `Shift + cmd + p` and search `python: select interpreter`. Chose the `env` environment to make it run with VSCode
