@@ -2,9 +2,9 @@ import os
 import glob
 
 from keras.models import Sequential
-from keras import layers
 from keras.utils import to_categorical
 from keras.models import load_model
+from keras.layers import Dense, Dropout, Activation
 
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.feature_extraction.text import CountVectorizer
@@ -104,6 +104,41 @@ def get_simple_keras_classifier(data_train, data_test, target_train, target_test
         model = Sequential()
         model.add(layers.Dense(10, input_dim=vectorize_data.input_dim, activation='relu'))
         model.add(layers.Dense(len(vectorize_data.target_names), activation='softmax', kernel_initializer='uniform')) 
+
+        # categorial is the way to go for multiple possible categorys as results, instead of binary
+        model.compile(loss='categorical_crossentropy',  
+                    optimizer='adam', 
+                    metrics=['accuracy'])
+        
+        if (verbose):
+            model.summary()
+
+        history = model.fit(vectorize_data.X_train, vectorize_data.y_train,
+                        epochs=100,
+                        verbose=verbose,
+                        validation_data=(vectorize_data.X_test, vectorize_data.y_test),
+                        batch_size=100)
+    
+        model.save(path)
+
+        if (verbose):
+            print (history)
+
+    return get_keras_classifier(name, model, vectorize_data, verbose)
+
+def get_denser_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose=False):
+    name = 'denser'
+
+    vectorize_data = Vectorized(data_train, data_test, target_train, target_test, target_names)
+
+    model, path = get_saved_model(name)
+    if (model == None):
+        model = Sequential()
+        model.add(Dense(512, input_dim=vectorize_data.input_dim, activation='relu'))
+        model.add(Dropout(0.5)) # To avoid overfitting
+        model.add(Dense(256, activation='sigmoid'))
+        model.add(Dropout(0.5)) # To avoid overfitting
+        model.add(Dense(len(vectorize_data.target_names), activation='softmax', kernel_initializer='uniform')) 
 
         # categorial is the way to go for multiple possible categorys as results, instead of binary
         model.compile(loss='categorical_crossentropy',  

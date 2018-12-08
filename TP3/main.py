@@ -5,7 +5,7 @@ from operator import itemgetter
 
 from utility import get_complet_path, bcolors
 from sklearn_classifiers import SkLearnClassifier, ClassifierTestSet
-from keras_classifier import get_simple_keras_classifier, KerasClassifier, remove_saved_keras_models
+from keras_classifier import *
 
 from sklearn.model_selection import train_test_split
 from sklearn.svm import LinearSVC
@@ -107,8 +107,8 @@ def test_with_keras_classifier(data_train, data_test, target_train, target_test,
     remove_saved_keras_models(remove_models)
 
     results = []
-    results.append(get_simple_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose))
-    # TODO: Add more classifiers to evaluate
+    #results.append(get_simple_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose))
+    results.append(get_denser_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose))
 
     return predict_with_best(results)
 
