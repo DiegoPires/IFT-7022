@@ -18,6 +18,8 @@ from operator import itemgetter
 
 import numpy as np
 
+from classifier import Classifier
+
 # Silent numpy warnings for better reporting 
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
@@ -38,7 +40,6 @@ class ClassifierTestSet:
     def str_keys(self):
         sb = []
         for key in self.__dict__:
-            # TODO: this is not pythonic i guess...
             if (key != 'classifier'):
                 sb.append("{key}".format(key=key, value=self.__dict__[key]))
  
@@ -48,7 +49,6 @@ class ClassifierTestSet:
     def __str__(self):
         sb = []
         for key in self.__dict__:
-            # TODO: this is not pythonic i guess...
             if (key != 'classifier'):
                 sb.append("{value}".format(key=key, value=self.__dict__[key]))
  
@@ -57,7 +57,7 @@ class ClassifierTestSet:
 # Most resources taken from http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
 
 # This class train and tests SkLearn classifiers
-class SkLearnClassifier():
+class SkLearnClassifier(Classifier):
     def __init__(self, data_train, data_test, target_train, target_test, target_names):
         self.data_train = data_train
         self.data_test = data_test
@@ -94,19 +94,31 @@ class SkLearnClassifier():
         self.predicted = self.pipeline.predict(self.data_test)
 
     def __mean(self):
-        return np.mean(self.predicted == self.target_test)
+        self.accuracy = np.mean(self.predicted == self.target_test)
 
     def show_analyses(self):
         print(metrics.classification_report(self.target_test, self.predicted, target_names=['angry','sad', 'happy', 'others']))
 
-    def mean_from_classifier(self, classifierTest):
+    def train_classifier(self, classifierTest, verbose):
         self.__create_pipeline(classifierTest)
         self.__predict()
-        return self.__mean()
+        self.__mean()
+
+        if (verbose):
+            print("{} | {}{}{}".format( 
+                self.classifier,
+                bcolors.BOLD,
+                self.accuracy,
+                bcolors.ENDC))
+            #skLearnClassifier.show_most_informative_features(n=5)
+            #skLearnClassifier.show_analyses()
 
     def predict(self, text):
         test_text = np.array([text])
         return self.pipeline.predict(test_text)
+
+    def __str__(self):
+        return str(self.classifier)
 
     # This method was extract from https://bbengfort.github.io/tutorials/2016/05/19/text-classification-nltk-sckit-learn.html 
     # I dont clain ownership of it, its just for evaluation purposes, to see how the classifier is trained
