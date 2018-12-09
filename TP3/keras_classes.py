@@ -46,12 +46,12 @@ class KerasClassifier(Classifier):
         self.labels.sort()
         self.loss, self.accuracy = self.get_loss_and_accuracy(model, vectorize_data, verbose)
 
-        #TODO: if (verbose):
-        print("{} | {}{}{}".format( 
-            self.name,
-            bcolors.BOLD,
-            self.accuracy,
-            bcolors.ENDC))
+        if (verbose):
+            print("{} | {}{}{}".format( 
+                self.name,
+                bcolors.BOLD,
+                self.accuracy,
+                bcolors.ENDC))
         
     def get_loss_and_accuracy(self, model, vectorize_data, verbose):
         loss, accuracy = model.evaluate(vectorize_data.X_train, vectorize_data.y_train, verbose=verbose)

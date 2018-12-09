@@ -17,7 +17,19 @@ def get_complet_path(path):
 def get_directory_content(path):
     return read_directory(get_complet_path(path))
 
+def delete_folder_content(path):
+    files = glob.glob(path + '/*')
+    for f in files:
+        os.remove(f)
+    
+def clean_results():
+    keras_classifiers_path = get_complet_path('results/keras_classifiers')
+    sklearn_classifiers_path = get_complet_path('results/sklearn_classifiers')
+    results_path = get_complet_path('results')
 
+    delete_folder_content(keras_classifiers_path)
+    delete_folder_content(sklearn_classifiers_path)
+    delete_folder_content(results_path)
 
 # https://stackoverflow.com/questions/287871/print-in-terminal-with-colors
 class bcolors:

@@ -17,6 +17,8 @@ from keras_classes import KerasClassifierWithVectorizer, KerasClassifierWithToke
 
 import numpy as np
 
+# A lot of good stuff from here: https://realpython.com/python-keras-text-classification/#one-hot-encoding
+
 # Remove all saved models from the directory
 def remove_saved_keras_models(remove_models):
     if (remove_models):

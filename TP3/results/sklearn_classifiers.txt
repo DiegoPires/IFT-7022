@@ -1,0 +1,485 @@
+classifier|accuracy
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.7397214854111406
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.5160809018567639
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.5160809018567639
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.5056366047745358
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.6163793103448276
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.6153846153846154
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.7302718832891246
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.49187665782493367
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.49187665782493367
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.6452254641909815
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.6450596816976127
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.7299403183023873
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.5159151193633952
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.5159151193633952
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.5056366047745358
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.5792440318302388
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.5770888594164456
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.7102122015915119
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.49187665782493367
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.49187665782493367
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.6067639257294429
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)|0.6024535809018567
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.7882957559681698
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.519893899204244
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.519893899204244
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.5087864721485411
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.7758620689655172
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.7826591511936339
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.7634283819628647
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.4946949602122016
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.4946949602122016
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.7508289124668435
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.7622679045092838
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.8012267904509284
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.5207228116710876
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.5207228116710876
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.5087864721485411
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.7770225464190982
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.7811671087533156
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.7692307692307693
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.4946949602122016
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.4946949602122016
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.7571286472148541
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False)|0.7612732095490716
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.7924403183023873
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.5157493368700266
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.5038129973474801
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.5009946949602122
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.7773541114058355
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.7816644562334217
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.7692307692307693
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.4937002652519894
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.49403183023872677
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.7611074270557029
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.7647546419098143
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.7972480106100795
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.5144230769230769
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.5170755968169761
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.4960212201591512
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.7934350132625995
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.7977453580901857
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.7705570291777188
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.4961870026525199
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.49353448275862066
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.7692307692307693
+SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+       early_stopping=False, epsilon=0.1, eta0=0.0, fit_intercept=True,
+       l1_ratio=0.15, learning_rate='optimal', loss='hinge', max_iter=1000,
+       n_iter=None, n_iter_no_change=5, n_jobs=None, penalty='l2',
+       power_t=0.5, random_state=None, shuffle=True, tol=None,
+       validation_fraction=0.1, verbose=0, warm_start=False)|0.7717175066312998
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.763262599469496
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.5207228116710876
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.5207228116710876
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.5064655172413793
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.7795092838196287
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.784316976127321
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.7374005305039788
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.4948607427055703
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.4948607427055703
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.7438660477453581
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.7561339522546419
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.792606100795756
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.5208885941644562
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.5208885941644562
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.5064655172413793
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.8055371352785146
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.8070291777188329
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.7546419098143236
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.4948607427055703
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.4948607427055703
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.7617705570291777
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=1e-05, verbose=0)|0.7667440318302388
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.7536472148541115
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.49452917771883287
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.49452917771883287
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.5828912466843501
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.590683023872679
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.7259615384615384
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.49353448275862066
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.49353448275862066
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.6022877984084881
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.6128978779840849
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.7873010610079576
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.5044761273209549
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.5044761273209549
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.5008289124668435
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4937002652519894
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.7402188328912467
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.49353448275862066
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.49353448275862066
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.5311671087533156
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.5147546419098143
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085
+SVC(C=0.025, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='rbf', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)|0.4925397877984085

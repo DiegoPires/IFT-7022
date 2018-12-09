@@ -24,6 +24,8 @@ from classifier import Classifier
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
+# Some good stuff to be tested from here (But still not used): https://zablo.net/blog/post/twitter-sentiment-analysis-python-scikit-word2vec-nltk-xgboost
+
 # Class used to test all the scenarios of test for SkLearn
 # Some reminder about max_df and min_df = https://stackoverflow.com/questions/27697766/understanding-min-df-and-max-df-in-scikit-countvectorizer
 class ClassifierTestSet:
