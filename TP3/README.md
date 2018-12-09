@@ -30,3 +30,9 @@ Started using virtualenv as a recommendation to make Tensorflow work for TP3
 - Install requirements `$ pip install -r requirements.txt`
 
 On VSCode should go `Shift + cmd + p` and search `python: select interpreter`. Chose the `env` environment to make it run with VSCode
+
+### Executing the code
+
+On VSCode just click right on the main.py and chose `Run python file on terminal`.
+
+Or in the command prompt run `python3 <path_to_IFT-7022>/TP3/main.py` according to where the code was downloaded

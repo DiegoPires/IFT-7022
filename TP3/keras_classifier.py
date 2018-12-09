@@ -13,7 +13,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from utility import get_complet_path
 from pathlib import Path
 
-from keras_classes import KerasClassifierWithVectorizer, KerasClassifierWithTokenizer, Vectorized
+from keras_classes import KerasClassifierWithVectorizer, KerasClassifierWithTokenizer, Vectorized, CountVectorizerDTO, DataDTO, KerasTokenizerDTO
 
 import numpy as np
 
@@ -37,17 +37,19 @@ def get_saved_model(name):
 
 # Create a simple keras classifier with one layer
 # This example does not have a hidden layer, just input and output
-def get_simple_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose=False):
-    name = 'simple'
+def get_simple_keras_classifier(name, data_dto, count_vectorizer_dto=None, verbose=False):
 
-    vectorize_data = Vectorized(data_train, data_test, target_train, target_test, target_names)
-    vectorize_data.initialize_with_count_vectorizer()
+    if count_vectorizer_dto == None:
+        count_vectorizer_dto = CountVectorizerDTO()
+
+    vectorize_data = Vectorized(data_dto)
+    vectorize_data.initialize_with_count_vectorizer(count_vectorizer_dto)
 
     model, path = get_saved_model(name)
     if (model == None):
         model = Sequential()
         model.add(Dense(10, input_dim=vectorize_data.input_dim, activation='relu'))
-        model.add(Dense(len(vectorize_data.target_names), activation='softmax', kernel_initializer='uniform')) 
+        model.add(Dense(len(vectorize_data.data_dto.target_names), activation='softmax', kernel_initializer='uniform')) 
 
         # categorial is the way to go for multiple possible categorys as results, instead of binary
         model.compile(loss='categorical_crossentropy',  
@@ -70,11 +72,13 @@ def get_simple_keras_classifier(data_train, data_test, target_train, target_test
 
     return KerasClassifierWithVectorizer(name, model, vectorize_data, verbose)
 
-def get_denser_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose=False):
-    name = 'denser'
+def get_denser_keras_classifier(name, data_dto, count_vectorizer_dto=None, verbose=False):
 
-    vectorize_data = Vectorized(data_train, data_test, target_train, target_test, target_names)
-    vectorize_data.initialize_with_count_vectorizer()
+    if count_vectorizer_dto == None:
+        count_vectorizer_dto = CountVectorizerDTO()
+
+    vectorize_data = Vectorized(data_dto)
+    vectorize_data.initialize_with_count_vectorizer(count_vectorizer_dto)
 
     model, path = get_saved_model(name)
     if (model == None):
@@ -83,7 +87,7 @@ def get_denser_keras_classifier(data_train, data_test, target_train, target_test
         model.add(Dropout(0.5)) # To avoid overfitting
         model.add(Dense(256, activation='sigmoid'))
         model.add(Dropout(0.5)) # To avoid overfitting
-        model.add(Dense(len(vectorize_data.target_names), activation='softmax', kernel_initializer='uniform')) 
+        model.add(Dense(len(vectorize_data.data_dto.target_names), activation='softmax', kernel_initializer='uniform')) 
 
         # categorial is the way to go for multiple possible categorys as results, instead of binary
         model.compile(loss='categorical_crossentropy',  
@@ -106,23 +110,22 @@ def get_denser_keras_classifier(data_train, data_test, target_train, target_test
 
     return KerasClassifierWithVectorizer(name, model, vectorize_data, verbose)
 
-def get_denser_keras_classifier_with_tokenizer(data_train, data_test, target_train, target_test, target_names, verbose=False):
-    name = 'denser_and_tokenizer'
+def get_denser_keras_classifier_with_tokenizer(name, data_dto, verbose=False):
 
-    vectorize_data = Vectorized(data_train, data_test, target_train, target_test, target_names, 15000)
+    vectorize_data = Vectorized(data_dto)
     vectorize_data.initialize_with_keras_tokenizer()
 
     model, path = get_saved_model(name)
     if (model == None):
         model = Sequential()
         
-        model.add(Dense(512, input_shape=(vectorize_data.vocab_size,)))
+        model.add(Dense(512, input_shape=(vectorize_data.data_dto.vocab_size,)))
         model.add(Activation('relu'))
         model.add(Dropout(0.3))
         model.add(Dense(512))
         model.add(Activation('relu'))
         model.add(Dropout(0.3))
-        model.add(Dense(len(vectorize_data.target_names)))
+        model.add(Dense(len(vectorize_data.data_dto.target_names)))
         model.add(Activation('softmax'))
 
         # categorial is the way to go for multiple possible categorys as results, instead of binary
@@ -144,4 +147,4 @@ def get_denser_keras_classifier_with_tokenizer(data_train, data_test, target_tra
         if (verbose):
             print (history)
 
-    return KerasClassifierWithTokenizer(name, model, vectorize_data, verbose)
+    return KerasClassifierWithTokenizer(name, model, vectorize_data, verbose) 

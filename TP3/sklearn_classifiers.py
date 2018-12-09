@@ -27,7 +27,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 # Class used to test all the scenarios of test for SkLearn
 # Some reminder about max_df and min_df = https://stackoverflow.com/questions/27697766/understanding-min-df-and-max-df-in-scikit-countvectorizer
 class ClassifierTestSet:
-    def __init__(self, name, classifier, stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False):
+    def __init__(self, name, classifier, stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1, 1)):
         self.name = name
         self.classifier = classifier
         self.stop_words = stop_words
@@ -35,6 +35,7 @@ class ClassifierTestSet:
         self.max_df = max_df
         self.use_Tfid = use_Tfid
         self.binary = binary
+        self.ngram_range=ngram_range
 
     # To return all properties concatenated to the report header
     def str_keys(self):
@@ -72,7 +73,8 @@ class SkLearnClassifier(Classifier):
             lowercase = True, 
             max_df = classifierTest.max_df, 
             min_df = classifierTest.min_df,
-            binary = classifierTest.binary
+            binary = classifierTest.binary,
+            ngram_range = classifierTest.ngram_range
         )
 
         self.pipeline = Pipeline([
@@ -103,13 +105,14 @@ class SkLearnClassifier(Classifier):
         self.__create_pipeline(classifierTest)
         self.__predict()
         self.__mean()
-
+        
         if (verbose):
             print("{} | {}{}{}".format( 
-                self.classifier,
+                classifierTest,
                 bcolors.BOLD,
                 self.accuracy,
                 bcolors.ENDC))
+
             #skLearnClassifier.show_most_informative_features(n=5)
             #skLearnClassifier.show_analyses()
 

@@ -114,3 +114,6 @@ dmypy.json
 .vscode
 .DS_Store
 __pycache__
+
+# just with three basics (simple, denser, denser_and_tokenizer), otherwise will be too much stuff on github
+keras_models/

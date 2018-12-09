@@ -6,13 +6,15 @@ from operator import itemgetter
 from utility import get_complet_path, bcolors
 from sklearn_classifiers import SkLearnClassifier, ClassifierTestSet
 
-from sklearn.model_selection import train_test_split
+from sklearn.svm import SVC
 from sklearn.svm import LinearSVC
+from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
 from keras_classifier import remove_saved_keras_models, get_simple_keras_classifier, get_denser_keras_classifier, get_denser_keras_classifier_with_tokenizer
+from keras_classes import DataDTO, CountVectorizerDTO, KerasTokenizerDTO
 
 # Loads the data for training and evaluation
 def get_train_data():
@@ -21,7 +23,7 @@ def get_train_data():
     df.fillna('', inplace=True)
     
     # Threat all the columns as one
-    df['text'] = df[['turn1', 'turn2', 'turn3']].apply(lambda x: '; '.join(x), axis=1)
+    df['text'] = df[['turn1', 'turn2', 'turn3']].apply(lambda x: '. '.join(x), axis=1)
     df.drop('turn1', inplace=True, axis=1)
     df.drop('turn2', inplace=True, axis=1)
     df.drop('turn3', inplace=True, axis=1)
@@ -66,6 +68,24 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
         ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=0.8, min_df=0.1, use_Tfid=False, binary=False),
         ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=False),
         ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', max_df=1.0, min_df=1, use_Tfid=False, binary=False),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', max_df=0.5, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', max_df=0.7, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', max_df=0.8, min_df=0.1, use_Tfid=False, binary=False),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=False),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=True),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=0.5, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=0.7, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=0.8, min_df=0.1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2)),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', max_df=0.5, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', max_df=0.7, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', max_df=0.8, min_df=0.1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2)),
 
         ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False),
         ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None, max_df=0.5, min_df=0.05, use_Tfid=False, binary=False),
@@ -73,6 +93,24 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
         ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None, max_df=0.8, min_df=0.1, use_Tfid=False, binary=False),
         ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=False),
         ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', max_df=1.0, min_df=1, use_Tfid=False, binary=False),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', max_df=0.5, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', max_df=0.7, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', max_df=0.8, min_df=0.1, use_Tfid=False, binary=False),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=False),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=True),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None, max_df=0.5, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None, max_df=0.7, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None, max_df=0.8, min_df=0.1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2)),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', max_df=0.5, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', max_df=0.7, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', max_df=0.8, min_df=0.1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2)),
 
         ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False),
         ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words=None, max_df=0.5, min_df=0.05, use_Tfid=False, binary=False),
@@ -80,6 +118,24 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
         ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words=None, max_df=0.8, min_df=0.1, use_Tfid=False, binary=False),
         ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=False),
         ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words='english', max_df=1.0, min_df=1, use_Tfid=False, binary=False),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words='english', max_df=0.5, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words='english', max_df=0.7, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words='english', max_df=0.8, min_df=0.1, use_Tfid=False, binary=False),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=False),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=True),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words=None, max_df=0.5, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words=None, max_df=0.7, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words=None, max_df=0.8, min_df=0.1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2)),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words='english', max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words='english', max_df=0.5, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words='english', max_df=0.7, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words='english', max_df=0.8, min_df=0.1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2)),
 
         ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False),
         ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=0.5, min_df=0.05, use_Tfid=False, binary=False),
@@ -87,6 +143,74 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
         ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=0.8, min_df=0.11, use_Tfid=False, binary=False),
         ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=False),
         ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words='english', max_df=1.0, min_df=1, use_Tfid=False, binary=False),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words='english', max_df=0.5, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words='english', max_df=0.7, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words='english', max_df=0.8, min_df=0.11, use_Tfid=False, binary=False),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=False),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=True),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=0.5, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=0.7, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=0.8, min_df=0.11, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2)),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words='english', max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words='english', max_df=0.5, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words='english', max_df=0.7, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words='english', max_df=0.8, min_df=0.11, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2)),
+
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words=None, max_df=0.5, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words=None, max_df=0.7, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words=None, max_df=0.8, min_df=0.1, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words='english', max_df=0.5, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words='english', max_df=0.7, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words='english', max_df=0.8, min_df=0.1, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=True),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words=None, max_df=0.5, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words=None, max_df=0.7, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words=None, max_df=0.8, min_df=0.1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words='english', max_df=0.5, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words='english', max_df=0.7, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words='english', max_df=0.8, min_df=0.1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="linear", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2)),
+
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words=None, max_df=0.5, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words=None, max_df=0.7, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words=None, max_df=0.8, min_df=0.1, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=0.5, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=0.7, min_df=0.05, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=0.8, min_df=0.1, use_Tfid=False, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=False),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=True),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words=None, max_df=0.5, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words=None, max_df=0.7, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words=None, max_df=0.8, min_df=0.1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=0.5, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=0.7, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=0.8, min_df=0.1, use_Tfid=False, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2)),
+        ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2)),
     ]
     
     if (verbose):
@@ -96,7 +220,7 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
     results = []
     for classifier in classifiers[:2]: 
         skLearnClassifier = SkLearnClassifier(data_train, data_test, target_train, target_test, target_names)
-        skLearnClassifier.train_classifier(classifier, verbose)
+        skLearnClassifier.train_classifier(classifier, True) #verbose
         
         results.append(skLearnClassifier)
 
@@ -106,11 +230,12 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
 def test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose=False, remove_models=False):
     
     remove_saved_keras_models(remove_models)
+    data_dto = DataDTO(data_train, data_test, target_train, target_test, target_names) # 15000
 
     results = []
-    results.append(get_simple_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose))
-    results.append(get_denser_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose))
-    results.append(get_denser_keras_classifier_with_tokenizer(data_train, data_test, target_train, target_test, target_names, verbose))
+    results.append(get_simple_keras_classifier('simple', data_dto, verbose=verbose))
+    results.append(get_denser_keras_classifier('denser', data_dto, verbose=verbose))
+    results.append(get_denser_keras_classifier_with_tokenizer('denser_and_tokenizer', data_dto, verbose=verbose))
 
     return predict_with_best(results)
 
