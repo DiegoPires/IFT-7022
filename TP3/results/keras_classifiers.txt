@@ -1,4 +1,7 @@
 classifier|accuracy
 simple|0.6863395225464191
 denser|0.7693965517241379
-denser_and_tokenizer|0.5112732095490716
+denser_and_tokenizer_binary|0.7931034482758621
+denser_and_tokenizer_count|0.7863063660477454
+denser_and_tokenizer_tfidf|0.781498673740053
+denser_and_tokenizer_freq|0.78315649867374

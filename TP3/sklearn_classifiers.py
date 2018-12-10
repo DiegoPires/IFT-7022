@@ -7,6 +7,7 @@ from utility import get_directory_content, bcolors #stuff not important are here
 
 import nltk
 from nltk.corpus import stopwords, wordnet
+from nltk.tokenize import TweetTokenizer
 
 from sklearn import metrics
 from sklearn.pipeline import Pipeline, FeatureUnion
@@ -27,21 +28,51 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 # Some good stuff to be tested from here (But still not used): https://zablo.net/blog/post/twitter-sentiment-analysis-python-scikit-word2vec-nltk-xgboost
 
-class ExtraFeature(BaseEstimator, TransformerMixin):
+class ExtraCountFeature(BaseEstimator, TransformerMixin):
 
-    def __init__(self, feature):
-        self.feature=feature
+    def __init__(self, features):
+        self.features=features
 
+    def fit(self, X, y=None):
+        return self
+    
+    def count_occurences(self, character, word_array):
+        counter = 0
+        for j, word in enumerate(word_array):
+            for char in word:
+                if char == character:
+                    counter += 1
+        return counter
+
+    def transform(self, X):
+        #tt = TweetTokenizer()
+        
+        #feature_count = []
+        #for text in X:
+        #    tokenized = tt.tokenize(text)
+        #    feature_ocurrence = []
+        #    for feature in self.features:
+        #        count = self.count_occurences(feature, tokenized)
+        #        feature_ocurrence.append(count)
+        #    feature_count.append(feature_ocurrence)
+
+        return [[len(x), len(x)] for x in X]
+
+class ExtraSentimentFeature(BaseEstimator, TransformerMixin):
+
+    def __init__(self):
+        pass
+        
     def fit(self, X, y=None):
         return self
 
     def transform(self, X):
-        return [[len(x)] for x in X]
+        return [[len(x), len(x)] for x in X]
 
 # Class used to test all the scenarios of test for SkLearn
 # Some reminder about max_df and min_df = https://stackoverflow.com/questions/27697766/understanding-min-df-and-max-df-in-scikit-countvectorizer
 class ClassifierTestSet:
-    def __init__(self, name, classifier, stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1, 1), apply_extra_features=False):
+    def __init__(self, name, classifier, stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1, 1), apply_count_features=False, apply_sentiment_features=False):
         self.name = name
         self.classifier = classifier
         self.stop_words = stop_words
@@ -50,7 +81,8 @@ class ClassifierTestSet:
         self.use_Tfid = use_Tfid
         self.binary = binary
         self.ngram_range=ngram_range
-        self.apply_extra_features=apply_extra_features
+        self.apply_count_features = apply_count_features
+        self.apply_sentiment_features = apply_sentiment_features
 
     # To return all properties concatenated to the report header
     def str_keys(self):
@@ -101,19 +133,21 @@ class SkLearnClassifier(Classifier):
         if (classifierTest.use_Tfid):
             text_pipeline.steps.insert(1,['tfidf', TfidfTransformer(norm='l2', smooth_idf=True, sublinear_tf=False, use_idf=True)])
 
-        if (classifierTest.apply_extra_features):
-            features = FeatureUnion([
-                ('happyface', ExtraFeature('😍')),
-                ('text', text_pipeline)
-            ])
-        else:
-            features = FeatureUnion([
-                ('text', text_pipeline)
-            ])
+        features = [('text', text_pipeline)]
+
+        if (classifierTest.apply_count_features):
+            features.append(
+                ('count', ExtraCountFeature(['😍','😁','😭','😂','😠','💔','😞', ':)', ':(', '!', '?'])), # TODO: not sure its the best way
+            )
         
+        if (classifierTest.apply_sentiment_features):
+            features.append(
+                ('sentiment', ExtraSentimentFeature())
+            )
+
         self.pipeline = Pipeline([
-            ('features', features),
-            ('clf', classifierTest.classifier),
+            ('features', FeatureUnion(features)),
+            ('clf', classifierTest.classifier)
         ])
 
         self.classifier = classifierTest.classifier
