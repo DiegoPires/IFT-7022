@@ -112,10 +112,13 @@ def get_denser_keras_classifier(name, data_dto, count_vectorizer_dto=None, verbo
 
     return KerasClassifierWithVectorizer(name, model, vectorize_data, verbose)
 
-def get_denser_keras_classifier_with_tokenizer(name, data_dto, verbose=False):
+def get_denser_keras_classifier_with_tokenizer(name, data_dto, keras_tokenizer_dto=None, verbose=False):
+
+    if (keras_tokenizer_dto == None):
+        keras_tokenizer_dto = KerasTokenizerDTO()
 
     vectorize_data = Vectorized(data_dto)
-    vectorize_data.initialize_with_keras_tokenizer()
+    vectorize_data.initialize_with_keras_tokenizer(keras_tokenizer_dto)
 
     model, path = get_saved_model(name)
     if (model == None):

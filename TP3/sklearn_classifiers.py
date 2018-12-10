@@ -9,10 +9,11 @@ import nltk
 from nltk.corpus import stopwords, wordnet
 
 from sklearn import metrics
-from sklearn.pipeline import Pipeline
+from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.base import BaseEstimator, TransformerMixin
 
 from operator import itemgetter
 
@@ -26,10 +27,21 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 # Some good stuff to be tested from here (But still not used): https://zablo.net/blog/post/twitter-sentiment-analysis-python-scikit-word2vec-nltk-xgboost
 
+class ExtraFeature(BaseEstimator, TransformerMixin):
+
+    def __init__(self, feature):
+        self.feature=feature
+
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X):
+        return [[len(x)] for x in X]
+
 # Class used to test all the scenarios of test for SkLearn
 # Some reminder about max_df and min_df = https://stackoverflow.com/questions/27697766/understanding-min-df-and-max-df-in-scikit-countvectorizer
 class ClassifierTestSet:
-    def __init__(self, name, classifier, stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1, 1)):
+    def __init__(self, name, classifier, stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1, 1), apply_extra_features=False):
         self.name = name
         self.classifier = classifier
         self.stop_words = stop_words
@@ -38,6 +50,17 @@ class ClassifierTestSet:
         self.use_Tfid = use_Tfid
         self.binary = binary
         self.ngram_range=ngram_range
+        self.apply_extra_features=apply_extra_features
+
+    # To return all properties concatenated to the report header
+    def str_keys(self):
+        sb = []
+        for key in self.__dict__:
+            # TODO: this is not pythonic i guess...
+            if (key != 'classifier'):
+                sb.append("{key}".format(key=key, value=self.__dict__[key]))
+ 
+        return '|'.join(sb)
 
     # To return all the properties values concatenated to the report
     def __str__(self):
@@ -71,20 +94,32 @@ class SkLearnClassifier(Classifier):
             ngram_range = classifierTest.ngram_range
         )
 
+        text_pipeline = Pipeline([
+            ('vect', count_vectorizer)
+        ])
+
+        if (classifierTest.use_Tfid):
+            text_pipeline.steps.insert(1,['tfidf', TfidfTransformer(norm='l2', smooth_idf=True, sublinear_tf=False, use_idf=True)])
+
+        if (classifierTest.apply_extra_features):
+            features = FeatureUnion([
+                ('happyface', ExtraFeature('😍')),
+                ('text', text_pipeline)
+            ])
+        else:
+            features = FeatureUnion([
+                ('text', text_pipeline)
+            ])
+        
         self.pipeline = Pipeline([
-            ('vect', count_vectorizer),
+            ('features', features),
             ('clf', classifierTest.classifier),
         ])
 
         self.classifier = classifierTest.classifier
         self.classifier_test = classifierTest
 
-        if (classifierTest.use_Tfid):
-            self.pipeline.steps.insert(1,['tfidf', TfidfTransformer(norm='l2', smooth_idf=True, sublinear_tf=False, use_idf=True)])
-        else:
-            pass
-            #self.pipeline.steps.insert(1,['tfidf', TfidfTransformer()])
-
+        
         self.pipeline.fit(self.data_train, self.target_train)  
 
     def __predict(self):

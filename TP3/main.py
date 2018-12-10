@@ -66,6 +66,8 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
 
     classifiers = [
         ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False),
+        ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, apply_extra_features=True),
+        
         ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=0.5, min_df=0.05, use_Tfid=False, binary=False),
         ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=0.7, min_df=0.05, use_Tfid=False, binary=False),
         ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=0.8, min_df=0.1, use_Tfid=False, binary=False),
@@ -209,7 +211,7 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
         print(headerClassifier.str_keys())
 
     results = []
-    for classifier in classifiers[:2]: 
+    for classifier in classifiers:
         skLearnClassifier = SkLearnClassifier(data_train, data_test, target_train, target_test, target_names)
         skLearnClassifier.train_classifier(classifier, False)
         
@@ -227,7 +229,11 @@ def test_with_keras_classifier(data_train, data_test, target_train, target_test,
     results = []
     results.append(get_simple_keras_classifier('simple', data_dto, verbose=verbose))
     results.append(get_denser_keras_classifier('denser', data_dto, verbose=verbose))
-    results.append(get_denser_keras_classifier_with_tokenizer('denser_and_tokenizer', data_dto, verbose=verbose))
+    results.append(get_denser_keras_classifier_with_tokenizer('denser_and_tokenizer_binary', data_dto, keras_tokenizer_dto=KerasTokenizerDTO(None, True, ' ', False, 'binary'), verbose=verbose))
+    results.append(get_denser_keras_classifier_with_tokenizer('denser_and_tokenizer_count', data_dto, keras_tokenizer_dto=KerasTokenizerDTO(None, True, ' ', False, 'count'), verbose=verbose))
+    results.append(get_denser_keras_classifier_with_tokenizer('denser_and_tokenizer_tfidf', data_dto, keras_tokenizer_dto=KerasTokenizerDTO(None, True, ' ', False, 'tfidf'), verbose=verbose))
+    results.append(get_denser_keras_classifier_with_tokenizer('denser_and_tokenizer_freq', data_dto, keras_tokenizer_dto=KerasTokenizerDTO(None, True, ' ', False, 'freq'), verbose=verbose))
+
 
     for keras_c in results:
         write_classifier_result_to_file('keras_classifiers.txt', keras_c)
@@ -297,7 +303,7 @@ def main(verbose=False, remove_saved_keras_models=False):
     data_train, data_test, target_train, target_test, target_names = get_train_data()
     
     sk_predictions = test_with_sklearn_classifiers(data_train, data_test, target_train, target_test, target_names, verbose)
-    ke_predictions = [] #test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose, remove_saved_keras_models)
+    ke_predictions = test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose, remove_saved_keras_models)
 
     mean_between_results = np.mean(sk_predictions == ke_predictions)
 
