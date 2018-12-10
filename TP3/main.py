@@ -209,7 +209,7 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
         print(headerClassifier.str_keys())
 
     results = []
-    for classifier in classifiers: 
+    for classifier in classifiers[:2]: 
         skLearnClassifier = SkLearnClassifier(data_train, data_test, target_train, target_test, target_names)
         skLearnClassifier.train_classifier(classifier, False)
         
@@ -241,7 +241,7 @@ def predict_with_best(results, file_results_name):
 
     # Just show top 10
     print ("\n\n{}## The top 10 of classifiers: {}{}".format(bcolors.HEADER, type(best_classifier), bcolors.ENDC))
-    print ("\nClassifier|Accuracy")
+    print ("\nClassifier|stop_words|min_df|max_df|use_tfid|binary|ngram_range|Accuracy")
     for classifier in results[:10]:
         print("{}|{}{}{}".format(
             classifier, 
@@ -297,7 +297,7 @@ def main(verbose=False, remove_saved_keras_models=False):
     data_train, data_test, target_train, target_test, target_names = get_train_data()
     
     sk_predictions = test_with_sklearn_classifiers(data_train, data_test, target_train, target_test, target_names, verbose)
-    ke_predictions = test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose, remove_saved_keras_models)
+    ke_predictions = [] #test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose, remove_saved_keras_models)
 
     mean_between_results = np.mean(sk_predictions == ke_predictions)
 

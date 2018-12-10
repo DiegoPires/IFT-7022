@@ -39,15 +39,6 @@ class ClassifierTestSet:
         self.binary = binary
         self.ngram_range=ngram_range
 
-    # To return all properties concatenated to the report header
-    def str_keys(self):
-        sb = []
-        for key in self.__dict__:
-            if (key != 'classifier'):
-                sb.append("{key}".format(key=key, value=self.__dict__[key]))
- 
-        return ' | '.join(sb)
-
     # To return all the properties values concatenated to the report
     def __str__(self):
         sb = []
@@ -55,7 +46,7 @@ class ClassifierTestSet:
             if (key != 'classifier'):
                 sb.append("{value}".format(key=key, value=self.__dict__[key]))
  
-        return ' | '.join(sb)
+        return '|'.join(sb)
 
 # Most resources taken from http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
 
@@ -69,6 +60,7 @@ class SkLearnClassifier(Classifier):
         self.target_names = target_names
 
     def __create_pipeline(self, classifierTest):
+        
         count_vectorizer = CountVectorizer(
             strip_accents = 'unicode',
             stop_words = classifierTest.stop_words, 
@@ -85,6 +77,7 @@ class SkLearnClassifier(Classifier):
         ])
 
         self.classifier = classifierTest.classifier
+        self.classifier_test = classifierTest
 
         if (classifierTest.use_Tfid):
             self.pipeline.steps.insert(1,['tfidf', TfidfTransformer(norm='l2', smooth_idf=True, sublinear_tf=False, use_idf=True)])
@@ -123,7 +116,7 @@ class SkLearnClassifier(Classifier):
         return self.pipeline.predict(test_text)
 
     def __str__(self):
-        return str(self.classifier)
+        return str(self.classifier_test)
 
     # This method was extract from https://bbengfort.github.io/tutorials/2016/05/19/text-classification-nltk-sckit-learn.html 
     # I dont clain ownership of it, its just for evaluation purposes, to see how the classifier is trained
