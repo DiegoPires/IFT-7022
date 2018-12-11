@@ -31,6 +31,19 @@ Started using virtualenv as a recommendation to make Tensorflow work for TP3
 
 On VSCode should go `Shift + cmd + p` and search `python: select interpreter`. Chose the `env` environment to make it run with VSCode
 
+### Download data
+
+Using python on the command prompt:
+
+```
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+nltk.download('sentiwordnet')
+```
+
 ### Executing the code
 
 On VSCode just click right on the main.py and chose `Run python file on terminal`.

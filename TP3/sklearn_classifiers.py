@@ -15,6 +15,10 @@ from sklearn.feature_extraction import DictVectorizer
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.base import BaseEstimator, TransformerMixin
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import wordnet as wn
+from nltk.corpus import sentiwordnet as swn
+from nltk import pos_tag
 
 from operator import itemgetter
 
@@ -28,6 +32,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 # Some good stuff to be tested from here (But still not used): https://zablo.net/blog/post/twitter-sentiment-analysis-python-scikit-word2vec-nltk-xgboost
 
+# Example from here: https://scikit-learn.org/0.19/auto_examples/hetero_feature_union.html
 class ExtraCountFeature(BaseEstimator, TransformerMixin):
 
     def __init__(self, features):
@@ -35,39 +40,77 @@ class ExtraCountFeature(BaseEstimator, TransformerMixin):
 
     def fit(self, X, y=None):
         return self
-    
-    def count_occurences(self, character, word_array):
-        counter = 0
-        for j, word in enumerate(word_array):
-            for char in word:
-                if char == character:
-                    counter += 1
-        return counter
 
-    def transform(self, X):
-        #tt = TweetTokenizer()
+    def transform(self, phrases):
+        feature_list = []
+        for text in phrases:
+            data = {}
+            for feature in self.features:
+                data.update({ feature : text.count(feature) })
+            feature_list.append(data)
         
-        #feature_count = []
-        #for text in X:
-        #    tokenized = tt.tokenize(text)
-        #    feature_ocurrence = []
-        #    for feature in self.features:
-        #        count = self.count_occurences(feature, tokenized)
-        #        feature_ocurrence.append(count)
-        #    feature_count.append(feature_ocurrence)
+        return feature_list
 
-        return [[len(x), len(x)] for x in X]
-
+# https://nlpforhackers.io/sentiment-analysis-intro/
 class ExtraSentimentFeature(BaseEstimator, TransformerMixin):
-
     def __init__(self):
-        pass
+        self.tt = TweetTokenizer()
+        self.lemm = WordNetLemmatizer()
+    
+    def penn_to_wn(self, tag):
+        if tag.startswith('J'):
+            return wn.ADJ
+        elif tag.startswith('N'):
+            return wn.NOUN
+        elif tag.startswith('R'):
+            return wn.ADV
+        elif tag.startswith('V'):
+            return wn.VERB
+        return None
+    
+    def clean_text(self, text):
+        text = text.replace("<p>", "").replace("</p>", " ")
+        text = text.decode("utf-8")
+    
+        return text
         
     def fit(self, X, y=None):
         return self
 
-    def transform(self, X):
-        return [[len(x), len(x)] for x in X]
+    def get_sentiment(self, phrase):
+        tagged_sentence = pos_tag(self.tt.tokenize(phrase))
+    
+        negative = 0
+        positive = 0
+        for word, tag in tagged_sentence:
+            wn_tag = self.penn_to_wn(tag)
+            if wn_tag not in (wn.NOUN, wn.ADJ, wn.ADV):
+                continue
+ 
+            lemma = self.lemm.lemmatize(word, pos=wn_tag)
+            if not lemma:
+                continue
+ 
+            synsets = wn.synsets(lemma, pos=wn_tag)
+            if not synsets:
+                continue
+ 
+            # Take the first sense, the most common
+            synset = synsets[0]
+            swn_synset = swn.senti_synset(synset.name())
+ 
+            sentiment = swn_synset.pos_score() - swn_synset.neg_score()
+
+            if sentiment >= 0:
+                positive = positive + 1
+            else:
+                negative = negative + 1
+
+        return { 'positive' : positive, 'negative' : negative }
+
+    def transform(self, phrase):
+        resultat = [ self.get_sentiment(x) for x in phrase ]
+        return resultat
 
 # Class used to test all the scenarios of test for SkLearn
 # Some reminder about max_df and min_df = https://stackoverflow.com/questions/27697766/understanding-min-df-and-max-df-in-scikit-countvectorizer
@@ -126,33 +169,45 @@ class SkLearnClassifier(Classifier):
             ngram_range = classifierTest.ngram_range
         )
 
+        index_classifier = 1
+        transformer_list = []
+
         text_pipeline = Pipeline([
             ('vect', count_vectorizer)
         ])
 
         if (classifierTest.use_Tfid):
-            text_pipeline.steps.insert(1,['tfidf', TfidfTransformer(norm='l2', smooth_idf=True, sublinear_tf=False, use_idf=True)])
+            text_pipeline.steps.insert(index_classifier,['tfidf', TfidfTransformer(norm='l2', smooth_idf=True, sublinear_tf=False, use_idf=True)])
+            index_classifier = index_classifier + 1
 
-        features = [('text', text_pipeline)]
+        transformer_list.append(('text', text_pipeline))
 
         if (classifierTest.apply_count_features):
-            features.append(
-                ('count', ExtraCountFeature(['😍','😁','😭','😂','😠','💔','😞', ':)', ':(', '!', '?'])), # TODO: not sure its the best way
-            )
+            transformer_list.append(('emojis', Pipeline([
+                ('count', ExtraCountFeature(['😍','😁','😭','😂','😠','💔','😞', ':)', ':(', '!', '?'])),
+                ('vect', DictVectorizer())
+            ])))
         
         if (classifierTest.apply_sentiment_features):
-            features.append(
-                ('sentiment', ExtraSentimentFeature())
-            )
+            transformer_list.append(('sentiment', Pipeline([
+                ('count', ExtraSentimentFeature()),
+                ('vect', DictVectorizer())
+            ])))
 
-        self.pipeline = Pipeline([
-            ('features', FeatureUnion(features)),
-            ('clf', classifierTest.classifier)
-        ])
+        # Just use the FeatureUnion if we have at least one of the extra features, otherwise crashs
+        if (len(transformer_list) == 1):
+            text_pipeline.steps.insert(index_classifier,['clf', classifierTest.classifier])
+            self.pipeline = text_pipeline
+        else:
+            self.pipeline = Pipeline([
+                ('features', FeatureUnion(
+                    transformer_list=transformer_list
+                )),
+                ('clf', classifierTest.classifier)
+            ])
 
         self.classifier = classifierTest.classifier
         self.classifier_test = classifierTest
-
         
         self.pipeline.fit(self.data_train, self.target_train)  
 

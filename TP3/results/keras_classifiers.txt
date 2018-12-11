@@ -1,4 +1,4 @@
-classifier|accuracy
+Classifier|stop_words|min_df|max_df|use_tfid|binary|ngram_range|emoji|sentiment|Accuracy
 simple|0.6863395225464191
 denser|0.7693965517241379
 denser_and_tokenizer_binary|0.7931034482758621

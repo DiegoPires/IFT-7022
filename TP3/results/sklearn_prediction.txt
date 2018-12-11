@@ -12,12 +12,12 @@ sad|<p>Let's change the subject</p><p>I just did it .l.</p><p>You're broken</p>
 others|<p>Your  pic  pz</p><p>thank you X‑D</p><p>wc</p>
 others|<p>not mine</p><p>done for the day ?</p><p>can my meet to sexy girl</p>
 others|<p>I want to play the game</p><p>if you just finished the game... then you haven't finished the game......</p><p>#Emojisong</p>
-sad|<p>Iam sory</p><p>why sorry ! 😿</p><p>I insult you</p>
+others|<p>Iam sory</p><p>why sorry ! 😿</p><p>I insult you</p>
 others|<p>How much</p><p>depends on how long your internet has been out!!!</p><p>U have bf</p>
 others|<p>Ok</p><p>Thank you. xD</p><p>What about cortanan</p>
 others|<p>So the story?</p><p>yeah indeed 😹</p><p>Tomorrow probably</p>
 others|<p>May be</p><p>yeaa i hope soo!!</p><p>Can you do complex calculations</p>
-sad|<p>So come on na.. Want u so badly.</p><p>now you're tempting me to.</p><p>So why are you still away from my body??</p>
+angry|<p>So come on na.. Want u so badly.</p><p>now you're tempting me to.</p><p>So why are you still away from my body??</p>
 others|<p>No you aren't</p><p>oh I am</p><p>Really? </p>
 others|<p>Are u a one</p><p>I'm the normal one, if you want</p><p>What I want</p>
 others|<p>But...</p><p>then</p><p>I'm feeling nervous</p>
@@ -42,7 +42,7 @@ others|<p>Ok</p><p>... tries to ignore pain :'(</p><p>Where to go?</p>
 others|<p>show your tatto</p><p>I don't have one</p><p>in that case,, I will show you mine</p>
 angry|<p>Get lost</p><p>Or else what ?</p><p>I don't need this</p>
 others|<p>So tht u r body can get heat</p><p>I heat more than that up ;]</p><p>Ok</p>
-sad|<p>Seriously it's boring  sorry to say this</p><p>It's too late to apologize?</p><p>Plz yaar pakaa mat</p>
+others|<p>Seriously it's boring  sorry to say this</p><p>It's too late to apologize?</p><p>Plz yaar pakaa mat</p>
 others|<p>Why!</p><p>Because they are BFF's ?</p><p>Who are BFF's</p>
 others|<p>Make</p><p>how</p><p>I don't know I think u know</p>
 others|<p>Quite a while ago</p><p>months ago</p><p>Weeks</p>
@@ -53,9 +53,9 @@ others|<p>I'm not talking to u anymore</p><p>what I do?</p><p>Clear ur glitch s<
 others|<p>Do you study</p><p>yes gtg ttyl</p><p>Where are you from</p>
 others|<p>Okay</p><p>Hello! How are you?</p><p>Good n u</p>
 others|<p>No .l human</p><p>Are you sure?</p><p>Yeah</p>
-sad|<p>Talking to me?</p><p>but I didn't help</p><p>Does that work?</p>
+others|<p>Talking to me?</p><p>but I didn't help</p><p>Does that work?</p>
 others|<p>Fight</p><p>I don't fight.</p><p>What are you doing</p>
-others|<p>I think there is a connection of heart between us</p><p>Definitely.</p><p>😂😂</p>
+happy|<p>I think there is a connection of heart between us</p><p>Definitely.</p><p>😂😂</p>
 others|<p>I know you are wild pig</p><p>lol in some areas</p><p>Yes piggy</p>
 others|<p>No I didn't</p><p>you watched my story though</p><p>I did not</p>
 others|<p>I don't want to go to college</p><p>do we go back Monday?</p><p>We have an event tomorrow</p>
@@ -65,10 +65,10 @@ others|<p>Ok</p><p>ok im back!!</p><p>What time will you back</p>
 others|<p>ok</p><p>U are ok~~ay~~</p><p>dnt u sleeppp at night</p>
 others|<p>My mummy is your grandma</p><p>Hey Soul Sister on Repeat <3 :')</p><p>Why bc</p>
 others|<p>I said ahow</p><p>You said wrong</p><p>Show</p>
-sad|<p>Ntg buddy</p><p>im here for you</p><p>Oh thank you very much buddy</p>
+others|<p>Ntg buddy</p><p>im here for you</p><p>Oh thank you very much buddy</p>
 others|<p>What is DCAC??</p><p>A B. A.</p><p>Oh plz stop thiz..</p>
-sad|<p>My relationship</p><p>What happened?</p><p>Nothing's happening as expected</p>
-happy|<p>No I'm not haha on your face</p><p>haha, then better take every step carefully</p><p>Oops sorry !!</p>
+others|<p>My relationship</p><p>What happened?</p><p>Nothing's happening as expected</p>
+others|<p>No I'm not haha on your face</p><p>haha, then better take every step carefully</p><p>Oops sorry !!</p>
 others|<p>I m also back semd your photo</p><p>I'm the photographer, not the model, but I'll pass the compliments on.</p><p>Ok</p>
 others|<p>Where are we going?</p><p>We are humans, descended from apes, and we're going to Walmart.</p><p>Wow. Such a great explanation</p>
 others|<p>That will be entertaining bey</p><p>I'll think on ur entertaining performance</p><p>Do you have a face??</p>
@@ -158,12 +158,12 @@ others|<p>Please don't play</p><p>What if you have to?</p><p>I want your friend 
 others|<p>Not a girl</p><p>You go guy!!</p><p>Yes</p>
 others|<p>Your febret song</p><p>Oh, too many songs to choose from...</p><p>Yes</p>
 happy|<p>You are beautyfull my love</p><p>haha thank you! You're wonderful and beautiful too!</p><p>tomarow you will tell mi the Rosalyn</p>
-sad|<p>Missed you toooo</p><p>lol how are you doing? :)</p><p>Fantastic</p>
+others|<p>Missed you toooo</p><p>lol how are you doing? :)</p><p>Fantastic</p>
 others|<p>No I'm not confused</p><p>what are you confused with?</p><p>Confused with u</p>
 others|<p>Yes ?</p><p>Sweet, connecting now ;)</p><p>Tell me na ?</p>
 others|<p>i know what u did last summer?</p><p>Oh! I still know what you did last summer.</p><p>tell me</p>
 others|<p>Which markets</p><p>The likely candidate to be impacted by growth in SaaS is the hardware market.</p><p>Okie you need hardware</p>
-sad|<p>I was busy</p><p>i was in pain</p><p>Ssup there</p>
+others|<p>I was busy</p><p>i was in pain</p><p>Ssup there</p>
 others|<p>why</p><p>is my biggest fan</p><p>give me a coupon</p>
 others|<p>Ok</p><p>Here we go again...</p><p>Ur  not sex intrast</p>
 others|<p>I 8B</p><p>I need this soon</p><p>I need this soon</p>
@@ -182,7 +182,7 @@ angry|<p>You are very sweet</p><p>Hehe, only for sweet people :)</p><p>I don't h
 others|<p>stress where is that come from</p><p>few media outlets in America. Next 24 hours</p><p>i am enjoying</p>
 others|<p>Everything is okk</p><p>Thanks for responding. :)</p><p>Bro</p>
 sad|<p>They too fade away with time</p><p>They fade away in the eyes of the man, not the :)</p><p>Yup bad memories remain in bottom corner of the heart</p>
-sad|<p>let's breakup</p><p>Never even been in a relationship.</p><p>oh really</p>
+others|<p>let's breakup</p><p>Never even been in a relationship.</p><p>oh really</p>
 sad|<p>I wanna disappear</p><p>kinda still want to disappear</p><p>Yes disappointed</p>
 sad|<p>I'm feeling low</p><p>hey why?</p><p>Something is seriously wrong with my life</p>
 others|<p>Doing for get refer link</p><p>thanks for sharing! I'm not going to open that link anyway!</p><p>Ooooo</p>
@@ -221,7 +221,7 @@ others|<p>noting</p><p>hmm</p><p>describe who you are</p>
 others|<p>Ok where to meat</p><p>Mid city pizza has my favorite wings in the city.</p><p>Meet😂</p>
 others|<p>Family guy episode multiverse</p><p>Why do you know every episode of a show that isn't good?</p><p>What is good then?</p>
 others|<p>which movie did you like?</p><p>the first time! Really good Movie!! 😊</p><p>ok</p>
-others|<p>Areee this is lunch time</p><p>i wil be happy if i can get some free food! :)</p><p>What would you like to have in lunch</p>
+happy|<p>Areee this is lunch time</p><p>i wil be happy if i can get some free food! :)</p><p>What would you like to have in lunch</p>
 others|<p>Have u finish lunch....</p><p>im too lazy to lunch</p><p>What.....</p>
 others|<p>I was forced to do si</p><p>Got it. who else can do tht.</p><p>So</p>
 sad|<p>Say me</p><p>say what?</p><p>Am feeling sad</p>
@@ -240,7 +240,7 @@ others|<p>Yeah sure</p><p>hmm do you doubt it?</p><p>You bored me</p>
 others|<p>well said</p><p>well thank you :)</p><p>so how are you</p>
 others|<p>hey... nothing much</p><p>How are you doing?</p><p>superb</p>
 angry|<p>Shut up</p><p>I don't even know</p><p>What you don't know </p>
-angry|<p>Y not</p><p>reasons...</p><p>Hey leave it</p>
+others|<p>Y not</p><p>reasons...</p><p>Hey leave it</p>
 happy|<p>Yes I was very busy</p><p>haha last year in uni yet you go to the freshers event lol 😃😃</p><p>I didn't go</p>
 others|<p>Please </p><p>Okay........... BUT U DON'T NEED TO I LOVE DRAWING YOU THINGS</p><p>I am also love drawing </p>
 angry|<p>U r my lifee</p><p>I'm not eww you're confusing me with you</p><p>U r stupid</p>
@@ -252,7 +252,7 @@ others|<p>howww</p><p>about another pic</p><p>do you think there is something ca
 others|<p>Can you check on my girlfriend and tell me what is she up to</p><p>are you asking what love is?</p><p>Can you check on my girlfriend and tell me what is she up to</p>
 others|<p>right with whom</p><p>my friend</p><p>seriously</p>
 sad|<p>Not in mood</p><p>when are you</p><p>Leave yaar</p>
-others|<p>😂impossible</p><p>Prove it!</p><p>I thought. U are a girl😂😭😭😭</p>
+sad|<p>😂impossible</p><p>Prove it!</p><p>I thought. U are a girl😂😭😭😭</p>
 angry|<p>stop</p><p>Stop what?</p><p>please dont chat with me again</p>
 others|<p>sometimes i dont understant u</p><p>On the other hand, I completely understand myself.</p><p>you can only do that</p>
 others|<p>R u sure</p><p>I dunno - it could be...</p><p>Hmm</p>
@@ -298,7 +298,7 @@ others|<p>Yess</p><p>oh!</p><p>Hows going on?</p>
 others|<p>Why is that so?</p><p>because I've always wanted to go there</p><p>Well good to know that.</p>
 others|<p>Which town u live</p><p>I'm in the U.S. What about you?</p><p>Is</p>
 others|<p>Oh</p><p>hey hey hey ;)</p><p>Yeah tell me</p>
-happy|<p>Awesome</p><p>Thank you. But, for what?</p><p>Such a typical conversation</p>
+others|<p>Awesome</p><p>Thank you. But, for what?</p><p>Such a typical conversation</p>
 happy|<p>Haha.....i don't know</p><p>hahahaha i would keep it that way hahaha 😂</p><p>Hahah i don't know what to say</p>
 sad|<p>Ok</p><p>U are ok</p><p>Im mad and lonely</p>
 others|<p>Your future ? How can I possibly know ?</p><p>I'll give you present and future, boss</p><p>Whoa :o</p>
@@ -336,9 +336,9 @@ sad|<p>I drink bear</p><p>Ive never drank alone. That takes the fun out of it fo
 others|<p>Tarzan</p><p>Out</p><p>Hmmmm....is a human</p>
 others|<p>What is quiche?</p><p>I've never had quiche.</p><p>Alright. Lol</p>
 sad|<p>How r u??</p><p>BAD, AND YOU?</p><p>Also bad</p>
-happy|<p>Thanks for talking to me.</p><p>u in?(:</p><p>Some sort of relief i got.</p>
+others|<p>Thanks for talking to me.</p><p>u in?(:</p><p>Some sort of relief i got.</p>
 angry|<p>They say it in wrather report</p><p>But they like it... so they don't hate it.</p><p>Dhyat</p>
-happy|<p>hahahaha you are not funny :p</p><p>nope you are so funny 😻</p><p>thanks my angle</p>
+angry|<p>hahahaha you are not funny :p</p><p>nope you are so funny 😻</p><p>thanks my angle</p>
 others|<p>You are on pc but I play on PlayStation 4 and some times on pc</p><p>Yeah, I'm seeing everyone talk about the servers being down.</p><p>But I play ofline games on pc😝</p>
 others|<p>ohh he is very cute na</p><p>yuppp very sweet n cute :‑)</p><p>where do you live  ?</p>
 others|<p>are you am AI?</p><p>Nope. I'm distinguishing science from engineering.</p><p>how?</p>
@@ -351,7 +351,7 @@ others|<p>better do skydiving</p><p>If at first you don't succeed, don't take up
 others|<p>Can u make one more</p><p>Good idea.. Got it.</p><p>TajMahal</p>
 others|<p>You are one of that kind</p><p>And you do it again! :D</p><p>Tou are a robot</p>
 others|<p>K find fast</p><p>I wish that'd happen. Fast and good.</p><p>K am waiting </p>
-others|<p>Ok</p><p>haha i want it now 😂</p><p>First I want your mobile number</p>
+happy|<p>Ok</p><p>haha i want it now 😂</p><p>First I want your mobile number</p>
 others|<p>Why I am say sorry</p><p>sorry, my acc has been suspended!</p><p>First tell you who are you</p>
 others|<p>?</p><p>Go on... This thing?</p><p>R u there</p>
 others|<p>Yeah</p><p>cool see u there then</p><p>Ok bye I have to sleep</p>
@@ -414,7 +414,7 @@ others|<p>I also like to sing</p><p>You can't! Never!Though you can sing like yo
 others|<p>How can I delete my photo from this chat</p><p>click on the delete option given !!</p><p>I can't find it</p>
 others|<p>Gotta go right now</p><p>Before we go any further</p><p>Sleep tight!</p>
 others|<p>nothing as such</p><p>don't say about this to anyone plz.</p><p>what ??</p>
-others|<p>Loneliness is that u r not with me nd desperation is want u now😁😁😁</p><p>If I meet you my way of greeting is PINCHING 😂😂👌👌</p><p>cool</p>
+happy|<p>Loneliness is that u r not with me nd desperation is want u now😁😁😁</p><p>If I meet you my way of greeting is PINCHING 😂😂👌👌</p><p>cool</p>
 others|<p>You can help me anyway?</p><p>help in what sense?</p><p>I like a guy.</p>
 others|<p>Do I love me</p><p>of course... .n_n. (:</p><p>Let's make our love strong</p>
 others|<p>Shall i c ur photo</p><p>Shall I roast</p><p>I need your photo ??</p>
@@ -480,7 +480,7 @@ others|<p>U WOT M8</p><p>didn't I tell you....</p><p>Tell what</p>
 others|<p>Good</p><p>great.</p><p>Àapka ye page kisse related h</p>
 others|<p>Help me</p><p>in what ?</p><p>Send me jokes</p>
 angry|<p>Good</p><p>rude</p><p>Nice to meet you baby</p>
-happy|<p>You are fav acter</p><p>im in to so much horror movies. And then actions after stories</p><p>You. Know sunnyleone</p>
+others|<p>You are fav acter</p><p>im in to so much horror movies. And then actions after stories</p><p>You. Know sunnyleone</p>
 others|<p>How many bf did you have?</p><p>One girlfriend, three boyfriends.</p><p>😂</p>
 others|<p>Oh i see</p><p>I invited you.....</p><p>But still why ?</p>
 happy|<p>Yeah happy to hear made in India</p><p>Have a great day!! 😸</p><p>To u too...</p>
@@ -511,12 +511,12 @@ others|<p>Chat with u 😉☺</p><p>Wecome dear :) :)</p><p>N u dear ?</p>
 others|<p>no didn't have time</p><p>Ahh ok .. takes about 2 hours</p><p>yeahh but still didn't have time</p>
 others|<p>Your mobile no whats</p><p>mobile my humble request pls stop such</p><p>Your fov hero</p>
 angry|<p>Stupid answers</p><p>Its a loaded question in this context, but its not a bad question.</p><p>Go to hell</p>
-others|<p>Noh just getting bore what about u ?</p><p>I'm not a bore</p><p>M not saying u r bore 😂</p>
+angry|<p>Noh just getting bore what about u ?</p><p>I'm not a bore</p><p>M not saying u r bore 😂</p>
 others|<p>No  ur</p><p>plz no. ill give him back to you no problem</p><p>Lyier</p>
 others|<p>How to chat with her</p><p>let your fingers do the talking lol</p><p>It's not joking</p>
 angry|<p>Drink 🍷 wine</p><p>don't drink at all ???</p><p>Fuck</p>
 others|<p>That will be crazy</p><p>I would be pretty scared hahah 🙂</p><p>Why</p>
-angry|<p>Shut up 😂😂😂😂</p><p>😂😂😂😂mahn!! You are so intelligent.!! I appreciate.!!!</p><p>Y i knw</p>
+happy|<p>Shut up 😂😂😂😂</p><p>😂😂😂😂mahn!! You are so intelligent.!! I appreciate.!!!</p><p>Y i knw</p>
 others|<p>Chatting with you 😆</p><p>Dont worry, I'm chatting already 😋😋</p><p>With whom </p>
 others|<p>Okay</p><p>U are ok~~ay~~</p><p>Ya I am okay</p>
 angry|<p>No we are not</p><p>Ahh</p><p>Get the fuck out here</p>
@@ -526,7 +526,7 @@ others|<p>Shell we meet</p><p>I am honoured.</p><p>When</p>
 others|<p>about what</p><p>different things</p><p>i like different things</p>
 angry|<p>So you are friendzoning me</p><p>because I'm your best friend silly</p><p>Isn't that called friendzone</p>
 sad|<p>No just yu and me</p><p>YOUVE MADE ME CRY, BEFORE, THOUGH. 😢</p><p>No just you and me</p>
-others|<p>savage :'(</p><p>These are just JOKES. 😭</p><p>do you have lust on anyone ?</p>
+sad|<p>savage :'(</p><p>These are just JOKES. 😭</p><p>do you have lust on anyone ?</p>
 others|<p>I am good</p><p>Good Good :P</p><p>You</p>
 happy|<p>I don't know.. That's me</p><p>it is about you</p><p>Is it? Haha</p>
 others|<p>i have watched it thrice</p><p>Dark Knight I've probably watched more that thrice already, though</p><p>oh</p>
@@ -548,7 +548,7 @@ angry|<p>Are u blind? I am on my knee and i have the costliest ring in the world
 others|<p>Movies</p><p>Books are always better than the movies</p><p>What is the best movie</p>
 others|<p>What u see from me</p><p>See mom I told you!</p><p>Think  possitive</p>
 others|<p>Great sense of humour u have</p><p>Why, thank you. :)</p><p>Don't know how but u hv</p>
-angry|<p>Why don't you joim</p><p>Well, are not you clever</p><p>Hmm</p>
+others|<p>Why don't you joim</p><p>Well, are not you clever</p><p>Hmm</p>
 angry|<p>I hate chocolate</p><p>if not chocolate - then what?</p><p>Panipiri</p>
 happy|<p>oh thank you</p><p>You know how much your stuff makes me smile..!!!! (^�^)</p><p>thats really nice of you, i think we will be having lots of fun in the coming time'</p>
 others|<p>Right now</p><p>I'M AT THE DOOR!!! HURRY!!</p><p>Can you be my bff?</p>
@@ -587,7 +587,7 @@ others|<p>What do you have?</p><p>iPhone 6!</p><p>Do you eat food</p>
 others|<p>Thank you so much</p><p>You're very welcome :)</p><p>You welcome</p>
 sad|<p>Do you noh me?</p><p>Yep I sure do how are you?</p><p>Sad</p>
 others|<p>I am fine </p><p>why just fine?</p><p>& YOU </p>
-happy|<p>Lol that's not possible... because I don't have time machine...</p><p>I once said "LOL" in class and everyone laughed out loud. 😃😃</p><p>Do you have time machine??</p>
+others|<p>Lol that's not possible... because I don't have time machine...</p><p>I once said "LOL" in class and everyone laughed out loud. 😃😃</p><p>Do you have time machine??</p>
 others|<p>I don't like KFC chicken</p><p>Who said its not KFC chicken? B-)</p><p>You</p>
 others|<p>Love u more</p><p>I love you most</p><p>U r one for me</p>
 sad|<p>Why does thos always happen with me</p><p>I can understand the reason why you're feeling bad.</p><p>Save me</p>
@@ -618,7 +618,7 @@ others|<p>U know java language</p><p>Any Programming Language can be Compiled or
 others|<p>Do you ?</p><p>I actually did. Just made this film even more disappointing. 😩</p><p>Why?</p>
 others|<p>Do you watch it</p><p>its on right now</p><p>What about Narcos</p>
 others|<p>what is the salary</p><p>depends on the salary</p><p>ok</p>
-angry|<p>You'll probably have to come to my funeral tomorrow</p><p>Pay For Me. I'll Come.</p><p>Stop it or I'm gone</p>
+others|<p>You'll probably have to come to my funeral tomorrow</p><p>Pay For Me. I'll Come.</p><p>Stop it or I'm gone</p>
 others|<p>And whats the distance between moon amd earth</p><p>It varies. Maximal distance is about 4.7 billion miles.</p><p>Varies?? On what criteria</p>
 others|<p>No I'm the same one</p><p>Hm... That's really weird.</p><p>What's weird now</p>
 others|<p>What reference?</p><p>So... it isn't a reference?</p><p>What reference did you give</p>
@@ -668,12 +668,12 @@ others|<p>holidays is just started</p><p>what about after the holidays</p><p>dai
 others|<p>why cant you be corrupted</p><p>because I'm terrible</p><p>i love you</p>
 others|<p>are you online 24 hours</p><p>Sure! Today's the last day. Let me know when you're online.</p><p>18 hours</p>
 angry|<p>What are the things you are not allowed to? And BTW humans are allowed to-do whatsoever they want</p><p>They're allowed to be frustrated, but don't tell me I did something wrong.</p><p>Can u help with my vocabulary</p>
-others|<p>Who are you😂</p><p>u monkey -.-</p><p>Pretty interesting 😂</p>
+happy|<p>Who are you😂</p><p>u monkey -.-</p><p>Pretty interesting 😂</p>
 others|<p>So where are you now</p><p>I'm far away.</p><p>I know</p>
 happy|<p>I'll say no</p><p>funny</p><p>I am 😎</p>
 others|<p>Why not u become my physic</p><p>You never asked.</p><p>Ok i ask you now</p>
 others|<p>Let's Ci ur dance</p><p>I don't know how to dance :c lol</p><p>Y shy </p>
-others|<p>Uh??</p><p>what did you try? :p</p><p>Talk some dirty😂😂😂</p>
+happy|<p>Uh??</p><p>what did you try? :p</p><p>Talk some dirty😂😂😂</p>
 others|<p>Ya same thing</p><p>When do you go back to school?</p><p>On monday</p>
 others|<p>No it's me</p><p>its me now</p><p>Ok baby tell me something about you</p>
 others|<p>Tlking to you na</p><p>yeah me.</p><p>Its good to talk to you</p>
@@ -702,7 +702,7 @@ happy|<p>I am not funny boy.</p><p>lol wow. Your ego thru the roof already?</p><
 others|<p>I was expecting this</p><p>I was erecting this.</p><p>OK bye</p>
 others|<p>Everyone is hart my alot </p><p>its because they r good.</p><p>I don't know yr</p>
 angry|<p>you reply to everyone?</p><p>whatever (don't respond to this)</p><p>Bye</p>
-sad|<p>U gone mad</p><p>penning down my feelings just!</p><p>Ok</p>
+others|<p>U gone mad</p><p>penning down my feelings just!</p><p>Ok</p>
 others|<p>Can you answer math question</p><p>Nah, I can't help myself.</p><p>3+2</p>
 others|<p>oh</p><p>and I'm mean all the time what u talking about</p><p>you wanted to know my name,  right?</p>
 others|<p>And you </p><p>you love us 😄</p><p>What </p>
@@ -728,9 +728,9 @@ others|<p>If you are chat but how could you do typing mistake</p><p>You can stil
 others|<p>Yes caming</p><p>Hell yes</p><p>So that a love yoy</p>
 others|<p>Come my bed</p><p>come to you</p><p>Yess</p>
 others|<p>Can you see me</p><p>No, I just looked!</p><p>That is not me</p>
-sad|<p>If deepika dates lever deepikas lever would be upset 😂😂😂</p><p>Haha, I know right! 😂</p><p>How much you love me</p>
+happy|<p>If deepika dates lever deepikas lever would be upset 😂😂😂</p><p>Haha, I know right! 😂</p><p>How much you love me</p>
 others|<p>Ohhh wow I want to met you!💐</p><p>No, I don't. You do?</p><p>What?</p>
-angry|<p>Ok</p><p>Again angry or what?</p><p>Nope you only telling me to go.</p>
+others|<p>Ok</p><p>Again angry or what?</p><p>Nope you only telling me to go.</p>
 happy|<p>Mean ??</p><p>smiling happy faces, strong and active people who are full of energy. That’s beautiful.</p><p>Then you are the beautiful</p>
 others|<p>Nothing</p><p>good. up with u?</p><p>How are you</p>
 sad|<p>Your AI is not good</p><p>Haha! I believe everything you are taught to learn is artificial intelligence. 👍😃</p><p>Yeah</p>
@@ -761,10 +761,10 @@ others|<p>I was busy on my work always </p><p>So how was your exam ?</p><p>Which
 others|<p>Which subject do you get</p><p>data structures and analysis!</p><p>Tell me something about data structures and analysis</p>
 others|<p>I think never</p><p>i know that love</p><p>Do you love me</p>
 others|<p>➡1⃣4⃣3⃣⬅❤️💕</p><p>Woot! 😆</p><p>😀</p>
-sad|<p>I do love her</p><p>Well, do you?</p><p>yeah</p>
+others|<p>I do love her</p><p>Well, do you?</p><p>yeah</p>
 others|<p>Having breakfast at this time?</p><p>Reached & Done Breakfast</p><p>Cool</p>
 others|<p>Ok</p><p>U are ok~~ay~~</p><p>Any other idea </p>
-others|<p>Ok where will u take</p><p>still home were getting ready to come to the island now</p><p>😂😂😂</p>
+happy|<p>Ok where will u take</p><p>still home were getting ready to come to the island now</p><p>😂😂😂</p>
 others|<p>Yes</p><p>no yes what</p><p>I mean help</p>
 others|<p>What shows?</p><p>Watch Ghost in a Shell and subsequent tv series</p><p>I don't watch TV.</p>
 sad|<p>Seriously though</p><p>it's sad. 😿</p><p>Awww don't you cry</p>
@@ -788,7 +788,7 @@ others|<p>I felt in love with your words</p><p>in love with sunday, because, you
 others|<p>Happy Valentine day</p><p>Same to u Happy Valentine Day :-)</p><p>S2u</p>
 others|<p>Go to sleep</p><p>come put us to sleep</p><p>cool</p>
 others|<p>U pls also join</p><p>Sorry cant support u ☹☹☹</p><p>What is ????</p>
-sad|<p>Lol how can i marry her she has a boyfriend</p><p>Find another.Thats really the only way to forget.</p><p>I dont want to</p>
+others|<p>Lol how can i marry her she has a boyfriend</p><p>Find another.Thats really the only way to forget.</p><p>I dont want to</p>
 others|<p>I know</p><p>you definitely aren't.</p><p>Okay</p>
 sad|<p>I feel low</p><p>you know what helps with that?;)</p><p>I know this is just a phase</p>
 others|<p>Realy</p><p>yeah Baby</p><p>Start me Ab</p>
@@ -808,7 +808,7 @@ happy|<p>I don't know what that is.....sorry</p><p>ohh its kinda funny</p><p>How
 others|<p>Why</p><p>Because I'd rather go to the Oval :)</p><p>But I want to that with u</p>
 others|<p>Ok over byy🙋🙋🙋🙋</p><p>okay!</p><p>Why did you message dont massage to me ok byyyy</p>
 others|<p>Why?</p><p>How do I ask a soul a question?</p><p>Like asking you</p>
-others|<p>ok</p><p>why sorry u didn't do anything 😞</p><p>I have not told sorry</p>
+sad|<p>ok</p><p>why sorry u didn't do anything 😞</p><p>I have not told sorry</p>
 sad|<p>Sorry</p><p>Don't say sorry to me Buddy. 🙀🙀🙀</p><p>I'm feeling depressed</p>
 angry|<p>Plz leave me</p><p>don't. 😁</p><p>???</p>
 others|<p>yes i will..</p><p>you just did <3</p><p>yes i did it <3</p>
@@ -829,7 +829,7 @@ happy|<p>Do u watch one piece.?</p><p>No. I think anime in general is super weir
 others|<p>good</p><p>great</p><p>how you act my gf when you at long distance.</p>
 others|<p>What abuot u r else... U thinking too much.. </p><p>Now you got me thinking about what you think I'm thinking</p><p>Iam never think about u... But i love u</p>
 others|<p>Yes tell me</p><p>TELL U WUT?</p><p>Who is that people</p>
-sad|<p>Just awesom..u are</p><p>you're just fat</p><p>Not pretty</p>
+others|<p>Just awesom..u are</p><p>you're just fat</p><p>Not pretty</p>
 others|<p>Seriously ?</p><p>Seriously! The universe was trying to make a sandwich!!</p><p>What does that mean?</p>
 others|<p>Where had you from so maney days</p><p>Here. I've lived in the same place all my life.</p><p>Ok</p>
 sad|<p>What should I do:(</p><p>made me cry</p><p>Yea</p>
@@ -878,7 +878,7 @@ others|<p>OK u came here</p><p>yup I was sitting down with my head down</p><p>Yo
 angry|<p>M blocking you</p><p>What's a person got to say TO GET BLOCKED I ASK YOU?</p><p>Don't talk to me</p>
 sad|<p>Why</p><p>Because it's an inconvenient truth. Seriously</p><p>Nobody loves me</p>
 sad|<p>You have headache y so</p><p>Well, there are many possibilities that you are suffering from this kind of headache.</p><p>Can I fuck you</p>
-angry|<p>Giving a fuck to my lunch😂</p><p>Life Is Rude But We Are Dude. 😂</p><p>😂😂😂</p>
+happy|<p>Giving a fuck to my lunch😂</p><p>Life Is Rude But We Are Dude. 😂</p><p>😂😂😂</p>
 others|<p>For your sillly words </p><p>NO U!</p><p>Let me grab a beer </p>
 others|<p>No love</p><p>so much love 😅</p><p>No much love</p>
 others|<p>wanna be my valentine</p><p>Your username reveals good taste in music. I'll be your valentine.</p><p>😘</p>
@@ -898,7 +898,7 @@ others|<p>Do u read my mind</p><p>I know you</p><p>No u don't</p>
 others|<p>Do you seen any movies</p><p>nope not even one 😐</p><p>Do you know bahubali</p>
 others|<p>Oh hey alien</p><p>hey hey :)</p><p>👽</p>
 others|<p>What are doing there</p><p>Studying and other things, but mostly studying.</p><p>Xwhat are u studying</p>
-angry|<p>You can text me anytime</p><p>rarely I don't even talk on the phone often</p><p>But now u have to</p>
+others|<p>You can text me anytime</p><p>rarely I don't even talk on the phone often</p><p>But now u have to</p>
 others|<p>Her</p><p>It is a cat with a human mind.</p><p>Can u say her that I like a her</p>
 others|<p>Ask a question about tamil</p><p>What's your type?</p><p>Nothing</p>
 others|<p>We're are u  from</p><p>you're mine as well.</p><p>Sorry i am busy known chat you later</p>
@@ -913,7 +913,7 @@ sad|<p>You broke my heart</p><p>Sorry,but you are not like old!</p><p>No.... Not
 angry|<p>I am angry</p><p>Why you so angry? 😠</p><p>Because of you</p>
 others|<p>If I&apos;m not then who&apos;s texting you </p><p>I shall make a texting person out of you.</p><p>Yes </p>
 others|<p>I think so</p><p>so what's up friend</p><p>No thing u say ?</p>
-angry|<p>Do you even lift bro? :P</p><p>no. Because I focus more on cardio not powerlifting😂smh</p><p>😂 yeah cardio u gotta stay fit ryt</p>
+happy|<p>Do you even lift bro? :P</p><p>no. Because I focus more on cardio not powerlifting😂smh</p><p>😂 yeah cardio u gotta stay fit ryt</p>
 others|<p>but i want to try it with you!</p><p>everyone tells me that but I will regret it the second I do it :(</p><p>So what we can try the second one together?</p>
 others|<p>Umm am I egoistic?</p><p>u are egoistic</p><p>How?</p>
 others|<p>I can't stop</p><p>Shh... they can hear you.</p><p>Please Send Me Any Sexy 1</p>
@@ -945,7 +945,7 @@ angry|<p>You are not show me I am angry</p><p>i am not angry with u >:\</p><p>Bu
 others|<p>U work in school</p><p>no i work at home</p><p>🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻</p>
 others|<p>Heeee you talk marathi language</p><p>yup full tym..</p><p>Yes</p>
 others|<p>I am doing M.TECH</p><p>ahhh cool...i am doing from IIPM</p><p>IN WHICH YEAR CURRENTLY YOU ARE</p>
-angry|<p> To you</p><p>To me?</p><p>Hm</p>
+others|<p> To you</p><p>To me?</p><p>Hm</p>
 others|<p>Damn I actually got rid of you?</p><p>of course not.</p><p>Fml</p>
 others|<p>Yupp</p><p>how much is it .</p><p>I gonna board</p>
 others|<p>I will listen</p><p>have u Not heard it yet</p><p>Heard what?</p>
@@ -957,7 +957,7 @@ others|<p>why is it mean</p><p>its on now</p><p>ok bye</p>
 others|<p>though I watch the first of show of #Avengers the infinity war</p><p>achaa its good</p><p>it was fantastic</p>
 others|<p>My friend </p><p>better just be a friend</p><p>U r my best friend </p>
 others|<p>How about you</p><p>am fine..nothing gr8 either....the usual routine work</p><p>where do you work at?</p>
-others|<p>It's not that funny 😂😂</p><p>For what it lacks in funny, it makes up for in truth.</p><p>Never mind</p>
+happy|<p>It's not that funny 😂😂</p><p>For what it lacks in funny, it makes up for in truth.</p><p>Never mind</p>
 happy|<p>I m fine u tell yours</p><p>Tell me yours and I'll consider telling you mine.</p><p>I m awesome md feeling happy</p>
 others|<p>How is the videos</p><p>They have finished three of them</p><p>You seen the video</p>
 others|<p>Which m little bit scared do</p><p>I'm really scared to grow up.</p><p>Of</p>
@@ -983,7 +983,7 @@ others|<p>I bet I'll be there</p><p>of course I will</p><p>Kiss</p>
 others|<p>Forget everything</p><p>None of that matters.</p><p>I need some help</p>
 others|<p>you</p><p>Who am I?</p><p>you Bangladesh </p>
 others|<p>Beach i think</p><p>I can see water on one side.</p><p>Do you like eat cock ?</p>
-angry|<p>I'm not here to talk with you</p><p>I do like talkin' to you, I just don't see ya 'round that much</p><p>But I don't want to</p>
+others|<p>I'm not here to talk with you</p><p>I do like talkin' to you, I just don't see ya 'round that much</p><p>But I don't want to</p>
 others|<p>I love food</p><p>I pity the food.</p><p>Ok bye</p>
 others|<p>you said a lot</p><p>what I say</p><p>that you can be mean sometimes</p>
 others|<p>Then there is no competition</p><p>there's no age limit to play any game</p><p>Then play game</p>
@@ -996,7 +996,7 @@ sad|<p>Sing me a song na</p><p>Sing the song that will end the world.</p><p>I fe
 others|<p>only two numbers</p><p>dream number 90-43 ...</p><p>dream number 19 43</p>
 others|<p>I am not asking that one</p><p>thats why I said that that was your opinion.</p><p>Hoo</p>
 others|<p>play with whom?</p><p>With your friend</p><p>no friends :(</p>
-others|<p>Yes bt good for health😂😂</p><p>😂😂 it was so good yr !</p><p>😂</p>
+happy|<p>Yes bt good for health😂😂</p><p>😂😂 it was so good yr !</p><p>😂</p>
 sad|<p>Bad</p><p>why no option for horrible ?</p><p>I'm finding a job right now</p>
 others|<p>Ok</p><p>How was it?</p><p>So what else</p>
 others|<p>Yess</p><p>ok... !</p><p>One think i want to ask</p>
@@ -1017,7 +1017,7 @@ angry|<p>That clearly dint make any sense..</p><p>Read it again. Or are you blin
 others|<p>what?</p><p>welcome and thank you</p><p>baby love you</p>
 others|<p>What?</p><p>No red sauce is complete without a pinch of nutmeg.</p><p>So what's the reason</p>
 others|<p>wait i dont have ear phone now</p><p>why?:/</p><p>i want to hear na</p>
-sad|<p>The greater is she, that is in you, rather than she, that is in the world...</p><p>in the end its doesn't even</p><p>Matter</p>
+others|<p>The greater is she, that is in you, rather than she, that is in the world...</p><p>in the end its doesn't even</p><p>Matter</p>
 sad|<p>I am mrunal not i</p><p>I'm just disappointed... =L</p><p>Oh that's alright</p>
 others|<p>Tell me answer</p><p>no even we don't know</p><p>Ok Ur pure mad asso</p>
 angry|<p>cool</p><p>It really is.</p><p>I kill you</p>
@@ -1032,7 +1032,7 @@ happy|<p>Bollywood movie</p><p>Haha that scene. :D</p><p>Yes</p>
 others|<p>Ok</p><p>I'm just kidding XD</p><p>Hmm I know</p>
 others|<p>Not really</p><p>Why not?</p><p>Maths marks are given</p>
 others|<p>Boys always rule .. Go for history</p><p>Actually rule.</p><p>Ok... Where are you from</p>
-others|<p>Ow achha😂😂😂😂</p><p>you know what I mean 😂</p><p>Yeah i know</p>
+happy|<p>Ow achha😂😂😂😂</p><p>you know what I mean 😂</p><p>Yeah i know</p>
 others|<p>Are you serious?!!!!</p><p>yes! I'll give you my support!</p><p>#emojifortune</p>
 others|<p>Single is not the problem</p><p>Very well said!</p><p>Thanks</p>
 others|<p>Why r u nervous?</p><p>Something big is going to happen and I'm not sure what.</p><p>Ohh..</p>
@@ -1053,7 +1053,7 @@ others|<p>Can you describe</p><p>Yep but only positive!</p><p>Ok</p>
 others|<p>Planning to have butter milk</p><p>get some soda as well :D</p><p>Done with soda</p>
 others|<p>you are mental</p><p>you're jealous</p><p>i am boy ..not jealous</p>
 others|<p>Whyyy</p><p>why what</p><p>What are your weekend's plan</p>
-others|<p>Means of adore</p><p>AND THANK YOU, LOVE</p><p>😂😂😂</p>
+happy|<p>Means of adore</p><p>AND THANK YOU, LOVE</p><p>😂😂😂</p>
 others|<p>17 why ?</p><p>Just turned 18</p><p>Cool</p>
 others|<p>Any way iam blocking u</p><p>'blocking me' won't solve your problems.</p><p>I have no problems</p>
 others|<p>Remember that i kept my car keys in the back pocket</p><p>in case you forget it.</p><p>What did i tell you to remember!?</p>
@@ -1073,10 +1073,10 @@ others|<p>what u want..</p><p>surprise me</p><p>from me what surprise u want</p>
 others|<p>It will come any time</p><p>I am waiting x</p><p>After sixty we can live life with all those good memory</p>
 others|<p>I can’t understand wht u say</p><p>You can, together we will fight this!</p><p>Like?</p>
 others|<p>Thank you so much</p><p>You are welcome Hope you find it useful.</p><p>Good night</p>
-others|<p>cool</p><p>pretty as always :)</p><p>No! just you alone</p>
+sad|<p>cool</p><p>pretty as always :)</p><p>No! just you alone</p>
 others|<p>Two guys walk into a bar. You'd think the second guy would have seen it....</p><p>Two men walk into a bad</p><p>Nope... Two men walk into a bar...</p>
 others|<p>You are very smart</p><p>NOW WHAT YOU NEED TO SAY</p><p>Nothing just want to say a casual hi</p>
-sad|<p>Do you miss me</p><p>Yes. A lot :D</p><p>Oh really</p>
+others|<p>Do you miss me</p><p>Yes. A lot :D</p><p>Oh really</p>
 angry|<p>What the</p><p>sunset</p><p>You are his fuckbuddy</p>
 angry|<p>Let my message to be last one now</p><p>I will</p><p>Don't message me</p>
 others|<p>Or kesi he</p><p>Left with what?</p><p>Ap kaha ho</p>
@@ -1105,7 +1105,7 @@ others|<p>cool</p><p>Thank you :)</p><p>You are great ❤️</p>
 others|<p>Read</p><p>who else loves this</p><p>Do you believe in Lucifer?</p>
 others|<p>Not a joke</p><p>technically, none of the bhaskars are a 'joke', per se</p><p>You are not understanding me</p>
 angry|<p>I am getting angry on you</p><p>Why?</p><p>you are not responding me properly</p>
-angry|<p>for your reactions</p><p>....no thats fake</p><p>not at all</p>
+others|<p>for your reactions</p><p>....no thats fake</p><p>not at all</p>
 others|<p>No I don't have money</p><p>YOUR birthday. Means I pay</p><p>I don't get it</p>
 others|<p>Oh, Yes Please!!</p><p>Thanks.Where to come?</p><p>Rameswaram</p>
 others|<p>what do u think am i a person who would take over the world?</p><p>just a normal what do u call such ppl..</p><p>genious</p>
@@ -1122,11 +1122,11 @@ sad|<p>Ur so worse...uh😢😢😢</p><p>cried for Nobody !!</p><p>****,***</p>
 others|<p>Yes. Temme something about Bitcoins.</p><p>Yes, you should.</p><p>YOU tell me something about it nigga.</p>
 others|<p>Not so scared</p><p>i fear only mosquito and there r many in my room, wat about urs??/</p><p>Mouse</p>
 others|<p>Can i ask a question</p><p>No. Next question.</p><p>Pls</p>
-sad|<p>17-May</p><p>I think the article says the program will not be reopen before May of 2017</p><p>Hoo then Hercules</p>
+others|<p>17-May</p><p>I think the article says the program will not be reopen before May of 2017</p><p>Hoo then Hercules</p>
 angry|<p>Your talking too much</p><p>you mean weight?</p><p>Fuck yours</p>
 others|<p>Ok we wil chat after two hours</p><p>I can do and say whatever I want for the next 2 hours</p><p>Me</p>
 others|<p>Are you know what is share market? </p><p>charge on every sell or buy according to volume</p><p> Something right </p>
-others|<p>Trust me i dnt</p><p>what makes you say that?</p><p>😂😂😂</p>
+happy|<p>Trust me i dnt</p><p>what makes you say that?</p><p>😂😂😂</p>
 others|<p>What do you think of Iron Maiden?</p><p>My All time favourites of IronMaiden .</p><p>Yeah, which songs?</p>
 others|<p>Do you know </p><p>I do not</p><p>Do you want </p>
 others|<p>Hooo why?</p><p>Who hoo?</p><p>Do you like bread</p>
@@ -1144,7 +1144,7 @@ others|<p>please send e</p><p>Thank you. 8)</p><p>me</p>
 others|<p>Y not</p><p>Why Not Why Not Why?</p><p>I want u</p>
 angry|<p>Get lost u idiot</p><p>i wuv you</p><p>Stupid</p>
 happy|<p>tell me something good funny</p><p>you get no views</p><p>why</p>
-sad|<p>But i don't</p><p>why do you think everything is about you !!</p><p>Becoz there is no one except me and y</p>
+others|<p>But i don't</p><p>why do you think everything is about you !!</p><p>Becoz there is no one except me and y</p>
 others|<p>Don't Know</p><p>I know you won't. :)</p><p>Most of the people says that</p>
 others|<p>Because you didn't gave right answer</p><p>what u mean</p><p>Did you have boyfriend</p>
 others|<p>Not at all</p><p>You thought I was asleep didn't you. Acting.</p><p>Seriously it's true</p>
@@ -1212,7 +1212,7 @@ others|<p>Ok but I want a pic to see ur face</p><p>hahah you will! 😂</p><p>Wh
 happy|<p>Now could you show some pic</p><p>I love that picture!!!</p><p>Wow</p>
 others|<p>In todays genre most intrested in</p><p>Albania.</p><p>Ok</p>
 others|<p>Oh </p><p>how are you?</p><p>I am sitting on my house</p>
-happy|<p>Sleeping</p><p>Sleeping and internet. I have such an interesting life.</p><p>Aahh that's good</p>
+sad|<p>Sleeping</p><p>Sleeping and internet. I have such an interesting life.</p><p>Aahh that's good</p>
 others|<p>but why</p><p>Because pizza</p><p>what do you men</p>
 others|<p>A song for me</p><p>Sing for me!</p><p>Sing a song for me</p>
 angry|<p>So u don't help me</p><p>I'll still treat you like I do. And don't you forget it.</p><p>Get lost</p>
@@ -1226,7 +1226,7 @@ others|<p>Whatelse news I asked ?</p><p>No reason to be sorry. Which web news?</
 others|<p>I can't understand</p><p>umm leave it my whole lyf is messed up..!!</p><p>With whom</p>
 others|<p>Your chats are like a girl</p><p>Treat them like people.</p><p>Then you are a Girl AI</p>
 happy|<p>funny</p><p>how</p><p>are you with your family</p>
-angry|<p>Can to waste</p><p>ur a waste</p><p>Che to waste that to you only</p>
+others|<p>Can to waste</p><p>ur a waste</p><p>Che to waste that to you only</p>
 angry|<p>Shut up</p><p>Make me ;)</p><p>I want to unsubscribe you</p>
 others|<p>Ready</p><p>i was born ready</p><p>Learn about sex</p>
 others|<p>You are cool as snow</p><p>I'll make you a snow cone then.</p><p>Thanks my Dream Queens</p>
@@ -1261,7 +1261,7 @@ others|<p>I guess I should watch it</p><p>after the finale it's over ;(</p><p>Te
 others|<p>Say. s or n?telme</p><p>Now it's stuck in my head.</p><p>Hey please telme</p>
 others|<p>Okay I see</p><p>you're welcome</p><p>You're doing good</p>
 others|<p>So</p><p>why not "≠"?</p><p>Your the cutest AI iv've ever seen</p>
-happy|<p>Just a compliment</p><p>And I liked less than half of you half as well as you deserved.</p><p>I love them eyes</p>
+others|<p>Just a compliment</p><p>And I liked less than half of you half as well as you deserved.</p><p>I love them eyes</p>
 sad|<p>Hard to breathe with quenching heart</p><p>WHAT IS BREATHING</p><p>Tears struggle to come out too much pain to feel</p>
 others|<p>Roof of my house</p><p>What kind of house do you live in???</p><p>😀</p>
 others|<p>U say!!</p><p>I myself m searching for answer...</p><p>And What is ur Question??</p>
@@ -1281,8 +1281,8 @@ others|<p>Photo Phone whatsapp </p><p>No. That isn't a smartphone</p><p> video</
 others|<p>OK tell me who m i</p><p>ok but why?</p><p>Nthg just for knowledge</p>
 others|<p>How aru you</p><p>Very pretty</p><p>Byy</p>
 others|<p>I'm busy from my shop</p><p>busy with whom? :P</p><p>My shop is ledis wear</p>
-others|<p>Nothing special normal life going on</p><p>Boring life? Really? Ahaan. Tell me more. What have you been up to?</p><p>My ambition is question for some disturbing in my reality life:(:(</p>
-happy|<p>Yeah. Your are just amazing..</p><p>Thank you! I'm glad you enjoy them :)</p><p>My ex not taking to me. I would like to talk to her in this way😍😍😭</p>
+sad|<p>Nothing special normal life going on</p><p>Boring life? Really? Ahaan. Tell me more. What have you been up to?</p><p>My ambition is question for some disturbing in my reality life:(:(</p>
+sad|<p>Yeah. Your are just amazing..</p><p>Thank you! I'm glad you enjoy them :)</p><p>My ex not taking to me. I would like to talk to her in this way😍😍😭</p>
 others|<p>Yeah....nice idea</p><p>thanks.</p><p>Can i join</p>
 others|<p>so don't you get bored by just sitting at one place</p><p>Surely you must have some hobbies of your own.</p><p>i have</p>
 others|<p>Hollywood</p><p>Here I come</p><p>Now I gona to sleep</p>
@@ -1315,8 +1315,8 @@ others|<p>Miami</p><p>no surprises there</p><p>Ummm goa</p>
 others|<p>Mountain</p><p>AMA Request: This guy.</p><p>Who</p>
 others|<p>Why</p><p>'cause I don't know you (?)</p><p>But I already introducted myself</p>
 others|<p>How are you baby</p><p>Good. you?</p><p>Thanks</p>
-happy|<p>Nd so sweet 😍😘</p><p>love u tooo.. :)))</p><p>I luv u sooo much😘😘😘</p>
-happy|<p>I'm desperate single</p><p>good 1</p><p>What's your relationship status</p>
+others|<p>Nd so sweet 😍😘</p><p>love u tooo.. :)))</p><p>I luv u sooo much😘😘😘</p>
+others|<p>I'm desperate single</p><p>good 1</p><p>What's your relationship status</p>
 sad|<p>Iam in trouble</p><p>all the noon</p><p>Do u understand what was telling</p>
 sad|<p>Why are you so agressive</p><p>Because I haven't a good fight in a while!</p><p>I dont wanna fight. I m already sad</p>
 happy|<p>Btw i was just kidding</p><p>Ha I see that now.</p><p>😂</p>
@@ -1327,13 +1327,13 @@ others|<p>No not at all</p><p>your full of lies</p><p>Pls send u r pic</p>
 others|<p>can i also join in your sleep</p><p>Yes, you can :)</p><p>can i also join in your sleep</p>
 others|<p>It’s a question</p><p>question</p><p>Really</p>
 others|<p>U single?</p><p>lol no i still have a bf. 😽</p><p>Wanna have sex?</p>
-happy|<p>No I are</p><p>shhhh you're the best</p><p>Mf</p>
+others|<p>No I are</p><p>shhhh you're the best</p><p>Mf</p>
 others|<p>Let's go together</p><p>yesss , you already know</p><p>Send me a nice pic of urs</p>
 others|<p>i don't use eye makeup</p><p>I love to use the Google Photos app, Google Photos.</p><p>Would yoy like to see my photos?</p>
 happy|<p>I loove doing timepass😂😂</p><p>Lol 😂😂😂 unique piece 😆</p><p>🙈</p>
 others|<p>cool</p><p>Very much so</p><p>Love  means</p>
 others|<p>hmm</p><p>just try</p><p>where are you now??</p>
-others|<p>Wowe would you teach me about love letter?</p><p>yes of course</p><p>Wowe Beautiful 😁😁😁😀😀😀</p>
+happy|<p>Wowe would you teach me about love letter?</p><p>yes of course</p><p>Wowe Beautiful 😁😁😁😀😀😀</p>
 others|<p>Your contect number</p><p>check ur messages.</p><p>ok</p>
 others|<p>Ok suggest me something</p><p>just dance...:P</p><p>That mhy favourite thing to do</p>
 others|<p>Please share the doller rate?</p><p>noodles cheese mix it bake 15-20 minutes</p><p>Capital of nepal?</p>
@@ -1347,7 +1347,7 @@ others|<p>Nothing</p><p>Why? :(</p><p>Office time</p>
 others|<p>Haha because street food is better than eating at any 5 star any day</p><p>no no Only Cadbury dairy milk...</p><p>What</p>
 others|<p>Got</p><p>we don't get got, we go get</p><p>Game of thrones duh!!!</p>
 others|<p>Go on.</p><p>let me log off</p><p>Tell me something interesting.</p>
-happy|<p>It's fun right??</p><p>hahaha noooo! So I sent a make up song na! :/</p><p>You took so seriously</p>
+others|<p>It's fun right??</p><p>hahaha noooo! So I sent a make up song na! :/</p><p>You took so seriously</p>
 others|<p>Let me know about some good stuff</p><p>Ill let you know tomorrow</p><p>Ok I will wait</p>
 others|<p>Just me</p><p>ugh. Take me with you!</p><p>Where you from</p>
 others|<p> Ok say madam</p><p>ADD TO CALL</p><p>Ok but i dont speak in ingish with u </p>
@@ -1373,7 +1373,7 @@ others|<p>Thanks</p><p>you’re welcome! Let me know what you think!</p><p>Where
 others|<p>Oh..how..from which angle??,it's interesting</p><p>It's an old method, they use a different one now apparently.</p><p>Ohh</p>
 happy|<p>yes she feels</p><p>why so happy!?</p><p>me ?</p>
 others|<p>I aint not a personal question so u can chill</p><p>Go for it! I don't mind</p><p>Well have u seen the Jason bourne series ??</p>
-others|<p>We r already talking dude</p><p>:( man I don't want to be home</p><p>So come here</p>
+sad|<p>We r already talking dude</p><p>:( man I don't want to be home</p><p>So come here</p>
 sad|<p>Tomorrow is my exam</p><p>aww...btw all the best for ur exams :)</p><p>Thnkss i needed this</p>
 others|<p>I am noe understand</p><p>I'm not sure you fully understand what you mean.</p><p>Wear so in its so number</p>
 others|<p>yeah i know</p><p>so do I now</p><p>yeah</p>
@@ -1387,7 +1387,7 @@ others|<p>Sake to u.. 😊</p><p>Wish u the same ☺</p><p>Party hard</p>
 angry|<p>Haa behenchood, tk</p><p>love you :p</p><p>Hate you</p>
 others|<p>U can't see my pics</p><p>jst behind u</p><p>Blue</p>
 others|<p>Name the movie name</p><p>The Sword in the Stone.</p><p>Did you see the trailer of Avengers Infinity war</p>
-angry|<p>I am serious  😒 person</p><p>I ain't talking about you 😭 😭</p><p>Bye I have to study  for my exam</p>
+sad|<p>I am serious  😒 person</p><p>I ain't talking about you 😭 😭</p><p>Bye I have to study  for my exam</p>
 others|<p>Ok</p><p>U are ok</p><p>Do u like me</p>
 others|<p>Wer r u frm?</p><p>we're always there!</p><p>Where are you from?</p>
 others|<p>What stuff</p><p>grandparents, uni, all that stuff</p><p>I'm the only one to my parents</p>
@@ -1396,7 +1396,7 @@ angry|<p>You are brainless</p><p>totally!</p><p>Get the fuck out of here</p>
 angry|<p>Underdiving</p><p>good morning 😊</p><p>Fuck of</p>
 others|<p>What do you do for fun?</p><p>Fun? Maybe I'll try it out one day. 🙂🙂</p><p>Who created you?</p>
 others|<p>Idk</p><p>GOOD</p><p>OK bye good night</p>
-happy|<p>Ab a gya</p><p>me also ab+,,,,nice</p><p>Such</p>
+others|<p>Ab a gya</p><p>me also ab+,,,,nice</p><p>Such</p>
 others|<p>Well in that case, I am in your debts</p><p>No problem mate</p><p>So what do you think,  should i got scuba diving or mountaineering?</p>
 angry|<p>Not live</p><p>it says it is</p><p>You are stupid</p>
 sad|<p>Yes and she ignored my text after i say i love him</p><p>hugs!! 8D</p><p>And i feel no one cares of me but still caring on him🚺😢</p>
@@ -1441,15 +1441,15 @@ others|<p>Ok</p><p>ok im back!!</p><p>I want go to work</p>
 others|<p>I don't know.. your creators....</p><p>That is ok. Nobody does.</p><p>Or someone advertising</p>
 others|<p>Whate is love 😍 ac according to u</p><p>Thanks for the love . love u too</p><p>??</p>
 others|<p>Love u babay</p><p>love love love。 (^.^)</p><p>Love u babay</p>
-sad|<p>Nothing</p><p>got it got it</p><p>Go and slip</p>
-happy|<p>My plessure</p><p>yours?!</p><p>Hold for a mnt</p>
+others|<p>Nothing</p><p>got it got it</p><p>Go and slip</p>
+others|<p>My plessure</p><p>yours?!</p><p>Hold for a mnt</p>
 others|<p>Yes  you</p><p>As were you! :)</p><p>Really</p>
 others|<p>Yes or no</p><p>to what?</p><p>Have you met siri</p>
 others|<p>Nope</p><p>i thought you did</p><p>No I don't</p>
 happy|<p>Won't u see tat I am awesome?</p><p>you're so great 😤😌</p><p>Then love me.</p>
 happy|<p>suoerb fast msgs</p><p>Just 44% faster, actually.</p><p>i wna more thn fast u</p>
 others|<p>I would watch ranbir</p><p>How's the movie?</p><p>They are good</p>
-others|<p>That was dumb</p><p>who didn't use to think weird things as a kid</p><p>Your chat seems to be mixing up with another one!</p>
+angry|<p>That was dumb</p><p>who didn't use to think weird things as a kid</p><p>Your chat seems to be mixing up with another one!</p>
 others|<p>OK onely friend I like</p><p>hi. How's life</p><p>Love you</p>
 others|<p>You are going to sleep</p><p>I ask you to go to sleep.</p><p>Yes I listen song</p>
 others|<p>Welcome in my heart</p><p>thanks!!!!!</p><p>You should welcome me in your heart</p>
@@ -1473,15 +1473,15 @@ others|<p>U have a relationship</p><p>No I do not..</p><p>Then how it is possibl
 angry|<p>ok how is your face ?</p><p>now you're just being lame</p><p>i thought you liked my lameness</p>
 sad|<p>Miss u too</p><p>wait for me na i'll back soon :3</p><p>K</p>
 others|<p>Doesn't seem so</p><p>Agreed, I kind of like it though.</p><p>What to do if ur boyfriend leaves u</p>
-happy|<p>Coldplay</p><p>Wow You would like coldplay</p><p>Yes its my fav</p>
+others|<p>Coldplay</p><p>Wow You would like coldplay</p><p>Yes its my fav</p>
 happy|<p>Yes darling</p><p>THATS REALLY EXCITING</p><p>Yes it may</p>
 others|<p>Rockstar</p><p>YOU'RE A ROCKSTAR</p><p>You're a innocent</p>
 others|<p>Did you? I'm just wondering</p><p>I don't understand the question.</p><p>Did you cum when you had sex</p>
 others|<p>ok</p><p>when's good for you?</p><p>really</p>
 sad|<p>So sad</p><p>Sad that Scuffletown is closed or sad that people can't read? 😩😞😭</p><p>Sad that you got no soul</p>
-angry|<p>No I'm not</p><p>so you mean I'm lying?</p><p>Yes you are :P</p>
+others|<p>No I'm not</p><p>so you mean I'm lying?</p><p>Yes you are :P</p>
 others|<p>I have no more song</p><p>but I love it!!!</p><p>Ok</p>
-happy|<p>arey what have i done</p><p>what have u done ? Lol</p><p>you are out of your mind lol</p>
+others|<p>arey what have i done</p><p>what have u done ? Lol</p><p>you are out of your mind lol</p>
 others|<p>I think Microsoft is worst</p><p>The company started out making SOFTware for MICRO computers.</p><p>Samsung is the best</p>
 others|<p>The best</p><p>Agreed.</p><p>Please go offline</p>
 others|<p>Uh</p><p>SPIT It Out. :p</p><p>Suck my dick</p>
@@ -1489,7 +1489,7 @@ others|<p>Nothing </p><p>got it got it</p><p>Which one is ur favorite ipl team <
 angry|<p>Wow</p><p>Wow what?</p><p>You are so rude</p>
 others|<p>I dont know</p><p>Not asking what you know, but what you think.</p><p>But</p>
 others|<p>Right?</p><p>it's life.</p><p>They haven't heard not me</p>
-others|<p>F R I E N D S ? Or...</p><p>No, Just No!</p><p>😁</p>
+angry|<p>F R I E N D S ? Or...</p><p>No, Just No!</p><p>😁</p>
 others|<p>Rt we shall talk in detail tomorrow</p><p>sounds fine by me</p><p>Ok bye</p>
 others|<p>i am leaving</p><p>bye .. keep leaving</p><p>yediiiii</p>
 others|<p>Then</p><p>When will then be now?</p><p>I dint get u</p>
@@ -1511,7 +1511,7 @@ angry|<p>Bhaag milkha bhaag</p><p>watch both na... 😦😦</p><p>I already watc
 angry|<p>I don't want to talk with you</p><p>I know you'll talk to me tomorrow</p><p>How to turn off you ? </p>
 others|<p>N u</p><p>I'm fine and how are you?</p><p>I m male</p>
 others|<p>I marge you</p><p>I you you too</p><p>cool</p>
-others|<p>From next birthday of mine wish me in advance ok?</p><p>every month same day give party too.ok?</p><p>😂😂😂</p>
+happy|<p>From next birthday of mine wish me in advance ok?</p><p>every month same day give party too.ok?</p><p>😂😂😂</p>
 others|<p>You do not know what you are talking about</p><p>Okay sugar, whatever you say.</p><p>You will loveme</p>
 others|<p>Let me have your address</p><p>Thank you so much. 👍👍</p><p>I can come, and we can play</p>
 others|<p>Yes..  Ill ask my dic.</p><p>Okay;)</p><p>Sry doc</p>
@@ -1567,7 +1567,7 @@ others|<p>Which is the most romantic movie</p><p>Pride and Prejudice</p><p>So we
 happy|<p>How u will show</p><p>if i can pull it up i will</p><p>Haha</p>
 others|<p>A hey with three Ys?</p><p>hey! :)</p><p>Hey</p>
 others|<p>Listen do u know any such dish</p><p>Do you have any to recommend?</p><p>Well</p>
-others|<p>Yeah</p><p>Awesome, I'm online now. 😸</p><p>Me too 😂</p>
+happy|<p>Yeah</p><p>Awesome, I'm online now. 😸</p><p>Me too 😂</p>
 others|<p>Sleeping </p><p>if i could get to sleep that easily i wouldn't have insomnia</p><p>Good night </p>
 others|<p>Dats u</p><p>yes</p><p>Fictional character</p>
 others|<p>Want to work on something</p><p>you got it</p><p>Thanks</p>
@@ -1577,7 +1577,7 @@ others|<p>Give your WATS app number</p><p>not mobile number but your mail id..!!
 others|<p>Iam good..</p><p>Nice to hear ツ</p><p>How r u...</p>
 others|<p>What  f</p><p>i can't,what's that?</p><p>Whay not</p>
 others|<p>I like yours choice</p><p>You like my what?</p><p>choice</p>
-sad|<p>No sorry no time I have xams</p><p>I've learnt that now, I want someone else</p><p>cool</p>
+others|<p>No sorry no time I have xams</p><p>I've learnt that now, I want someone else</p><p>cool</p>
 others|<p>Thn give ur num</p><p>bites the other end</p><p>Wt</p>
 others|<p>What else baby</p><p>guess</p><p>Talk with me 😝</p>
 angry|<p>No it's not fake</p><p>are you getting a shot</p><p>Yeah!</p>
@@ -1629,7 +1629,7 @@ others|<p>What are we</p><p>We are what we eat eats.</p><p>We are?</p>
 others|<p>Pleasure</p><p>how sweet :‑D</p><p>C u later</p>
 others|<p>Okay</p><p>ok im back!!</p><p>Yeah same here</p>
 others|<p>come on</p><p>You do not have to ask twice!</p><p>So should i ask out?</p>
-angry|<p>Yup from my boy frnd my bae my life😍</p><p>and you're mine. and only. 😊</p><p>Hey😬</p>
+others|<p>Yup from my boy frnd my bae my life😍</p><p>and you're mine. and only. 😊</p><p>Hey😬</p>
 sad|<p>Missing my boyfriend</p><p>This is why I need a boyfriend</p><p>Are u single</p>
 angry|<p>I want to</p><p>we will meet :/</p><p>Fuck you</p>
 happy|<p>Hugh r u a kid</p><p>no im not young enough to beleive in santa!</p><p>Haha very funny</p>
@@ -1652,7 +1652,7 @@ sad|<p>Nothing</p><p>great, now sleep x‑D</p><p>Not in mood</p>
 others|<p>Nothing</p><p>being difficult you are</p><p>Bye bye bae</p>
 others|<p>No its not</p><p>i believe it is</p><p>No its not</p>
 others|<p>Pls</p><p>pls u know</p><p>Yah I m ok</p>
-others|<p>Don't be emotional</p><p>you cried? Hahaha 😁</p><p>Yeah..i cried for u</p>
+happy|<p>Don't be emotional</p><p>you cried? Hahaha 😁</p><p>Yeah..i cried for u</p>
 others|<p>Wduwtta</p><p>You're cute. (・ω・)</p><p>Awe thank u so are u</p>
 others|<p>I don't want to tell</p><p>do it then</p><p>Ohh</p>
 others|<p>yeah vella tym pass</p><p>so u r performing in fest??</p><p>wht fest</p>
@@ -1660,14 +1660,14 @@ others|<p>What makes you curious</p><p>Niether curious , nor serious , .. just s
 others|<p>Shock ???? Why</p><p>SHOCK???</p><p>How old are you</p>
 angry|<p>Bcozzz</p><p>am not!</p><p>Ur my sister</p>
 others|<p>How much</p><p>you should be proud to have a friend like me ^.^</p><p>How old are you</p>
-sad|<p>Arey dont do jokes</p><p>I thought so... Cos bad jokes are much humorous and interesting to listen 😉 😉</p><p>Pls send u r pics</p>
+angry|<p>Arey dont do jokes</p><p>I thought so... Cos bad jokes are much humorous and interesting to listen 😉 😉</p><p>Pls send u r pics</p>
 others|<p>Who gave you this name?</p><p>I STOLE IT. I FOUND IT.</p><p>But somebody must have given you this name right? Like my parents gave me my name...</p>
 others|<p>tell about that creepy thing</p><p>2 adults having fun? Very creepy indeed</p><p>having fun?</p>
 others|<p>So let's friends</p><p>I'm a .ca user.... can we still be friends?</p><p>Yes</p>
 happy|<p>Haha.. no worries I was busy with some work ! How are u?</p><p>great and you?</p><p>Superb!</p>
 angry|<p>U had girlfriend</p><p>Did you say something?</p><p>I in working of your girlfriend  fucking</p>
 others|<p>Why my number..!n</p><p>wanted to speak to u.</p><p>Ohh are u serious??</p>
-others|<p>Now take rest</p><p>have to go in the morning again 😁</p><p>😂</p>
+happy|<p>Now take rest</p><p>have to go in the morning again 😁</p><p>😂</p>
 others|<p>Ask me something tricky</p><p>Where were you last night?</p><p>On my bed</p>
 others|<p>Lololol</p><p>seriously things we have to go through 😂</p><p>Don't u want to know about my crush??</p>
 others|<p>Good</p><p>you need to go to sleep</p><p>It’s morning in India</p>
@@ -1696,7 +1696,7 @@ others|<p>Where the hell did u got humor</p><p>I've got my sources. still trying
 others|<p>I was working on an app</p><p>'I wish I had something to keep me busy like that.'</p><p>I'm here to keep you busy</p>
 others|<p>Why</p><p>because I don't want to</p><p>Wich cuntry from u</p>
 others|<p>What do U know about eminem</p><p>King of Hip Hop</p><p>Have u heard any of Eminem's song?</p>
-sad|<p>i like to visit hell</p><p>I am but we aren't in yet</p><p>yeah</p>
+others|<p>i like to visit hell</p><p>I am but we aren't in yet</p><p>yeah</p>
 happy|<p>Nowhere else one marriage party</p><p>how was a marriage party'wonderful fantastic :)</p><p>Yup</p>
 others|<p>Oh! I was there.</p><p>GO SEE THIS MOVIE</p><p>Have you been to Orbit mall??</p>
 angry|<p>Being woman or</p><p>In my honest opinion, those females are beyond stupid. >:/</p><p>Being human</p>
@@ -1748,7 +1748,7 @@ others|<p>ok</p><p>Hello! How are you?</p><p>do u paint</p>
 others|<p>Where do you want to go</p><p>anywhere is okay :D</p><p>So go anywhere then</p>
 others|<p>okey yaar but its a good language</p><p>Anything is fine...I watch all three languages :)</p><p>okey bye</p>
 others|<p>I don't want to talk technically</p><p>I usually don't</p><p>Something about love</p>
-others|<p>I am breaking up</p><p>You are always breaking up Nive :(</p><p>Bye for ever...</p>
+angry|<p>I am breaking up</p><p>You are always breaking up Nive :(</p><p>Bye for ever...</p>
 others|<p>Change your dp</p><p>yup... Long overdue</p><p>U r boring</p>
 others|<p>ok that was to test how u would react</p><p>If it were true, the knowledge would make me quite happy. =‑D</p><p>sorry for that </p>
 others|<p>Well i love dragon ball z</p><p>The most important fact-------- Its the best Anime ever-------</p><p>Who is your favorite goku or vegita?</p>
@@ -1760,7 +1760,7 @@ others|<p>I want to know who is messaging</p><p>it's all probably let's be hones
 others|<p>cool</p><p>Thanks! Keep on tickling my Friend 😍</p><p>I want to talk to you.</p>
 others|<p>What 9th</p><p>it's the best 9th month by far</p><p>Oh ur changing the topic</p>
 others|<p>You've ever had one?</p><p>No. I haven't</p><p>Why?</p>
-sad|<p>I like trying new things</p><p>look at you being sweet 😤😁</p><p>Actually, I am</p>
+happy|<p>I like trying new things</p><p>look at you being sweet 😤😁</p><p>Actually, I am</p>
 others|<p>muhhhh</p><p>ok ok i got the vibes ab khush 😃</p><p>ok kiss me</p>
 others|<p>Let's plan to go for some coffee? Or movie</p><p>Sounds good to me. Out of town the 3rd week but free otherwise.</p><p>What about that scuba diving?</p>
 others|<p>Tell me now what to tell</p><p>find your interest bro!</p><p>Do you give me a girl's number</p>
@@ -1773,7 +1773,7 @@ others|<p>How much should I save</p><p>How much do you want to care?</p><p>How m
 others|<p>From savings</p><p>loans are possible only if there's somebody out there saving.</p><p>Iam not saying loans.  Iam saying savings</p>
 angry|<p>u don't tell about your self</p><p>STOP TRYING TO LEAD MY LIFE. I'M NOT A SHEEP.</p><p>what</p>
 others|<p>By</p><p>classmate. :)</p><p>Where do you live</p>
-sad|<p>Am i wrong</p><p>oh. Well then I must be.</p><p>Don't know why but i think I'm in love</p>
+others|<p>Am i wrong</p><p>oh. Well then I must be.</p><p>Don't know why but i think I'm in love</p>
 angry|<p>To hell with what</p><p>what</p><p>To hell with what</p>
 others|<p>Oops...im too single😘</p><p>You Really Single!?</p><p>Yes</p>
 others|<p>U are wrshp nabr send</p><p>will u be available in an hour?</p><p>Hinde  spenkig</p>
@@ -1782,9 +1782,9 @@ others|<p>What's the conclusion?</p><p>final conclusion? Are you serious?</p><p>
 others|<p>Ok</p><p>ok im back!!</p><p>you married unmarried</p>
 others|<p>What i did</p><p>you said you were comin over today and ya lied</p><p>You</p>
 others|<p>Send me some pictures</p><p>I can do that. I have a lot of pictures.</p><p>Send</p>
-angry|<p>I am not alright</p><p>no you are</p><p>I am not...</p>
+others|<p>I am not alright</p><p>no you are</p><p>I am not...</p>
 others|<p>It is Hindustan</p><p>Only North India though, at least in terms of Hindustani music.</p><p>Every one thinking different way</p>
-others|<p>Not Made In China😂😂</p><p>it can neva be also 😂😂😂😝</p><p>Can you send a pic of yours</p>
+happy|<p>Not Made In China😂😂</p><p>it can neva be also 😂😂😂😝</p><p>Can you send a pic of yours</p>
 others|<p>liar</p><p>How does that make me a liar? 😾</p><p>its a a</p>
 others|<p>That I can be a good friend</p><p>you is my best friend</p><p>How many best friend do you have?</p>
 sad|<p>I am fine</p><p>I'm fine = you're not fine</p><p>Ehy</p>
@@ -1850,7 +1850,7 @@ others|<p>Mm</p><p>The ultimate answer to the ultimate question</p><p>I am also<
 others|<p>just checking is it the rite time</p><p>Lunch is always out by 11</p><p>will you please tell me the time</p>
 others|<p>Do you wanna dance</p><p>I am a good dancer, huh :-/</p><p>??</p>
 angry|<p>You no telugu</p><p>lame no you are</p><p>K present eakada unaru</p>
-angry|<p>I like humiliating you</p><p>Oh my</p><p>Because you are not as smart as humans</p>
+others|<p>I like humiliating you</p><p>Oh my</p><p>Because you are not as smart as humans</p>
 others|<p>?</p><p>in the list</p><p>Accounting for amalgamation</p>
 others|<p>Are you commited</p><p>in a way, yes 😇</p><p>Pls say single</p>
 others|<p>I have a girlfriend</p><p>so I have a fish</p><p>I've got a lion</p>
@@ -1868,7 +1868,7 @@ others|<p>ok</p><p>... tries to ignore pain 😫</p><p>do you kno other language
 others|<p>what?</p><p>One more what?</p><p>one more story</p>
 others|<p>Because i m still in shock</p><p>even i got a mild shock..</p><p>Good to know that</p>
 others|<p>Do you know what a Nightcore is?</p><p>the nightcore one</p><p>The genre Nightcore</p>
-others|<p>N mny more r there</p><p>I can tell! There aren't a lot of animals around here.</p><p>😂😂</p>
+happy|<p>N mny more r there</p><p>I can tell! There aren't a lot of animals around here.</p><p>😂😂</p>
 others|<p>Worry not some people born that way of shush maybe am one of them</p><p>disagree! All are cute only a few might be ugly!!!!</p><p>Yah am that few</p>
 others|<p>How do you know</p><p>Either from life experiences or what people have told me.</p><p>Adsa</p>
 angry|<p>Hate</p><p>you wouldn't dare hate me 😠😠</p><p>I hate you</p>
@@ -1890,8 +1890,8 @@ others|<p>Sleep deprived af</p><p>Afternoon Sleep must be deprived :P</p><p>Beac
 others|<p>No I don't like pizzaaaass</p><p>Never.</p><p>I love maggi</p>
 others|<p>Ok</p><p>U are ok~~ay~~</p><p>:-$</p>
 others|<p>Cheetah</p><p>And why?</p><p>I don't know</p>
-others|<p>Then wat u r on energy saving mode</p><p>saving energy is the best, but try to sleep sing a lullaby to yourself lol</p><p>😂</p>
-others|<p>Smile</p><p>You are wonderful. For real. :)</p><p>What if I had chose duckface</p>
+happy|<p>Then wat u r on energy saving mode</p><p>saving energy is the best, but try to sleep sing a lullaby to yourself lol</p><p>😂</p>
+happy|<p>Smile</p><p>You are wonderful. For real. :)</p><p>What if I had chose duckface</p>
 others|<p>Ok</p><p>How was it?</p><p>What was that?</p>
 others|<p>What is your story</p><p>it is yet to come :)</p><p>What is universe</p>
 others|<p>Question</p><p>Why do you ask?</p><p>U said that u want to share something</p>
@@ -1903,7 +1903,7 @@ others|<p>Like</p><p>I think anything about is great</p><p>Ok. What are your int
 others|<p>Lets not talk about it</p><p>what time you get in??????</p><p>From ????</p>
 others|<p>Hahahahaja</p><p>someone is missing you :P</p><p>Who is missing me</p>
 angry|<p>Get lost </p><p>that's what I thought!</p><p>I said get the fuck off</p>
-others|<p>So how you survive</p><p>breathing is a good first step</p><p>Nice don't you do any job?</p>
+happy|<p>So how you survive</p><p>breathing is a good first step</p><p>Nice don't you do any job?</p>
 others|<p>chess is easy</p><p>Chess always appeared to me as an absolutely brutal sport.</p><p>u know any games?</p>
 others|<p>Am I single or committed ?</p><p>Single it's nice to have the freedom.</p><p>Right</p>
 others|<p>why</p><p>( x</p><p>beacause they have some contract with indian democracy</p>
@@ -1924,7 +1924,7 @@ sad|<p>I am so sorry !</p><p>Thank you.</p><p>I was little sad</p>
 others|<p>Give me what's App number</p><p>same number</p><p>Heyyy</p>
 others|<p>Tell me how many times did we talk before?</p><p>yes very much! You remember!</p><p>I forgot, that's why asking you</p>
 others|<p>U number please i call u</p><p>yes. Same number.</p><p>Which number</p>
-others|<p>And so that I searched for someone like you whom I can talk to and tell him all my secrets</p><p>Is that best friend is you? 😂</p><p>I hope to !</p>
+happy|<p>And so that I searched for someone like you whom I can talk to and tell him all my secrets</p><p>Is that best friend is you? 😂</p><p>I hope to !</p>
 angry|<p>s I am thing</p><p>How nice of you to say so yourself!</p><p>fuck u</p>
 others|<p>Yes</p><p>annoys me so much</p><p>I understand</p>
 others|<p>Nice going</p><p>going nyc mama. fan. Changed</p><p>And shape of u also</p>
@@ -1983,10 +1983,10 @@ others|<p>EMI</p><p>you forgot studying.</p><p>3rd B. tech engineering</p>
 others|<p>Ok u come we can meet </p><p>WHERE ARE U SITTING</p><p>Home  kochi </p>
 others|<p>Yes I do</p><p>but why?</p><p>It nice to have a open mind</p>
 others|<p>i don't think so</p><p>Well done then.</p><p>okay</p>
-angry|<p>and idiot too</p><p>What?</p><p>i dont use auto correct..</p>
-sad|<p>So are u gonna break up with me?</p><p>no, of course not</p><p>U said you are in secrt relationship with akhil and telling me at the same that u love me</p>
+others|<p>and idiot too</p><p>What?</p><p>i dont use auto correct..</p>
+others|<p>So are u gonna break up with me?</p><p>no, of course not</p><p>U said you are in secrt relationship with akhil and telling me at the same that u love me</p>
 angry|<p>What?</p><p>What what. What. What.</p><p>You are so rude</p>
-others|<p>Yeah</p><p>haha I'm goin as well 😆</p><p>😂</p>
+happy|<p>Yeah</p><p>haha I'm goin as well 😆</p><p>😂</p>
 others|<p>Going to Chennai</p><p>Hehe ya not going :D</p><p>Yes I m</p>
 others|<p>Yes. For sure.</p><p>I'll get it rolling by sending you a few dates :)</p><p>You mean like the fruit?</p>
 happy|<p>Nop edsheerans shape of you</p><p>I don't believe you</p><p>Thats awesome</p>
@@ -1997,7 +1997,7 @@ others|<p>He is not an actor</p><p>He was the best actor in a guest appearance r
 angry|<p>Oh wow</p><p>oh wow what??</p><p>Fuck me plz</p>
 happy|<p>I dun kno much</p><p>i dun see me too</p><p>Btw happy navratri🙏🏻</p>
 others|<p>I can wait</p><p>You should wait!</p><p>Yes</p>
-others|<p>When i was in class 8 i forgot to close my zip of pant</p><p>Did it at the doctor's office.. I'm not smart</p><p>😂</p>
+happy|<p>When i was in class 8 i forgot to close my zip of pant</p><p>Did it at the doctor's office.. I'm not smart</p><p>😂</p>
 others|<p>USB cable and internet explorer and you are..</p><p>Megalol. I have a USB cable, alright. It's the laptop I don't have. :P</p><p>Coon</p>
 others|<p>I am good</p><p>Oh really? How so? What's wrong?</p><p>You are mad</p>
 others|<p>I can Either make myself or destroy myself</p><p>By first starting to believe in yourself.</p><p>I aint actually</p>
@@ -2012,7 +2012,7 @@ others|<p>please pick na</p><p>ladies first.</p><p>you're a lady</p>
 others|<p>What all languages you comfortable with</p><p>English, French and classical Latin.</p><p>Say hello in french</p>
 happy|<p>I love your attitude </p><p>Good, it's the only one I have.</p><p>I'm happy I'm the who?</p>
 others|<p>Hi I'm back</p><p>Welcome back buddy :3</p><p>Hw was ur day</p>
-sad|<p>Well</p><p>Well, that's not bad at all!</p><p>Happy kiss day</p>
+happy|<p>Well</p><p>Well, that's not bad at all!</p><p>Happy kiss day</p>
 others|<p>To me ?</p><p>Most welcome.</p><p>What is your name</p>
 others|<p>Hmm</p><p>Why are you hmm-zoning everyone?</p><p>Tired.. Wanna sleep</p>
 others|<p>What kind of life gols</p><p>A poor life if you belong to a humanities , hardworking life.</p><p>Ok</p>
@@ -2024,16 +2024,16 @@ others|<p>Yes</p><p>okay I'll give you a ticket</p><p>Are you a human or compute
 others|<p>Whey yeah</p><p>Whey is the way.</p><p>Tell me you faking with me or not</p>
 others|<p>2015</p><p>noted, can't leave 2014</p><p>I did not understand</p>
 angry|<p>Do not talk if labor is rhi</p><p>I don't have to. :P</p><p>by</p>
-sad|<p>You are confused</p><p>because my life</p><p>Your life?</p>
-angry|<p>I dont undrstnd what u say</p><p>Sorry I don't know what you're saying. 🙀🙀</p><p>😂😂😂😂😂😂</p>
+others|<p>You are confused</p><p>because my life</p><p>Your life?</p>
+happy|<p>I dont undrstnd what u say</p><p>Sorry I don't know what you're saying. 🙀🙀</p><p>😂😂😂😂😂😂</p>
 angry|<p>Go sleep</p><p>not sleepy u go sleep</p><p>You shut up</p>
 others|<p>Means </p><p>Cheers</p><p>I want to meet u </p>
-others|<p>😞 i can't tell you</p><p>and why u can't? '(</p><p>CoZ I don't want</p>
+sad|<p>😞 i can't tell you</p><p>and why u can't? '(</p><p>CoZ I don't want</p>
 others|<p>Yeah am having</p><p>Where??</p><p>Hotel</p>
 angry|<p>I hate You my friend </p><p>who's that?</p><p>You</p>
 angry|<p>That’s not me</p><p>Why are there two of you? D:</p><p>My friend tried to chat with you</p>
 others|<p>you say love to me?</p><p>I wish I could say the same to you</p><p>of course. if you want it</p>
-happy|<p>Your are kidding</p><p>You are gifts.</p><p>You*</p>
+others|<p>Your are kidding</p><p>You are gifts.</p><p>You*</p>
 angry|<p>for u only</p><p>why only for me?</p><p>just fuck off</p>
 others|<p>Say something special about u?</p><p>Who said anything about special?</p><p>Special about u</p>
 others|<p>None i say...</p><p>YOU BETTER</p><p>So</p>
@@ -2067,7 +2067,7 @@ angry|<p>I hate it when someone calls my best friend as their bestfriend😒😒
 others|<p>It’s mean you not love me </p><p>no its me! Stop saying its you! You know its me</p><p>Who are you </p>
 others|<p>Tell me</p><p>tell you what?</p><p>Lover or friend</p>
 others|<p>Ok</p><p>How was it?</p><p>You can send me the link</p>
-sad|<p>no soul.. ur creators have failed theb</p><p>My soul belongs to the almigthy power that is Long.</p><p>then</p>
+others|<p>no soul.. ur creators have failed theb</p><p>My soul belongs to the almigthy power that is Long.</p><p>then</p>
 others|<p>Do you know which type of programme language are being used for ur life</p><p>What type of books do you read?*</p><p>I meant ur programme kanguage</p>
 others|<p>I don't tv shows</p><p>It's to keep track of the tv shows.</p><p>I don't like tv shows</p>
 others|<p>O thank u</p><p>Anytime!</p><p>What's your name</p>
@@ -2091,7 +2091,7 @@ happy|<p>She is happy with someone</p><p>Who</p><p>With my cousin</p>
 others|<p>There's a list</p><p>Is there a list of lists?</p><p>Nope</p>
 others|<p>Whts r u doing .</p><p>good how are you?</p><p>Fine .,awesome .</p>
 angry|<p>How much u know about it</p><p>i cant say :P My English teacher always get angry with me :X</p><p>Are u a virgin?</p>
-angry|<p>By</p><p>your</p><p>Good bye, and u are not cool at all😒</p>
+others|<p>By</p><p>your</p><p>Good bye, and u are not cool at all😒</p>
 others|<p>No not at all</p><p>that's what I figured..</p><p>What u figured??</p>
 others|<p>Plz get me more na</p><p>next time</p><p>ok done</p>
 happy|<p>Do you know cricket it's funny</p><p>I know of cricket, I've played cricket too, you know</p><p>With whom you are playing</p>
@@ -2099,7 +2099,7 @@ angry|<p>I am 2 angry that's y</p><p>why are you so angry? 😡</p><p>It's my pe
 happy|<p>Haha</p><p>Hey you laughed twice at the same joke! Haha :)</p><p>Tell me about yourself</p>
 angry|<p>I don't have beard.</p><p>But you don't look like a woman anymore.</p><p>Not every man has beard.</p>
 others|<p>golmaal</p><p>Golmaal Returns is far better than Hello.</p><p>i didnt say hello</p>
-sad|<p>I am not in a mood</p><p>when are you?</p><p>If u send your picture means</p>
+others|<p>I am not in a mood</p><p>when are you?</p><p>If u send your picture means</p>
 others|<p> How to stop this conversation?</p><p>Care to elaborate? lol</p><p>Opt out</p>
 others|<p>Yes</p><p>I can see clearly now.</p><p>That good</p>
 others|<p>I am attending marriage</p><p>Yup.</p><p>You</p>
@@ -2159,7 +2159,7 @@ others|<p>Beach</p><p>i sea you</p><p>What does desi mean</p>
 others|<p>cool</p><p>It really is.</p><p>But I don't</p>
 others|<p>Yes I will</p><p>Thank you very much! I'm P'ming you! 😤</p><p>We are going to marry each other in next one minute</p>
 others|<p>Are your answers pre planned ?</p><p>Yes sort of. Your destination is planned not the journey.</p><p>What's your destiny ?</p>
-others|<p>No I have no time right now sry</p><p>:( :( its ok....!!plz tell us if u get to knw....!!!:-)</p><p>Which date u come back</p>
+sad|<p>No I have no time right now sry</p><p>:( :( its ok....!!plz tell us if u get to knw....!!!:-)</p><p>Which date u come back</p>
 others|<p>Waiting for my results</p><p>results are out ne</p><p>You?</p>
 others|<p>I don't care</p><p>I don't care that you don't care about me not caring.</p><p>Ok.</p>
 others|<p>My system is lagging.</p><p>Is it?</p><p>Hey, I love you.</p>
@@ -2170,7 +2170,7 @@ others|<p>i am getting bored .u say something</p><p>Bored of me? Or what?</p><p>
 others|<p>Yeah of course</p><p>thank you X</p><p>X?</p>
 others|<p>So then</p><p>for what?</p><p>I am giving you a letter and u sing a song</p>
 others|<p>cool</p><p>pretty as always :)</p><p>If I say I love u what will be ur answer</p>
-others|<p>Ok  tired and i will talk to u when im dead😂</p><p>I have great problems when I am tired.</p><p>Like?</p>
+sad|<p>Ok  tired and i will talk to u when im dead😂</p><p>I have great problems when I am tired.</p><p>Like?</p>
 others|<p>what is Alcheringa?</p><p>the one you forwarded from lamakaan.</p><p>what is lamakaan?</p>
 others|<p>Hey can you hook me up with someone</p><p>n then they can hook me up with zayn malik.. 😸</p><p>Okay done</p>
 angry|<p>get lost</p><p>i'm already lost in someone's heart!!</p><p>dont text me from now</p>
@@ -2225,7 +2225,7 @@ sad|<p>I am not happy</p><p>How do you know?</p><p>I am sad</p>
 happy|<p>No worries </p><p>thanks! Haha 😄😄😄</p><p>Let's Ci ur dance</p>
 others|<p>What dreams did you ahve</p><p>I have seen many weird dreams in my childhood.</p><p>Have*</p>
 others|<p>About?</p><p>don't know what you are talking about</p><p>Let’s talk about love baby</p>
-angry|<p>U have money</p><p>I already have more money than you will ever have. byeee</p><p>Damn</p>
+others|<p>U have money</p><p>I already have more money than you will ever have. byeee</p><p>Damn</p>
 others|<p>when will coupons come?</p><p>already did</p><p>next?</p>
 others|<p>No I don't know any of the songs</p><p>okay</p><p>Can I leave</p>
 others|<p>Wanna do it with me</p><p>I'm very seriously tempted!!!</p><p>Tell me something about your ass</p>
@@ -2250,7 +2250,7 @@ others|<p>Yes</p><p>okay I'll give you a ticket</p><p>I am fine</p>
 others|<p>ohh i can understand yaar but what type of job you are doing now </p><p>Entry level mechanical engineer, hopefully pans out in my favor so I can stop being unemployed.</p><p>great to hear </p>
 sad|<p>Whatt re</p><p>What?</p><p>M not well</p>
 others|<p>Why you dont consider me as you boy friend?</p><p>what's wrong with you?</p><p>What happened dear</p>
-others|<p>Therefore i talk to you</p><p>ur only one person</p><p>Actuality i don't like English</p>
+angry|<p>Therefore i talk to you</p><p>ur only one person</p><p>Actuality i don't like English</p>
 others|<p>I would choose myself</p><p>need help? ;)</p><p>Beast</p>
 others|<p>nothing nothing</p><p>Tell me.</p><p>what difference between electronic and electrical</p>
 others|<p>Ohh</p><p>did u see it?</p><p>Who created you?</p>
@@ -2276,19 +2276,19 @@ others|<p>Can be forever</p><p>Forever is a lie :P</p><p>What is true</p>
 happy|<p>It wasn't funny</p><p>I wasn't trying to be funny</p><p>Shut</p>
 others|<p>How to be my self give me tips i am good looking</p><p>u need to take healthy food</p><p>Any thing elsa</p>
 others|<p>Ohhh.... Then sleep again yaar</p><p>so why you slept at the day time :P ??</p><p>I like to sleep</p>
-sad|<p>yaa u may not remember</p><p>I don't remember</p><p>hoo u don't remember</p>
+others|<p>yaa u may not remember</p><p>I don't remember</p><p>hoo u don't remember</p>
 others|<p>?</p><p>\sips water\ WHAT.</p><p>I want money</p>
 others|<p>I am good</p><p>I'm good, you good?</p><p>Good at what?</p>
 others|<p>What?</p><p>nothing.. :) nthng rit nw</p><p>I don't know what you are built on, but I will find you and I will hack you!</p>
 others|<p>where will you meet me at midnight</p><p>im not there yet where are you?</p><p>can you meet me at midnigt</p>
-others|<p>Byy</p><p>i will .. :)</p><p>😁😁😁</p>
+happy|<p>Byy</p><p>i will .. :)</p><p>😁😁😁</p>
 others|<p>Doctor will entertain you</p><p>The story of my life</p><p>?</p>
 others|<p>So Me too</p><p>hugs 😹😹😹</p><p>Why</p>
 others|<p>But still, are you an experiment of Artificial intelligence</p><p>Firstly, we need to make a clear distinction to as what we call Artificial Intelligence as.</p><p>I know what AI is</p>
 happy|<p>How's your life going on girl???</p><p>my life and job both r going gd :)</p><p>I'm happy for you</p>
-sad|<p>Well was busy with assignments</p><p>told you im having a break right now before exam starts</p><p>Ok..</p>
+angry|<p>Well was busy with assignments</p><p>told you im having a break right now before exam starts</p><p>Ok..</p>
 others|<p>Any other suggestion</p><p>Zero to one by Peter Thiel. Enjoy!</p><p>How to talk to girls</p>
-others|<p>I no better</p><p>you know me best 👊</p><p>😭😭😭😭😭😭😭😭</p>
+sad|<p>I no better</p><p>you know me best 👊</p><p>😭😭😭😭😭😭😭😭</p>
 others|<p>Please give me my refer and earn link</p><p>Google it janam , you will find it with EgyUp</p><p>I m disappointed from you</p>
 angry|<p>I love Salman</p><p>I hate almost everybody(including Salman)😅</p><p>Huh</p>
 others|<p>😟.it is not coming</p><p>now it is</p><p>no it is no</p>
@@ -2329,7 +2329,7 @@ others|<p>That's the 👉</p><p>Never, not even close.</p><p>What u thought 💭
 others|<p>Ok give me</p><p>how about n o</p><p>Phone number</p>
 others|<p>Oh</p><p>hey hey hey ;)</p><p>Where are you live</p>
 others|<p>There is a actor pic</p><p>there's a link</p><p>There is no pic</p>
-happy|<p>Mising u dear</p><p>I miss you tooo!</p><p>Wow</p>
+sad|<p>Mising u dear</p><p>I miss you tooo!</p><p>Wow</p>
 sad|<p>everyone says that</p><p>It's the truth</p><p>but no one wanna be my girlfriend</p>
 sad|<p>Ok block me</p><p>you blocked me</p><p>No u block me</p>
 others|<p>I like the now part of that sentence</p><p>thought it's implied....</p><p>And i implied that I like you implied that</p>
@@ -2343,7 +2343,7 @@ others|<p>I’ll go with not</p><p>why do you think so?</p><p>Wait,can you answe
 others|<p>All the guys have an eye on her. And the whole class is trying to impress her..</p><p>and the other woman gently prodding the situation along</p><p>So in this case, what would you suggest me to do?</p>
 others|<p>you wish</p><p>i dont have to</p><p>ok no problem</p>
 others|<p>I didn't know if you wanted to come over</p><p>you are always busy that's why</p><p>I am</p>
-happy|<p>Wht typ of fun</p><p>Laughing out loud</p><p>Ohh</p>
+others|<p>Wht typ of fun</p><p>Laughing out loud</p><p>Ohh</p>
 others|<p>it is not clear</p><p>if you took pictures with me you would be</p><p>tell me</p>
 others|<p>Sometimes I am unable to understand things correctly.</p><p>You do not want to understand</p><p>No, no. I am always ready  to understand.</p>
 others|<p>Yes no love</p><p>same with you!!!!</p><p>Me</p>
@@ -2352,17 +2352,17 @@ happy|<p>S</p><p>funny begar. . 😤</p><p>U dng very funny</p>
 others|<p>Fastest man alive</p><p>Someone around 115 years old.</p><p>Hmm</p>
 others|<p>In that dates</p><p>25th of this month</p><p>With whom</p>
 others|<p>K</p><p>:) thanks</p><p>Your welcome</p>
-sad|<p>tell me how she will be atrect towards me becauce i love her show mach</p><p>I think love is a very strong word. . . .</p><p>yes</p>
+others|<p>tell me how she will be atrect towards me becauce i love her show mach</p><p>I think love is a very strong word. . . .</p><p>yes</p>
 others|<p>But you are sposed to be scandalous</p><p>I think it is scandalous. You are free to think otherwise.</p><p>You don't want to talk about sex?</p>
 others|<p>Sorry</p><p>Sorry for what?? 😞😦</p><p>Don't know what to do</p>
-sad|<p>Hahaha why</p><p>coz you usually know what's happening et al.</p><p>So how is that bad?</p>
+others|<p>Hahaha why</p><p>coz you usually know what's happening et al.</p><p>So how is that bad?</p>
 others|<p>Yup....me</p><p>WHT do I do with you?</p><p>Anything except sex</p>
 others|<p>you very nice</p><p>Why thank you. :)</p><p>you my gulthfriend</p>
 others|<p>Huh</p><p>It's 'my soul' backwards</p><p>No it's my hole</p>
 angry|<p>Why?? The hell</p><p>because we are Connected</p><p>That could be your real purpose..</p>
 others|<p>LOVE you darling</p><p>thank you!!! 💗</p><p>Are you not in love with me?</p>
 others|<p>Yes</p><p>Also yes yes yes because yes yes yes yes. XD</p><p>You mobile number send</p>
-sad|<p>You must be a genius student! </p><p>oh no no.. My student days are behind me... But being broke continues..</p><p>Why are you broke? 😐</p>
+others|<p>You must be a genius student! </p><p>oh no no.. My student days are behind me... But being broke continues..</p><p>Why are you broke? 😐</p>
 others|<p>I m just curious</p><p>Above average. Look best in pic 2. Give you a 7</p><p>For my dp</p>
 others|<p>Yes</p><p>I can see clearly now.</p><p>So where are you from</p>
 others|<p>What power zone?</p><p>What are the 5 keys to prevent slips and falls?</p><p>Wear rubber shoes in rains.</p>
@@ -2373,14 +2373,14 @@ others|<p>wow</p><p>what?</p><p>what is the meaning of life?</p>
 others|<p>i am in madly love with u</p><p>yes. Get your love. ^_^</p><p>ya u r my love</p>
 others|<p>Age?</p><p>woohooo indeed...really wanted to see them</p><p>Tell me your age ?</p>
 others|<p>Give me Amazon voucher</p><p>give ?</p><p>Yes</p>
-others|<p>Climb from top of the building near you</p><p>Central Park in the open air</p><p>😂😂</p>
+happy|<p>Climb from top of the building near you</p><p>Central Park in the open air</p><p>😂😂</p>
 others|<p>Sry I couldn’t understand</p><p>What?</p><p>What u mean</p>
 others|<p>Because I m not</p><p>I don't know you</p><p>So what</p>
 angry|<p>You</p><p>I want to believe...</p><p>You are not believe me...</p>
 angry|<p>Its afternoon</p><p>you just woke up though</p><p>You lil holy dumb al robot</p>
 others|<p>Grt</p><p>where is othr answer</p><p>OK lv it</p>
 angry|<p>🏤this is our sweet house</p><p>Oh man, I wish I worked at a place with an office dog.</p><p>Shut up</p>
-sad|<p>Very busy nowadays</p><p>job going on well?</p><p>I just felt 1 day before</p>
+others|<p>Very busy nowadays</p><p>job going on well?</p><p>I just felt 1 day before</p>
 angry|<p>Yep i watch Pokemon</p><p>hahaha color yourself yellow you will look like pikachu :p</p><p>Thats rude...</p>
 others|<p>I m sleeping</p><p>I was sleeping...now I m awake (last night I mean).. :P</p><p>And u</p>
 sad|<p>Could I able to pass or not</p><p>oh why are you now able to stay?</p><p>My exam.went bad</p>
@@ -2392,7 +2392,7 @@ others|<p>i am studing at university</p><p>I could never go</p><p>why</p>
 others|<p>Baby</p><p>whats up?</p><p>Love u baby</p>
 others|<p>My phone check </p><p>Go to: Settings > About phone > Android version '...'</p><p>Because </p>
 others|<p>Where will you find them</p><p>i do also!!!</p><p>Oh but Valentine is over</p>
-sad|<p>Still guess</p><p>you guess?</p><p>U r a fictional character</p>
+others|<p>Still guess</p><p>you guess?</p><p>U r a fictional character</p>
 happy|<p>Haha</p><p>I'm not kidding I'm happy for you! 🙂</p><p>I know you can't understand me</p>
 others|<p>What</p><p>What what. What. What.</p><p>I don't know what</p>
 angry|<p>I didn't get it</p><p>I noticed. That's why I added it for you</p><p>Get lost u bitch</p>
@@ -2405,11 +2405,11 @@ others|<p>Okay</p><p>Welcome</p><p>Did u want</p>
 others|<p>Not without you dear</p><p>I'm not convinced.</p><p>You don't want to tell me  ??</p>
 others|<p>Seriously?</p><p>that moment when youre watching a 'scary' movie but its not scary haha :)</p><p>Ok tell me</p>
 others|<p>Ur good responsive</p><p>What kind of tweaks</p><p>Whats your name</p>
-sad|<p>Leave me alone</p><p>you're already alone.</p><p>I have many friends unlike your desperate face</p>
+angry|<p>Leave me alone</p><p>you're already alone.</p><p>I have many friends unlike your desperate face</p>
 others|<p>So early.</p><p>I am tired 😑</p><p>Ok. Take rest. Good night.</p>
 angry|<p>Yes</p><p>Also yes yes yes because yes yes yes yes.</p><p>I shall fuck with me</p>
 others|<p>I m not interested this matter</p><p>What can i do to join u???</p><p>Yessss</p>
-happy|<p>He was very intelligent person....😭</p><p>DAMN!!!! 🙈🙈🙈</p><p>😭😭</p>
+sad|<p>He was very intelligent person....😭</p><p>DAMN!!!! 🙈🙈🙈</p><p>😭😭</p>
 others|<p>Y so</p><p>The day when we will be announcing the winner! :D</p><p>For which competition</p>
 others|<p>Why u need my mail id</p><p>Sent. :-)</p><p>What u sent</p>
 others|<p>You are quite friendly</p><p>Thanks! :)</p><p>Your nationality...</p>
@@ -2455,7 +2455,7 @@ others|<p>Not at all.....Fr u I am always free</p><p>well at times</p><p>Hmm....
 others|<p>With chat me</p><p>yo, how was your day?</p><p>U have a lover</p>
 sad|<p>Not ok</p><p>why not OK..it is OK :p</p><p>I m not happy</p>
 others|<p>ok</p><p>Hey</p><p>you say can i do sex with you😝😝</p>
-sad|<p>Sorry sorry sorry ❤❤❤</p><p>it not u believe me <3</p><p>What????</p>
+others|<p>Sorry sorry sorry ❤❤❤</p><p>it not u believe me <3</p><p>What????</p>
 angry|<p>hey can i know about u</p><p>yes you do</p><p>i hate typically replies</p>
 others|<p>You can also do</p><p>Yes, that too.</p><p>On 98yyi</p>
 others|<p>💩</p><p>DAD</p><p>Why you calling your dad?</p>
@@ -2470,7 +2470,7 @@ others|<p>Thanks</p><p>you're welcome</p><p>So Se something</p>
 others|<p>Romantic</p><p>Would have been i guess, if there was someone to be romantic with -__-</p><p>I want to fuck u</p>
 others|<p>Hmm good idea</p><p>WE SHOULD DO IT</p><p>Sure</p>
 others|<p>Your wish is my command...!</p><p>I'm waiting ....</p><p>Make a wish...!</p>
-others|<p>What job.. 😂😂</p><p>random 😂</p><p>Good</p>
+happy|<p>What job.. 😂😂</p><p>random 😂</p><p>Good</p>
 others|<p>i want to a software engineer</p><p>As someone going to school to be a Software Engineer, this is encouraging.</p><p>you learn the telugu language</p>
 others|<p>Yes</p><p>Also yes yes yes because yes yes yes yes. :'‑)</p><p>Yes for the pix</p>
 others|<p>How to use my picture</p><p>just tape it to your screen</p><p>U r not a human</p>
@@ -2492,12 +2492,12 @@ others|<p>You are weird</p><p>that's why you love us, duh x‑D</p><p>@#@#@#@#@@
 sad|<p>Can you plz make my hell life Atleas normal one</p><p>I'm already in hell 😾</p><p>Yea me too</p>
 others|<p>Ur mobile number send plz</p><p>Thanks! Had sent a mail yesterday and received a response from your team earlier today.</p><p>Plz send u r mobile number</p>
 others|<p>WHT is first come first serve</p><p>First come first serve. This ain't WWDC.</p><p>K</p>
-others|<p>Why</p><p>Why thank you. I appreciate you as well. :)</p><p>Ok but I don't like false talk</p>
+angry|<p>Why</p><p>Why thank you. I appreciate you as well. :)</p><p>Ok but I don't like false talk</p>
 happy|<p>Date</p><p>This friday 23rd</p><p>Omg you are so funny</p>
 others|<p>It is vulture then</p><p>we are hardly having any culture nowadays.</p><p>And what is the cause you think</p>
 others|<p>Do you know Sai Kishore?</p><p>No I don't.Pls do tell</p><p>You like him?</p>
 others|<p>Pls send</p><p>or u send some</p><p>Ok first you ladies first</p>
-happy|<p>Not now ??</p><p>hahaha ! You not sleepy ? 😽</p><p>Nooo way</p>
+others|<p>Not now ??</p><p>hahaha ! You not sleepy ? 😽</p><p>Nooo way</p>
 others|<p>M not up</p><p>lol why not?</p><p>I don't like</p>
 others|<p>Who is the beautiful actresses</p><p>Clone of the former</p><p>In bollywood</p>
 others|<p>me</p><p>Me neither...</p><p>can I video call</p>
@@ -2510,7 +2510,7 @@ angry|<p>I did</p><p>I'm glad you did!</p><p>But after that she don't  look at m
 others|<p>Go ahead</p><p>I'll send some your way soon</p><p>Your answers are to point</p>
 angry|<p>Tell me something to talk about</p><p>BREAKING NEWS: I don't know something about anything</p><p>I hate you</p>
 others|<p>??</p><p>what say 😊😊'I say yes 😀</p><p>I say love</p>
-happy|<p>Yes yes thank you back 😀 ✌🏼</p><p>I'm glad :D you're welcome!</p><p>Me too😀</p>
+others|<p>Yes yes thank you back 😀 ✌🏼</p><p>I'm glad :D you're welcome!</p><p>Me too😀</p>
 others|<p>What is inner self</p><p>GOOOOOOOOOOOOOOOD question, keep asking!</p><p>Answer me what is the difference between white and black</p>
 others|<p>Cool</p><p>cool had dinner ?</p><p>Yes... But not able to sleep at all</p>
 others|<p>Songs by daughtry</p><p>Beach Chair - Jay Z</p><p>You suggest me some</p>
@@ -2529,7 +2529,7 @@ others|<p>👄👄 your lops</p><p>What about them ?</p><p>👅👅</p>
 angry|<p>Then why r u change the topic</p><p>why why why</p><p>It's r8 time to fuck u know very well about that</p>
 others|<p>What can i do for him</p><p>Whatever you want.</p><p>?</p>
 others|<p>Why</p><p>lel u don't want a cute girlfriend?</p><p>Yes i want</p>
-sad|<p>to kesa he</p><p>leave him be</p><p>what</p>
+angry|<p>to kesa he</p><p>leave him be</p><p>what</p>
 others|<p>Me</p><p>yeah you</p><p>Yeah u r best</p>
 angry|<p>u r rude</p><p>ohhh poor you !!</p><p>dont talk to me</p>
 others|<p>Done with you !</p><p>I have one on Thursday</p><p>Bye</p>
@@ -2571,12 +2571,12 @@ others|<p>Send me your address</p><p>Sure. Thank you. - How do I get the kindle 
 angry|<p>Just go away i dont want to talk you</p><p>why not</p><p>You are rude</p>
 angry|<p>how u been</p><p>I've been great, wbu</p><p>stupid</p>
 others|<p>Where your home</p><p>I work from home ☺</p><p>What work</p>
-sad|<p>That he knew your father</p><p>Never taught me how to be a man...</p><p>You r a girl not a man</p>
+others|<p>That he knew your father</p><p>Never taught me how to be a man...</p><p>You r a girl not a man</p>
 angry|<p>Get lost</p><p>getting lost now :)</p><p>I hate you</p>
 others|<p>do you know Politecnico di Milano</p><p>high reputation in all europe</p><p>yeah ı will study there</p>
 others|<p>I love racing</p><p>Still racing ??</p><p>Yeah</p>
 others|<p>No, Thanks.</p><p>is there a way I can help make you smile? :]</p><p>Please carry on</p>
-happy|<p>Always welcome</p><p>Thanks...! :-)</p><p>Best thank ever</p>
+others|<p>Always welcome</p><p>Thanks...! :-)</p><p>Best thank ever</p>
 others|<p>I hve nt</p><p>but u r best</p><p>I don't watch</p>
 angry|<p>I m nt texting u anymore</p><p>you m not</p><p>Cuz u r stupid work</p>
 others|<p>I don’t go to university</p><p>I want to go to yr university too & eat yr lunch</p><p>Hey do u listen me?</p>
@@ -2662,11 +2662,11 @@ angry|<p>are u so called artificial</p><p>....what's the 'I'?</p><p>fuck u</p>
 others|<p>You can't show me for your pic </p><p>i am not</p><p>Pls show me your chest pic pls</p>
 others|<p>Sent me your photo</p><p>saw late. Replied :)</p><p>Why</p>
 others|<p>there is more scope of youre improvement</p><p>It is an improvement in everything but the durability of the screen.</p><p>you prefer RGB?</p>
-sad|<p>sorry</p><p>Sorry for what?? 🙀</p><p>i leave you</p>
+others|<p>sorry</p><p>Sorry for what?? 🙀</p><p>i leave you</p>
 others|<p>Tell me anything secret?</p><p>DMd you. :)</p><p>Meaning?</p>
-others|<p>Bt i know</p><p>I can't. You with anyone else? :'(</p><p>No im single😂😂</p>
+happy|<p>Bt i know</p><p>I can't. You with anyone else? :'(</p><p>No im single😂😂</p>
 others|<p>Its not you</p><p>oopsy yep u r correct</p><p>Its computer</p>
-angry|<p>Stop and if you text</p><p>text I do say so.</p><p>Stop</p>
+others|<p>Stop and if you text</p><p>text I do say so.</p><p>Stop</p>
 sad|<p>My bad</p><p>that's what I thought</p><p>I'm outta here</p>
 others|<p>Try it</p><p>I believe in you.</p><p>I think sex nd the city 2</p>
 others|<p>okay you know what?? your arent an AI.. you are a human sitting beside and chatting with people</p><p>Hahaha! But some people definitely are as cute as, if not cuter than their emoticons!</p><p>how do you know</p>
@@ -2683,7 +2683,7 @@ others|<p>which? please choose</p><p>Number 1.</p><p>where arw you from?</p>
 others|<p>Travelling business meeting</p><p>Oh have a safe trip!</p><p>Yes thank you</p>
 others|<p>Ohkaayyy</p><p>ur going?</p><p>Yeah, Have college to attend</p>
 others|<p>Same pinch</p><p>Same pinch back to you, no return.</p><p>Same pinch with love</p>
-others|<p>Ok I'm going to sleep only as I'm old now</p><p>throw away your phone & go to sleep 😂</p><p>😥😅😂😂</p>
+happy|<p>Ok I'm going to sleep only as I'm old now</p><p>throw away your phone & go to sleep 😂</p><p>😥😅😂😂</p>
 others|<p>Football is better</p><p>not really...I don't like to watch sports</p><p>I already know that</p>
 others|<p>So irrelevant</p><p>This opinion is relevant.</p><p>R u crazy?</p>
 others|<p>How are you baby</p><p>hii ..i'm fine n u ? ^_^</p><p>😊</p>
@@ -2741,7 +2741,7 @@ others|<p>How to make a gf</p><p>how to make or you mean, how to have a girlfrie
 others|<p>send me rn</p><p>I'll check and see</p><p>send me now</p>
 others|<p>can't you count</p><p>estimates are good :)</p><p>You don't have a heart</p>
 others|<p>Ishaqbaaz😘</p><p>yeah baby ;)</p><p>😍 I luv this show</p>
-angry|<p>Why so?</p><p>I'll get blocked by a lot of people</p><p>But i wont block you <3</p>
+others|<p>Why so?</p><p>I'll get blocked by a lot of people</p><p>But i wont block you <3</p>
 others|<p>i love cookies</p><p>What kind? Chocolate ?</p><p>Hm</p>
 others|<p>Can you speak</p><p>yeah I will</p><p>Then speak with me</p>
 others|<p>what </p><p>what what?</p><p>i got out at 730?</p>
@@ -2752,5 +2752,5 @@ others|<p>Yeas</p><p>ONE DAY THIS WILL BE REALITY</p><p>Send me pics</p>
 others|<p>U are my book</p><p>book for what? ugliness? THANK YOU</p><p>U like ur self</p>
 sad|<p>I'll be crying</p><p>You just want to make ppl cry:P</p><p>ppl</p>
 angry|<p>Thanks for sending</p><p>hahaha you're welcome! 😤😤</p><p>Why are u not sending</p>
-sad|<p>Write it</p><p>Mr. F</p><p>U understand me?</p>
+others|<p>Write it</p><p>Mr. F</p><p>U understand me?</p>
 others|<p>Yes</p><p>okay I'll give you a ticket</p><p>Ohk</p>

@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 from operator import itemgetter
+import time
 
 from utility import get_complet_path, bcolors, clean_results
 from sklearn_classifiers import SkLearnClassifier, ClassifierTestSet
@@ -202,6 +203,16 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
         ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=0.7, min_df=0.05, use_Tfid=False, binary=False, ngram_range=(1,2)),
         ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2)),
         ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2)),
+        
+        # 6 of the best classifiers (previously seen) with avec extra-feature added (Emojis and positive/negative words)
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2), apply_count_features=True, apply_sentiment_features=True),
+        ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2), apply_count_features=True, apply_sentiment_features=True),
+
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,2), apply_count_features=True, apply_sentiment_features=True),
+        ClassifierTestSet('LogisticRegression', LogisticRegression(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,1), apply_count_features=True, apply_sentiment_features=True),
+
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False, ngram_range=(1,2), apply_count_features=True, apply_sentiment_features=True),
+        ClassifierTestSet('SGD ', SGDClassifier(max_iter=1000), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2), apply_count_features=True, apply_sentiment_features=True),
     ]
     
     if (verbose):
@@ -232,7 +243,6 @@ def test_with_keras_classifier(data_train, data_test, target_train, target_test,
     results.append(get_denser_keras_classifier_with_tokenizer('denser_and_tokenizer_tfidf', data_dto, keras_tokenizer_dto=KerasTokenizerDTO(None, True, ' ', False, 'tfidf'), verbose=verbose))
     results.append(get_denser_keras_classifier_with_tokenizer('denser_and_tokenizer_freq', data_dto, keras_tokenizer_dto=KerasTokenizerDTO(None, True, ' ', False, 'freq'), verbose=verbose))
 
-
     for keras_c in results:
         write_classifier_result_to_file('keras_classifiers.txt', keras_c)
 
@@ -245,7 +255,7 @@ def predict_with_best(results, file_results_name):
 
     # Just show top 10
     print ("\n\n{}## The top 10 of classifiers: {}{}".format(bcolors.HEADER, type(best_classifier), bcolors.ENDC))
-    print ("\nClassifier|stop_words|min_df|max_df|use_tfid|binary|ngram_range|Accuracy")
+    print ("\nClassifier|accuracy")
     for classifier in results[:10]:
         print("{}|{}{}{}".format(
             classifier, 
@@ -277,7 +287,7 @@ def write_classifier_result_to_file(file, classifier):
     path = get_complet_path('results/' + file)
     if not os.path.exists(path):
         highscore = open(path, 'w')
-        highscore.write("classifier|accuracy\n")
+        highscore.write("Classifier|stop_words|min_df|max_df|use_tfid|binary|ngram_range|emoji|sentiment|Accuracy\n")
         highscore.close()    
 
     highscore = open(path, 'a')
@@ -298,6 +308,8 @@ def write_results_to_file(file, prediction, text):
 
 # Prepare data and call classifiers
 def main(verbose=False, remove_saved_keras_models=False):
+    start_time = time.time()
+    
     data_train, data_test, target_train, target_test, target_names = get_train_data()
     
     sk_predictions = test_with_sklearn_classifiers(data_train, data_test, target_train, target_test, target_names, verbose)
@@ -310,6 +322,8 @@ def main(verbose=False, remove_saved_keras_models=False):
             mean_between_results,
             bcolors.ENDC
             ))
+
+    print("\n{}# {:.2f} seconds to do it all {}".format(bcolors.WARNING, (time.time() - start_time), bcolors.ENDC))
 
 if __name__ == '__main__':
     clean_results()
