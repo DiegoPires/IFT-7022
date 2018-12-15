@@ -25,7 +25,7 @@ Started using virtualenv as a recommendation to make Tensorflow work for TP3
 
 - Create as `virtualenv ./env`
 - Exported with `pip freeze > requirements.txt`
-- Activate with `source ./venv/bin/activate`
+- Activate with `source ./env/bin/activate`
 - Desactivate with `deactivate`
 - Install requirements `$ pip install -r requirements.txt`
 
