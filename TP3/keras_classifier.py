@@ -13,11 +13,11 @@ from sklearn.feature_extraction.text import CountVectorizer
 from utility import get_complet_path
 from pathlib import Path
 
-from keras_classes import KerasClassifierWithVectorizer, KerasClassifierWithTokenizer, Vectorized, CountVectorizerDTO, DataDTO, KerasTokenizerDTO
+from keras_classes import KerasClassifierWithVectorizer, KerasClassifierWithTokenizer, KerasClassifierWithWord2Vec, Vectorized, CountVectorizerDTO, DataDTO, KerasTokenizerDTO
 
 import numpy as np
 
-# A lot of good stuff from here: https://realpython.com/python-keras-text-classification/#one-hot-encoding
+# A lot of good stuff from here: https://realpython.com/python-keras-text-classification/
 
 # Remove all saved models from the directory
 def remove_saved_keras_models(remove_models):
@@ -153,3 +153,67 @@ def get_denser_keras_classifier_with_tokenizer(name, data_dto, keras_tokenizer_d
             print (history)
 
     return KerasClassifierWithTokenizer(name, model, vectorize_data, verbose) 
+
+# The two next methods using word2vec are inspired by: https://ahmedbesbes.com/sentiment-analysis-on-twitter-using-word2vec-and-keras.html
+def get_keras_with_word2vec(name, data_dto, extra_param=None, verbose=False):
+    
+    vectorize_data = Vectorized(data_dto)
+    vectorize_data.initialize_with_word2vec()
+
+    model, path = get_saved_model(name)
+    if (model == None):
+    
+        model = Sequential()
+        model.add(Dense(32, activation='relu', input_dim=data_dto.vocab_size))
+        model.add(Dense(len(vectorize_data.data_dto.target_names), activation='softmax'))
+        
+        model.compile(optimizer='rmsprop',
+                    loss='binary_crossentropy',
+                    metrics=['accuracy'])
+
+        if (verbose):
+            model.summary()
+
+        model.fit(vectorize_data.X_train, vectorize_data.y_train, 
+            epochs=9, 
+            batch_size=32, 
+            validation_data=(vectorize_data.X_test, vectorize_data.y_test),
+            verbose=verbose)
+        
+        model.save(path)
+
+    return KerasClassifierWithWord2Vec(name, model, vectorize_data, verbose)
+
+def get_keras_with_word2vec_denser(name, data_dto, extra_param=None, verbose=False):
+    
+    vectorize_data = Vectorized(data_dto)
+    vectorize_data.initialize_with_word2vec()
+
+    model, path = get_saved_model(name)
+    if (model == None):
+    
+        model = Sequential()
+        model.add(Dense(512, input_shape=(vectorize_data.data_dto.vocab_size,)))
+        model.add(Activation('relu'))
+        model.add(Dropout(0.3))
+        model.add(Dense(512))
+        model.add(Activation('relu'))
+        model.add(Dropout(0.3))
+        model.add(Dense(len(vectorize_data.data_dto.target_names)))
+        model.add(Activation('softmax'))
+        
+        model.compile(optimizer='rmsprop',
+                    loss='binary_crossentropy',
+                    metrics=['accuracy'])
+
+        if (verbose):
+            model.summary()
+
+        model.fit(vectorize_data.X_train, vectorize_data.y_train, 
+            epochs=9, 
+            batch_size=32, 
+            verbose=verbose)
+        
+        model.save(path)
+
+    return KerasClassifierWithWord2Vec(name, model, vectorize_data, verbose)

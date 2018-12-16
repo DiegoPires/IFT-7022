@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from operator import itemgetter
 import time
+from tqdm import tqdm
 
 from utility import get_complet_path, bcolors, clean_results
 from sklearn_classifiers import SkLearnClassifier, ClassifierTestSet
@@ -14,8 +15,8 @@ from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
-from keras_classifier import remove_saved_keras_models, get_simple_keras_classifier, get_denser_keras_classifier, get_denser_keras_classifier_with_tokenizer
-from keras_classes import DataDTO, CountVectorizerDTO, KerasTokenizerDTO
+from keras_classifier import remove_saved_keras_models, get_simple_keras_classifier, get_denser_keras_classifier, get_denser_keras_classifier_with_tokenizer, get_keras_with_word2vec, get_keras_with_word2vec_denser
+from keras_classes import DataDTO, CountVectorizerDTO, KerasTokenizerDTO, KerasClassifierTestSet
 
 # This could help to extract features from text: https://www.kaggle.com/kmader/toxic-emojis
 # And this too: https://nlpforhackers.io/sentiment-analysis-intro/
@@ -64,6 +65,8 @@ def get_predict_data():
 
 # Train multiple SkLearn Classifiers differents, get the best result and predict the texts without label
 def test_with_sklearn_classifiers(data_train, data_test, target_train, target_test, target_names, verbose=False):
+
+    start_time = time.time()
 
     classifiers = [
         ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False),
@@ -220,31 +223,47 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
         print(headerClassifier.str_keys())
 
     results = []
-    for classifier in classifiers:
+    print("\nEvaluating SkLearn classifiers\n")
+    for classifier in tqdm(classifiers):
         skLearnClassifier = SkLearnClassifier(data_train, data_test, target_train, target_test, target_names)
         skLearnClassifier.train_classifier(classifier, False)
         
         write_classifier_result_to_file('sklearn_classifiers.txt', skLearnClassifier)
         results.append(skLearnClassifier)
 
+    print("\n{}# {:.2f} seconds to do sklearn {}".format(bcolors.WARNING, (time.time() - start_time), bcolors.ENDC))
+
     return predict_with_best(results, 'sklearn_prediction.txt')
 
 # Train multiple keras classifiers differents, takes the best one and predict the texts without label
 def test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose=False, remove_models=False):
     
+    start_time = time.time()
+
     remove_saved_keras_models(remove_models)
-    data_dto = DataDTO(data_train, data_test, target_train, target_test, target_names) # 15000
+    data_dto = DataDTO(data_train, data_test, target_train, target_test, target_names) 
 
     results = []
-    results.append(get_simple_keras_classifier('simple', data_dto, verbose=verbose))
-    results.append(get_denser_keras_classifier('denser', data_dto, verbose=verbose))
-    results.append(get_denser_keras_classifier_with_tokenizer('denser_and_tokenizer_binary', data_dto, keras_tokenizer_dto=KerasTokenizerDTO(None, True, ' ', False, 'binary'), verbose=verbose))
-    results.append(get_denser_keras_classifier_with_tokenizer('denser_and_tokenizer_count', data_dto, keras_tokenizer_dto=KerasTokenizerDTO(None, True, ' ', False, 'count'), verbose=verbose))
-    results.append(get_denser_keras_classifier_with_tokenizer('denser_and_tokenizer_tfidf', data_dto, keras_tokenizer_dto=KerasTokenizerDTO(None, True, ' ', False, 'tfidf'), verbose=verbose))
-    results.append(get_denser_keras_classifier_with_tokenizer('denser_and_tokenizer_freq', data_dto, keras_tokenizer_dto=KerasTokenizerDTO(None, True, ' ', False, 'freq'), verbose=verbose))
+    classifier_test = [
+        KerasClassifierTestSet(name='simple', creation_method=get_simple_keras_classifier, data_dto=data_dto, extra_param=None, verbose=verbose),
+        KerasClassifierTestSet(name='denser', creation_method=get_denser_keras_classifier, data_dto=data_dto, extra_param=None, verbose=verbose),
 
-    for keras_c in results:
-        write_classifier_result_to_file('keras_classifiers.txt', keras_c)
+        KerasClassifierTestSet(name='denser_and_tokenizer_binary', creation_method=get_denser_keras_classifier_with_tokenizer, data_dto=data_dto, extra_param=KerasTokenizerDTO(None, True, ' ', False, 'binary'), verbose=verbose),
+        KerasClassifierTestSet(name='denser_and_tokenizer_count', creation_method=get_denser_keras_classifier_with_tokenizer, data_dto=data_dto, extra_param=KerasTokenizerDTO(None, True, ' ', False, 'count'), verbose=verbose),
+        KerasClassifierTestSet(name='denser_and_tokenizer_tfidf', creation_method=get_denser_keras_classifier_with_tokenizer, data_dto=data_dto, extra_param=KerasTokenizerDTO(None, True, ' ', False, 'tfidf'), verbose=verbose),
+        KerasClassifierTestSet(name='denser_and_tokenizer_freq', creation_method=get_denser_keras_classifier_with_tokenizer, data_dto=data_dto, extra_param=KerasTokenizerDTO(None, True, ' ', False, 'freq'), verbose=verbose),
+
+        KerasClassifierTestSet(name='word2vec', creation_method=get_keras_with_word2vec_denser, data_dto=data_dto, extra_param=None, verbose=verbose),
+        KerasClassifierTestSet(name='word2vec_denser', creation_method=get_keras_with_word2vec_denser, data_dto=data_dto, extra_param=None, verbose=verbose),
+    ]
+
+    print("\nEvaluating Keras classifiers\n")
+    for test in tqdm(classifier_test):
+        classifier = test.execute()
+        write_classifier_result_to_file('keras_classifiers.txt', classifier)
+        results.append(classifier)
+
+    print("\n{}# {:.2f} seconds to do keras {}".format(bcolors.WARNING, (time.time() - start_time), bcolors.ENDC))
 
     return predict_with_best(results, 'keras_prediction.txt')
 
