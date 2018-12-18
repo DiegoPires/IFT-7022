@@ -74,6 +74,7 @@ def get_simple_keras_classifier(name, data_dto, count_vectorizer_dto=None, verbo
 
     return KerasClassifierWithVectorizer(name, model, vectorize_data, verbose)
 
+# this one create 5 layers with dropout to avoid overfitting
 def get_denser_keras_classifier(name, data_dto, count_vectorizer_dto=None, verbose=False):
 
     if count_vectorizer_dto == None:
@@ -112,6 +113,7 @@ def get_denser_keras_classifier(name, data_dto, count_vectorizer_dto=None, verbo
 
     return KerasClassifierWithVectorizer(name, model, vectorize_data, verbose)
 
+# this one uses 8 layers and the tokenizer from Keras library
 def get_denser_keras_classifier_with_tokenizer(name, data_dto, keras_tokenizer_dto=None, verbose=False):
 
     if (keras_tokenizer_dto == None):
@@ -184,6 +186,7 @@ def get_keras_with_word2vec(name, data_dto, extra_param=None, verbose=False):
 
     return KerasClassifierWithWord2Vec(name, model, vectorize_data, verbose)
 
+# also using word2vec, but more layers, strange enough, its worse than simple layers
 def get_keras_with_word2vec_denser(name, data_dto, extra_param=None, verbose=False):
     
     vectorize_data = Vectorized(data_dto)

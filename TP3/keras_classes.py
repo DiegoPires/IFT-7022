@@ -17,6 +17,9 @@ from gensim.models.word2vec import Word2Vec
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import scale
 
+# this file contains a lot of classes that are helping to reuse code to test keras 
+# (doenst seen to be really reused because the tests are limited due to performance issues, but everything is in place to do so)
+
 class KerasClassifierTestSet():
     def __init__(self, name, creation_method, data_dto, extra_param, verbose):
         self.name = name
@@ -97,6 +100,7 @@ class KerasClassifierWithTokenizer(KerasClassifier):
         y_classes =  self.model.predict_classes(vectorized)
         return self.labels[y_classes]
 
+# Class used to encapsulate Keras test done with word2vec
 class KerasClassifierWithWord2Vec(KerasClassifier):
     def predict(self, text):
         x_predict = self.vectorizer.labelizeTweets([text], 'PREDICT')
@@ -105,7 +109,7 @@ class KerasClassifierWithWord2Vec(KerasClassifier):
         y_classes =  self.model.predict_classes(vectorized)
         return self.labels[y_classes]
 
-# Small DTO to facilitate passing parameters to methods. It vectorize our data to be able to use with Keras
+# Small DTO to facilitate the use of multiple vectorizers. It vectorize our data to be able to use with Keras
 class Vectorized():
     def __init__(self, data_dto):
         self.data_dto = data_dto
@@ -163,6 +167,7 @@ class Vectorized():
         self.y_train = encoder.transform(self.data_dto.target_train)
         self.y_test = encoder.transform(self.data_dto.target_test)
 
+# Need to extract this class to be able to reuse on the prediction, otherwise it would be all on the Vectorizer
 class CustomVectorizerForWord2Vec():
     def __init__(self, data_dto):
         self.tokenizer = TweetTokenizer()
@@ -193,7 +198,7 @@ class CustomVectorizerForWord2Vec():
         matrix = np.concatenate([self.__buildWordVector(z, self.vocab_size) for z in map(lambda x: x.words, labeled_tokens)])
         return scale(matrix) # This increases a lot the accuracy when training, but see next method
 
-    # needed to create for prediction, without scale, otherwise, the scale always returned a matriz of 0, we might be a little biased like this...
+    # needed to create for prediction, without scale, otherwise, the scale always returned a matrix of 0, we might be a little biased like this...
     def tabeled_tokens_to_matrix_without_scale(self, labeled_tokens):
         matrix = np.concatenate([self.__buildWordVector(z, self.vocab_size) for z in map(lambda x: x.words, labeled_tokens)])
         return matrix # This increases a lot the accuracy when training

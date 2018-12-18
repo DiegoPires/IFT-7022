@@ -18,9 +18,6 @@ from sklearn.naive_bayes import MultinomialNB
 from keras_classifier import remove_saved_keras_models, get_simple_keras_classifier, get_denser_keras_classifier, get_denser_keras_classifier_with_tokenizer, get_keras_with_word2vec, get_keras_with_word2vec_denser
 from keras_classes import DataDTO, CountVectorizerDTO, KerasTokenizerDTO, KerasClassifierTestSet
 
-# This could help to extract features from text: https://www.kaggle.com/kmader/toxic-emojis
-# And this too: https://nlpforhackers.io/sentiment-analysis-intro/
-
 # Loads the data for training and evaluation
 def get_train_data():
     # Read our train data from file
@@ -38,7 +35,7 @@ def get_train_data():
 
     target_names = df.label.unique()
     
-    # Create our data object with sentiments
+    # Create our training and test data randomically
     data_train, data_test, target_train, target_test = train_test_split(
             texts,
             labels,
@@ -61,6 +58,8 @@ def get_predict_data():
     df.drop('turn3', inplace=True, axis=1)
 
     values = df["text"].values
+
+    # returns an enumerate to facilitate for
     return np.ndenumerate(values)
 
 # Train multiple SkLearn Classifiers differents, get the best result and predict the texts without label
@@ -68,6 +67,7 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
 
     start_time = time.time()
 
+    # declaration of all tests
     classifiers = [
         ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=1.0, min_df=1, use_Tfid=False, binary=False),
         ClassifierTestSet('MultinomialNB', MultinomialNB(), stop_words=None, max_df=0.5, min_df=0.05, use_Tfid=False, binary=False),
@@ -207,7 +207,7 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
         ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2)),
         ClassifierTestSet('SVC', SVC(kernel="rbf", C=0.025), stop_words='english', max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2)),
         
-        # 6 of the best classifiers (previously seen) with avec extra-feature added (Emojis and positive/negative words)
+        # 6 of the best classifiers (previously seen) with extra-feature added (Emojis and positive/negative words)
         ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=False, ngram_range=(1,2), apply_count_features=True, apply_sentiment_features=True),
         ClassifierTestSet('LinearSVC ', LinearSVC(random_state=0, tol=1e-5), stop_words=None, max_df=1.0, min_df=1, use_Tfid=True, binary=True, ngram_range=(1,2), apply_count_features=True, apply_sentiment_features=True),
 
@@ -222,6 +222,8 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
         headerClassifier = ClassifierTestSet('Header', None)
         print(headerClassifier.str_keys())
 
+
+    # Execution of the tests
     results = []
     print("\nEvaluating SkLearn classifiers\n")
     for classifier in tqdm(classifiers):
@@ -233,6 +235,7 @@ def test_with_sklearn_classifiers(data_train, data_test, target_train, target_te
 
     print("\n{}# {:.2f} seconds to do sklearn {}".format(bcolors.WARNING, (time.time() - start_time), bcolors.ENDC))
 
+    # prediction with the best classification
     return predict_with_best(results, 'sklearn_prediction.txt')
 
 # Train multiple keras classifiers differents, takes the best one and predict the texts without label
@@ -240,9 +243,12 @@ def test_with_keras_classifier(data_train, data_test, target_train, target_test,
     
     start_time = time.time()
 
+    # clean the models on /keras_models. If done, program became slow because its gonna create it all
     remove_saved_keras_models(remove_models)
+
     data_dto = DataDTO(data_train, data_test, target_train, target_test, target_names) 
 
+    # declaration of our tests
     results = []
     classifier_test = [
         KerasClassifierTestSet(name='simple', creation_method=get_simple_keras_classifier, data_dto=data_dto, extra_param=None, verbose=verbose),
@@ -257,6 +263,7 @@ def test_with_keras_classifier(data_train, data_test, target_train, target_test,
         KerasClassifierTestSet(name='word2vec_denser', creation_method=get_keras_with_word2vec_denser, data_dto=data_dto, extra_param=None, verbose=verbose),
     ]
 
+    # execution of the tests
     print("\nEvaluating Keras classifiers\n")
     for test in tqdm(classifier_test):
         classifier = test.execute()
@@ -265,6 +272,7 @@ def test_with_keras_classifier(data_train, data_test, target_train, target_test,
 
     print("\n{}# {:.2f} seconds to do keras {}".format(bcolors.WARNING, (time.time() - start_time), bcolors.ENDC))
 
+    # prediction with the best classifier
     return predict_with_best(results, 'keras_prediction.txt')
 
 # Finds the best classifier and use it to predict the texts
@@ -286,7 +294,7 @@ def predict_with_best(results, file_results_name):
     print ("\nPrediction|Sentence")
     
     predictions = []
-    # Predicting all talks with our best classifier
+    # Predicting all talks with our best classifier and writting to file
     for index, text in get_predict_data():
         prediction = best_classifier.predict(text)[0] # 0 to remove from numpy array
         predictions.append(prediction)
@@ -334,6 +342,7 @@ def main(verbose=False, remove_saved_keras_models=False):
     sk_predictions = test_with_sklearn_classifiers(data_train, data_test, target_train, target_test, target_names, verbose)
     ke_predictions = test_with_keras_classifier(data_train, data_test, target_train, target_test, target_names, verbose, remove_saved_keras_models)
 
+    # evaluates the difference between our two best classifiers
     mean_between_results = np.mean(sk_predictions == ke_predictions)
 
     print("\n\n### Difference between best classifiers is: {}{:.4f}{}".format(

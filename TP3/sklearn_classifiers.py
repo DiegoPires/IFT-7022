@@ -32,7 +32,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 # Some good stuff to be tested from here (But still not used): https://zablo.net/blog/post/twitter-sentiment-analysis-python-scikit-word2vec-nltk-xgboost
 
-# Example from here: https://scikit-learn.org/0.19/auto_examples/hetero_feature_union.html
+# inspired by this: https://scikit-learn.org/0.19/auto_examples/hetero_feature_union.html
 class ExtraCountFeature(BaseEstimator, TransformerMixin):
 
     def __init__(self, features):
@@ -51,7 +51,7 @@ class ExtraCountFeature(BaseEstimator, TransformerMixin):
         
         return feature_list
 
-# https://nlpforhackers.io/sentiment-analysis-intro/
+# Inspired by: https://nlpforhackers.io/sentiment-analysis-intro/
 class ExtraSentimentFeature(BaseEstimator, TransformerMixin):
     def __init__(self):
         self.tt = TweetTokenizer()
@@ -194,7 +194,7 @@ class SkLearnClassifier(Classifier):
                 ('vect', DictVectorizer())
             ])))
 
-        # Just use the FeatureUnion if we have at least one of the extra features, otherwise crashs
+        # Just use the FeatureUnion if we have at least one of the extra features, otherwise use simple pipeline
         if (len(transformer_list) == 1):
             text_pipeline.steps.insert(index_classifier,['clf', classifierTest.classifier])
             self.pipeline = text_pipeline
